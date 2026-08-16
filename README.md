@@ -158,20 +158,22 @@ check, not a second treatment estimate.
 
 ## On the citations
 
-Located and verified during this project, with the bibliographic record retrieved:
-Cavallo, Neiman and Rigobon (2014, QJE); Gopinath, Boz, Casas, Díez, Gourinchas and
-Plagborg-Møller (2020, AER); DellaVigna and Gentzkow (2019, QJE); Björkegren (2019, ReStud);
-Nevo, Turner and Williams (2016, Econometrica); Fleder and Hosanagar (2009, Management Science);
-Zhu and Liu (2018, SMJ); Wen and Zhu (2019, SMJ); Katz and Shapiro (1985, AER); Varian (1985, AER);
-Tadelis (2016, Annual Review of Economics); Aguirre, Cowan and Vickers (2010, AER);
-Tudón (2022, QME); Watabe, Yang and Kanasheuski (2025, CJE); Danaher, Smith and Telang (2014);
-Choi (2025, Apple-funded DMA study, read in full); Howell and Parker (2024, SEC OASB, read in full).
+**All 29 bibliography entries are verified against the publisher record**, not cited from
+recollection. Run `./.venv/bin/python code/verify_refs.py` to reproduce the check: it parses
+`paper/refs.bib`, queries Crossref by title and first author, filters out preprint and SSRN
+records so it compares against the *published* version, and diffs journal, year, volume, issue and
+pages. Current status: 0 entries need attention.
 
-Cited from knowledge and flagged in `paper/refs.bib` for verification before journal submission:
-Schmalensee (1981), Cavallo (2017), Gorodnichenko and Talavera (2017), Danaher et al. (2010),
-Goodman-Bacon (2021), Callaway and Sant'Anna (2021), Sun and Abraham (2021), Borusyak, Jaravel and
-Spiess (2024), Santos Silva and Tenreyro (2006), Young (2019), Bertrand, Duflo and Mullainathan
-(2004), Cameron, Gelbach and Miller (2008), Conley and Taber (2011).
+Twenty-three verify automatically. Six cannot be matched by Crossref title search and were checked
+by hand against the sources recorded in the `MANUAL` block of that script: Varian (1985),
+Schmalensee (1981) and Katz & Shapiro (1985) pre-date reliable Crossref coverage of the *AER* and
+were confirmed via RePEc/EconPapers; Björkegren (2019) against the *Review of Economic Studies*
+listing and Brown's VIVO record; Tudón (2022) by DOI, which returned QME 20(3), 293–312; and Young
+(2019), where Crossref reports the 2018 online-first date rather than the 2019 issue.
+
+Two entries were corrected by this process: Tudón (2022) and Wen & Zhu (2019) were missing volume
+and page numbers. One near-miss is worth recording: a web search had reported Tudón as "volume 53,
+328–355", which is wrong. The DOI lookup is what caught it.
 
 ## The Form D code
 

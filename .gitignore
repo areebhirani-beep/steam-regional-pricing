@@ -19,3 +19,4 @@ paper/*.pdf
 *.bak
 data/raw/steamspy/
 logs_*.txt
+__pycache__/

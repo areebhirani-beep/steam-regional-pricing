@@ -17,10 +17,14 @@ Alternates, if you want to A/B them across batches:
 - *An elasticity for digital goods, identified off a 3x to 30x permanent price change*
 - *Steam abolished Turkish Lira pricing in 2023. I measured what happened.*
 
-**Rule two: attach nothing.** Link the PDF and link the GitHub. Attachments trip spam filters and
+**Rule two: host the PDF somewhere permanent before wave one.** The GitHub blob link works today,
+but a cold email whose link dies six months from now is worse than no email. Post to SSRN, or cut a
+GitHub release, and use that URL everywhere.
+
+**Rule three: attach nothing.** Link the PDF and link the GitHub. Attachments trip spam filters and
 signal that you expect them to do work before deciding.
 
-**Rule three: one ask, and make it small.** Never open with "will you co-author." Open with a
+**Rule four: one ask, and make it small.** Never open with "will you co-author." Open with a
 question only they can answer. The co-authorship conversation happens on the second or third
 exchange, or it does not happen.
 
@@ -42,12 +46,12 @@ exchange, or it does not happen.
 > inside the treated country.
 >
 > I used it to estimate the price elasticity of demand for digital goods in an emerging market.
-> Turkish demand for paid titles falls 29 percent in a triple difference (−0.343, s.e. 0.083), and
-> a dose-response specification recovers an elasticity of −0.331. Randomization inference across
+> Turkish demand for paid titles falls 27 percent in a triple difference (-0.317, s.e.
+> 0.057), and a dose-response specification recovers an elasticity of -0.287. Randomization inference across
 > all 28 Steam languages ranks Turkish first. Latin-American Spanish, whose countries moved onto a
 > *discounted* dollar schedule on the same day, moves in the opposite direction.
 >
-> Paper: [link]. Replication package: https://github.com/areebhirani-beep/steam-regional-pricing. Everything runs on public endpoints, no API key.
+> Paper: https://github.com/areebhirani-beep/steam-regional-pricing/blob/main/paper/paper.pdf. Replication package: https://github.com/areebhirani-beep/steam-regional-pricing. Everything runs on public endpoints, no API key.
 >
 > The question I cannot answer alone is the one you would ask first. My dose measure assumes
 > pre-change lira prices were a common fraction of dollar prices, because per-title historical lira
@@ -76,14 +80,18 @@ exchange, or it does not happen.
 > catalogue in dollars overnight, raising local prices several-fold to thirty-fold depending on the
 > title.
 >
-> Demand is inelastic. The dose-response estimate is −0.331 (s.e. 0.153), well above the
+> Demand is inelastic. The dose-response estimate is -0.287 (s.e. 0.055), well above the
 > unit-elastic benchmark a zero-marginal-cost seller should price at. The implication is
 > uncomfortable for industry practice: Steam's deep emerging-market discount was
 > revenue-reducing, and the surplus lost when it ended fell almost entirely on Turkish consumers.
 > It is the mirror image of DellaVigna and Gentzkow's uniform-pricing result, and it points at the
 > same underlying fact, that geographic prices are set with heuristics rather than elasticities.
 >
-> Paper: [link]. One figure carries it, and it is on page 11.
+> The welfare split is the part I did not expect: the seller captures 62 to 84 percent of
+> what Turkish consumers lost, so this is mostly a transfer out of a poor market rather than forgone
+> trade.
+>
+> Paper: https://github.com/areebhirani-beep/steam-regional-pricing/blob/main/paper/paper.pdf. One figure carries it, and it is on page 9.
 >
 > My question for you: I observe reviews, not units, and I show the composition of reviewers is
 > stable on library size and sentiment while playtime rises. Is that enough to convince a referee
@@ -108,16 +116,17 @@ exchange, or it does not happen.
 > Turkey and Argentina simultaneously. Pricing architecture is a platform decision that binds
 > thousands of sellers at once, and I have not found it measured.
 >
-> To measure it I assembled a panel of 1.36 million Steam reviews across 39 titles and 28
-> languages. Each observation carries a timestamp, a language, the reviewer's playtime at the
+> To measure it I assembled a panel of 9,608,862 Steam reviews across 484 titles and
+> 28 languages, from a raw collection of 17.4 million. Each observation carries a timestamp, a language, the reviewer's playtime at the
 > moment of writing, their library size, and a flag for whether the copy was activated from a
 > non-Steam key, which makes gray-market substitution directly observable rather than inferred.
 > The collector and the cleaning code are public and require no API key.
 >
-> Turkish demand for paid titles falls 29 percent. Free-to-play titles in the same country barely
-> move.
+> Turkish demand for paid titles falls 27 percent. Free-to-play titles in the same country,
+> which have no price, fall by far less, which is how the design separates the price change from the
+> Turkish macroeconomy.
 >
-> Paper: [link]. Code and data pipeline: https://github.com/areebhirani-beep/steam-regional-pricing.
+> Paper: https://github.com/areebhirani-beep/steam-regional-pricing/blob/main/paper/paper.pdf. Code and data pipeline: https://github.com/areebhirani-beep/steam-regional-pricing.
 >
 > The extension I cannot do alone: separating Argentina, which was treated on the same date but is
 > pooled with the rest of Latin America in Steam's language tags. Doing it properly needs
@@ -143,14 +152,14 @@ exchange, or it does not happen.
 > than a central bank. Because Steam tags every review with the reviewer's client language, the
 > quantity margin is observable at the product level and at monthly frequency.
 >
-> Turkish demand for paid titles falls 29 percent, with an implied elasticity of −0.331. The
+> Turkish demand for paid titles falls 27 percent, with an implied elasticity of -0.287. The
 > pre-existing differential trend is mildly positive, so netting it out makes the decline larger.
 > Latin-American Spanish, repriced downward on the same date, moves the other way.
 >
 > This is the quantity-side complement to Cavallo, Neiman and Rigobon, in a setting where the
 > currency switch is dated to the day and applies to an entire catalogue at once.
 >
-> Paper: [link].
+> Paper: https://github.com/areebhirani-beep/steam-regional-pricing/blob/main/paper/paper.pdf.
 >
 > What I would most value your view on: whether the near-complete absence of a quantity response
 > tells us something about pass-through into a market where the seller has no marginal cost, or
@@ -166,9 +175,9 @@ Keep it three sentences. Add one new thing. Never resend the original.
 
 > Professor [Name],
 >
-> Following up once on the note below. Since sending it I added a weekly event study covering
-> Valve's 26-day announcement window, which shows no anticipatory movement, and a leave-one-title-
-> out check that moves the estimate only within [−0.490, −0.448].
+> Following up once on the note below. Since sending it I extended the window to 31 months past
+> the event, where the effect shows no reversion, and added a leave-one-title-out check that moves
+> the estimate only within [-0.502, -0.497].
 >
 > If this is not your area, I would be grateful for a name rather than a reply.
 >

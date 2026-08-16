@@ -1,0 +1,5448 @@
+Sabrina T. Howell and Dean Parker*OCTOBER 2024VC Funds and Regulation D’s Rule 506(c):  Did Permitting General Solicitation  Open the Door for Emerging and  Underrepresented Managers?*Howell: New York University, Stern School of Business & NBER; Parker: New York University, Stern School of Business. This report was developed under contract with the SEC’s Office of the Advocate for Small Business Capital Formation (SEC OASB). The report represents the independent research and analysis of the authors and expresses the authors’ views and does not necessarily reflect those of the Commission, the Commissioners, or members of the SEC staff. It draws from and summarizes Sabrina Howell, Dean Parker, and Ting Xu. 2024. "Tyranny of the Personal Network: The Limits of Arm’s Length Fundraising in Venture Capital." Working Paper. Howell & Parker’s work on both the academic working paper and this report was funded by the SEC OASB.Executive Summary 
+
+This report studies take-up of a new exemption that permitted general solicitation (i.e., public advertis-
+
+ing) in private equity issuance. 
+
+In the private markets, issuers—including essentially all venture capital (VC) funds—avoid the Securi-
+ties Act’s requirement to register securities with the SEC by making use of an exemption.  The longstanding 
+most commonly used exemption, Regulation D’s Rule 506(b), bars issuers from publicly advertising, often 
+requiring them to have pre-existing substantive relationships with their investors. In 2013, a new exemption— 
+506(c)—became available that permitted issuers to publicly advertise if they take reasonable steps to verify 
+investor accreditation. 
+
+This report, which draws from Howell et al. (2024), studies the implications for VC fund managers of 
+the 506(c) exemption. As a frst step, we conduct a survey that confrms the importance of personal networks 
+in fundraising.  Among fund managers who only use 506(b), almost 90% of respondents report using their 
+personal network to raise funds.  In contrast, 40% of 506(c) users report that they use 506(c) because they 
+lacked a personal network. 
+
+To  formally  study  506(c)  take-up,  we  use  a  carefully  matched  sample  of  Regulation  D  flings  and 
+Pitchbook data, alongside LinkedIn data and other information.  Take-up of 506(c) has been relatively low, 
+averaging 8.4% of VC funds since 2013. However, take-up is not homogeneous across groups. We show that 
+female, Black or Hispanic, and frst-time managers, as well as managers who did not graduate from an elite 
+school, are more likely to use 506(c). These groups are traditionally underrepresented among fund managers 
+and are less likely to have strong personal networks.  Although their shares have grown dramatically, they 
+remain below supply benchmarks; for example, the Black/Hispanic share of managers increased from about 
+3% in the four years before 2013 to about 6% in the most recent fve years, far below their 26% share among 
+college graduates. 
+
+We present three channels that help to explain why 506(c) has not been widely used: 
+
+•  Track record paradox: The ability to publicly advertise in 506(c) reduces reliance on personal networks, 
+but arm’s length fundraising requires a track record.  This creates a paradox:  Few people have strong 
+track records yet did not develop strong personal networks along the way. 
+
+•  Access to the crowd:  We show that a 100-investor cap for 3(c)(1) private funds creates a regulatory 
+
+barrier to 506(c) managers’ access to small-time retail investors. 
+
+•  Investor verifcation costs:  While in principle not onerous,  we show that perceived costs and their 
+
+accompanying signaling problems play a role in helping to explain low take-up of 506(c). 
+
+Overall,  this  report  ofers  two  insights  that  are  broadly  relevant  to  securities  regulation  and  to  fnancial 
+intermediation: 
+
+•  Eforts to protect investors from fraud can come at the expense of higher barriers to entry for issuers; 
+
+•  Track record matters at arm’s length while strong networks matter in relationship fnancing, so public 
+advertising on its own is only helpful to the small fraction of prospective issuers with a strong track 
+record but weak personal networks. 
+
+1 
+
+Contents 
+
+1  Introduction 
+
+2  Regulatory Context and Background on 506(c) 
+
+3 
+
+6 
+
+2.1  Could the SEC Have Known? Ex-Ante Comments 
+
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  10 
+
+3  Data Sources 
+
+4  The Importance of Personal Networks 
+
+5  Take-Up Across Time and Fund Characteristics 
+
+6  Take-Up by Manager Demographics 
+
+7  Implications for Portfolio Companies 
+
+8  Has General Solicitation Moved the Needle? 
+
+9  Understanding the Limits on 506(c) Take-up 
+
+13 
+
+15 
+
+16 
+
+22 
+
+26 
+
+26 
+
+30 
+
+9.1  The Track Record Paradox 
+
+9.2  Accessing the Crowd  .
+
+.
+
+.
+
+.
+
+.
+
+.
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  30 
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  35 
+
+9.3  Verifcation Costs and Negative Signaling  . . . . . . . . . . . . . . . . . . . . . . . . . . .  36 
+
+10  Conclusion and Policy Discussion 
+
+A  Appendix:  Regulations and Institutional Details 
+
+39 
+
+65 
+
+A.1  Complete Rule 506 Text 
+
+.
+
+.
+
+.
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  65 
+
+A.2  Private Fund Categories under the 1940 Investment Company Act 
+
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  67 
+
+B  Appendix:  Surveys 
+
+69 
+
+B.1  Fund Manager Survey .
+
+.
+
+.
+
+.
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  69 
+
+B.1.1  Common First Page .
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  69 
+
+B.1.2  Remainder of Survey for 506(b)-Only Users  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  70 
+
+B.1.3  Remainder of Survey for 506(c)-Only Users  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  72 
+
+B.1.4  Remainder of Survey for both 506(b) & 506(c) Users  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  74 
+
+B.2  Lawyer Survey 
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  76 
+
+B.3  Emails Requesting Survey Participation 
+
+. . . . . . . . . . . . . . . . . . . . . . . . . . . .  79 
+
+2 
+
+1  Introduction 
+
+There is a tension in securities regulation between enabling broad capital formation and protecting investors. 
+
+This tension is particularly acute in private capital markets, where there is limited disclosure.  U.S. securities 
+
+regulation has relied on two main tools to protect investors in private markets:  (a) enforcing relationship-
+
+based fundraising by prohibiting public advertisement (also called “general solicitation”); and (b) restricting 
+
+the eligible investor base to sophisticated or wealthy individuals and fnancial institutions. These tools depart 
+
+from the main approach to regulating public markets, which is mandated disclosure. 
+
+In the private markets, issuers can avoid the Securities Act’s requirement to register securities with the 
+
+SEC (essentially, undergoing the regulatory costs of an IPO) by using an exemption, such as those available 
+
+under “Regulation D”. This exemption has in recent years accounted for substantially more fundraising than 
+all public equity and debt oferings combined in the U.S. (Bauguess et al., 2018).1  The longstanding most 
+commonly used exemption under Regulation D, 506(b),  bars issuers from publicly advertising,  requiring 
+
+them to have pre-existing substantive relationships with their investors.  In other words, the law traditionally 
+
+enforced reliance on personal networks. 
+
+Recent policies in the U.S. and abroad aim to increase access to the burgeoning private capital markets, 
+
+either by permitting general solicitation or by expanding the eligible investor base (Kiernan, 2019). The U.S. 
+
+Congress legislated a new exemption that took efect in 2013. As an example of Congress’ motivation, a letter 
+
+from Congress to the SEC emphasized that the Senate believed general solicitation “provide opportunities 
+
+to  raise  capital  from  investors  that  can  aford  to  take  risk”  (McHenry  and  Garrett,  2013).  This  addition 
+
+to Regulation D—506(c)—permitted issuers to publicly advertise.  Generally, both 506(b) and (c) require 
+
+investors to have a certain degree of wealth or fnancial sophistication through “accreditation” requirements. 
+
+They difer only in that 506(c) permits public advertising but requires the issuer to take reasonable steps to 
+
+verify accreditation.  Under 506(b), issuers need a reasonable belief that the investors are accredited. 
+
+In this report, we examine how these rules afect private fundraising, and in particular whether they 
+
+create  barriers  to  entry  for  underrepresented  private  fund  managers,  who  tend  to  have  weaker  personal 
+
+networks  with  which  to  reach  eligible  investors.  Our  data  and  analysis  draw  heavily  from  Howell  et  al. 
+
+(2024).  We focus on venture capital (VC) fundraising,  where VCs make use of Reg D when they obtain 
+
+equity capital from Limited Partners (LPs).  VC managers (i.e., General Partners or GPs) are the gatekeepers 
+
+determining which innovations move forward and are commercialized in the economy; VC-backed startups 
+
+are perhaps the most important source of innovation, productivity growth, and job creation in the post-WWII 
+
+U.S. (Kortum and Lerner, 2000; Gornall and Strebulaev, 2021).  We are interested in investment funds rather 
+
+than direct issuers because they have a far larger volume of capital, their managers are even less diverse than 
+
+portfolio company executives (Wang et al., 2023), and they are relatively understudied.  While investment 
+
+in startups is known to rely on personal trust, face-to-face due diligence, and reputation (Bernstein et al., 
+
+1More broadly, between 2012 and 2022, the global growth in private capital was more than 2.5 times larger the growth of public 
+
+equity and fxed income assets, leading to a total of $14.7 trillion in private capital funds (Schwartz et al., 2024). 
+
+3 
+
+2016; Howell and Nanda, 2019; Hu and Ma, 2021), less is known about the GP-LP relationship.  Exceptions 
+
+include Goyal et al. (2021),  Abuzov et al. (2022),  and Goyal et al. (2023),  who fnd mixed evidence that 
+
+personal networks and privacy matter. 
+
+We construct a novel dataset of U.S. VC funds by linking Pitchbook to funds’ regulatory flings on 
+
+Form D, which allows us to observe their exemption type (i.e., 506(b) or (c)).  Essentially all VC funds that 
+
+raise capital in the U.S. use Regulation D, which requires them to fle a Form D within 15 days of the frst 
+securities sale.2  The Pitchbook data are supplemented with information collected from managers’ LinkedIn 
+pages and with surveys of VCs and lawyers who provide counsel to VC funds. 
+
+We document that take-up of 506(c) has been relatively low, averaging 8.4% of VC funds across the 
+10 years since its introduction.  In the early years after adoption of the rule, take-up was de minimis, but has 
+
+recently accelerated.  506(c) funds tend to be smaller than their 506(b) counterparts.  They are also three 
+
+times more likely to use an intermediary in fundraising, consistent with arm’s length relationships. 
+
+In VC markets, the high uncertainty of startup outcomes and skewed returns makes it difcult to assess 
+
+quality,  both  of  fund  managers  and  of  the  portfolio  companies  they  fund.  In  other  words,  there  is  often 
+
+information asymmetry about quality, which forces participants to rely on imperfect signals.  One important 
+
+source of information about quality is personal and often local relationship networks (Hochberg et al., 2007, 
+
+2010; Chen et al., 2010; Howell, 2020; Garfnkel et al., 2021).  We frst confrm the importance of personal 
+
+networks in a survey of fund managers and their lawyers. Among fund managers who have only used 506(b), 
+
+almost 90% of respondents report sometimes or frequently using their personal network to raise funds.  In 
+
+contrast, 40% of 506(c) users report that they use 506(c) because they lacked a personal network. 
+
+While personal networks reduce information asymmetry, they have a “taste-based” dimension, driven 
+
+by  homophily  and  biases,  which  may  present  a  barrier  to  prospective  managers  from  underrepresented 
+
+backgrounds. Existing research documents that VCs are overwhelmingly White, male, and graduates of elite 
+
+schools, and that this composition afects which innovations get funded (Ewens and Townsend, 2020; Calder-
+
+Wang and Gompers, 2021; Cassel et al., 2022).  Rising concentration of fundraising at a few prestigious VC 
+
+frms and among a narrow pool of fnanciers may disadvantage startups that are not in the right location or lack 
+
+the right connections (Lerner and Nanda, 2020; Ewens, 2023).  There is growing interest among government 
+
+and  private  stakeholders  in  how  securities  regulation  may  afect  entry  barriers  and  the  participation  of 
+traditionally underrepresented groups in the capital markets.3 
+
+We show that fund managers who are less likely to have strong personal networks are more likely to 
+
+use 506(c), conditional on successfully raising a fund.  After including state-year fxed efects, which help 
+
+2We focus on funds that appear in Pitchbook, because this is the closest proxy to a universe of legitimate, economically relevant 
+
+VC funds that have raised a meaningful amount of capital. 
+
+3For example, one 2020 SEC request for comment on Regulation D asked: “Would the proposed changes positively impact access 
+to capital by counterbalancing social network efects for underrepresented founders, such as women, minorities, and entrepreneurs 
+in rural areas?”  In Senate Hearing 113-178 “The JOBS Act At a Year and a Half”, policy makers state that women and minorities 
+could  beneft  from  crowdfunding/general  solicitation.  See  SEC  (2020a),  SEC  (2020b),  SEC  (2023),  Chang  (2024),  and  113th 
+Congress (2013). 
+
+4 
+
+to control for dynamic and geographic trends, we fnd that the share of frst-time managers is 27% higher in 
+
+506(c) funds than in 506(b). The share of female managers is 39% higher and the share of Black or Hispanic 
+
+managers is 95% higher, relative to the mean.  506(c) fund managers are 8% less likely to have graduated 
+
+from elite schools than 506(b) managers.  They are also 30% more likely to be in a non-top 3 city and 47% 
+
+more likely to be in a non-top 10 city (in models with only year fxed efects).  Variation extends to portfolio 
+
+company  characteristics.  506(c)  managers  are  more  likely  to  fund  startups  with  frst-time,  female,  and 
+
+non-elite school entrepreneurs.  These descriptive results suggest underrepresented managers have weaker 
+
+personal networks and so make more use of the option to publicly advertise.  When it comes to returns to 
+
+investors,  506(c) funds if anything perform better than 506(b) funds,  pointing away from the diferential 
+
+take-up refecting adverse selection. 
+
+Although  the  share  of  underrepresented  managers  has  increased  relative  to  the  early  2010s,  from  a 
+
+levels perspective, their shares remain far below supply benchmarks.  The overall “needle” has not moved 
+
+much  because  506(c)  take-up  has  been  low  as  a  share  of  all  Regulation  D  use  and  these  groups  remain 
+underrepresented even within 506(c).4  For example, the share of Black and Hispanic managers in our overall 
+Regulation D data increased from about 3% in the four years before the rule change in 2013 to about 6% in 
+
+the fve years ending in 2023, far below their 26% share among college graduates.  Although we cannot fully 
+
+rule out supply-side constraints, minority funds do not perform worse than majority funds.  These results 
+
+suggest that minority managers continue to face entry barriers despite the availability of general solicitation, 
+
+and that their take-up of 506(c) could have been higher without a decline in quality. 
+
+The overall low take-up of 506(c) may seem surprising.  All else equal, having the option to publicly 
+
+solicit funding should be weakly better than not.  Why don’t more fund managers, especially those that are 
+
+network-constrained,  use  506(c)?  We identify  three  non-mutually exclusive  mechanisms  for low  take-up 
+
+of  506(c):  a  track  record  paradox,  regulatory  barriers  to  accessing  the  crowd,  and  investor  verifcation 
+
+costs.  However, it is important to emphasize that there are other barriers facing underrepresented GPs in the 
+
+entrepreneurial fnance ecosystem, such as deal sourcing and discrimination. 
+
+The ability to publicly advertise in 506(c) eliminates the need for a personal network, but fundraising 
+
+at arm’s length requires hard information to signal quality, especially evidence of past success.  This creates 
+
+a paradox: There are few individuals with strong track records who did not develop strong personal networks 
+
+along the way.  We hypothesize that the opportunity to fundraise at arm’s length in private markets will be 
+
+most valuable for managers with weaker networks,  yet may not be widely used or enable inclusive entry 
+
+because only people with established track records can convey quality at a distance.  We show that the two 
+
+phenomena  of  (a)  needing  to  signal  quality  in  arm’s  length  fnancing;  and  (b)  a  co-dependence  between 
+
+personal networks and a track record together constrain 506(c) take-up by underrepresented managers. 
+
+The second challenge is accessing the “crowd.”  General solicitation is best suited to fundraising from 
+
+4Although Regulation D also contains Rule 504, this study focuses on Rule 506(b) and (c) and all data references to “Regulation 
+D”  in  this  study  include  oferings  conducted  under  Rule  506(b)  and  (c).  Rule  504  excludes  investment  companies  and  is  not 
+frequently used by companies; see pages 14 and 16 in SEC (2023). 
+
+5 
+
+individuals outside one’s own network, and more specifcally from a large number of small-time investors 
+
+who lack connections to traditional VC funds.  Accessing retail investors is especially important for GPs 
+
+without connections to institutions, family ofces, or very wealthy individuals. However, there is a regulatory 
+
+barrier in the form of a 100-investor cap for 3(c)(1) private funds.  We use a new fund exemption that raised 
+
+the cap to 250 investors for very small funds to show that the cap seems to be binding,  and is one lever 
+
+policymakers could adjust to increase participation. 
+
+As mentioned at the outset,  one way that securities law tries to limit the social harm of scams and 
+
+high-risk investing is to require investors be wealthy or sophisticated. In 506(b), some issuers obtain investor 
+
+representations about their accredited investor status to meet the accreditation requirements for investing in 
+
+Regulation D oferings.  Since 506(c) would involve more arm’s length retail investors, the law required the 
+
+issuer to take “reasonable steps” to verify accreditation.  The available steps are not especially onerous, but 
+
+they do add some cost to 506(c), which in turn could lead to negative signaling. Using a survey, we show that 
+
+verifcation costs and their accompanying signaling problems play a role in helping to explain low take-up 
+
+of general solicitation by funds. 
+
+This paper ofers two insights that are broadly relevant to securities regulation and to fnancial inter-
+
+mediation.  First, eforts to protect investors from fraud—for example, by capping investors in some private 
+
+funds or installing verifcation requirements—can come at the expense of higher barriers to entry for issuers. 
+
+Second, track record matters at arms’ length while strong networks matter in relationship fnancing, so public 
+
+advertising on its own is only helpful to the small fraction of prospective issuers with a strong track record 
+
+but weak personal networks.  As policymakers seek to increase access to private markets, this paper informs 
+
+regulatory design, in particular the trade-of between investor protection and broader capital formation.  To 
+
+our knowledge, this paper is the frst to study the implications of securities regulation for diversity in capital 
+
+markets.  (For a comprehensive review of related academic literature, see Howell et al. (2024).) 
+
+2  Regulatory Context and Background on 506(c) 
+
+Information asymmetry creates regulatory pressure to protect investors from fraud and conficts of interest, 
+
+for example between sales intermediaries and their clients (Bolton et al., 2007; Bergstresser et al., 2008; 
+
+Inderst and Ottaviani, 2009).  U.S. securities laws have long struggled with the need to balance protecting 
+
+retail investors with supporting capital formation.  On the one hand, giving retail investors access to a wider 
+
+scope of opportunities may expose them to deception or excessive risks.  On the other hand, the ability to 
+
+make investments in risky  enterprises  or alternative assets is both core to  the U.S. economic engine and 
+
+an important source of wealth creation, especially since the U.S. tax structure favors capital gains.  In this 
+
+section, we describe the regulatory infrastructure that has grown over time in face of this trade-of. 
+
+Securities regulation in the U.S. primarily takes the form of mandating disclosure of material infor-
+
+mation,  especially of fnancial positions.  It is widely believed that left to their own devices,  issuers will 
+
+suboptimally disclose and deception-plagued markets will be illiquid and inefcient (Admati and Pfeiderer, 
+
+6 
+
+2000).  Securities  regulation helps  to  resolve commitment,  agency,  self-dealing,  and  other problems  that 
+
+arise  naturally  in  the  private  market  (Zingales,  2009).  Requiring  substantial  disclosure,  alongside  other 
+
+private and public enforcement regimes, has been shown to be central to the success of U.S. capital markets, 
+
+which in turn is tied to fnancial development and economic growth (Rajan and Zingales, 1998; Reese Jr and 
+
+Weisbach, 2002; La Porta et al., 2002; Shleifer and Wolfenzon, 2002; La Porta et al., 2006; Jackson and Roe, 
+
+2009; Christensen et al., 2016). Most empirical literature fnds positive efects of mandatory disclosure, such 
+
+as Greenstone et al. (2006) and Christensen et al. (2016). 
+
+However,  these  same  regulations  can  also  create  burdensome  costs  for  issuers,  a  point  emphasized 
+
+following  new  disclosure  mandates  in  the  2002  Sarbanes-Oxley  Act  (Chhaochharia  and  Grinstein,  2007; 
+
+Doidge et al., 2009; Hochberg et al., 2009; Iliev, 2010; Ewens et al., 2024).  A dimmer view of securities 
+
+regulation—going back to Stigler (1964)—emphasizes the costs and special interests that are often behind 
+
+particular  rules  (Posner,  1974;  Easterbrook  and  Fischel,  1984;  Mulherin,  2007).  For  example,  Mahoney 
+
+(2003) explores the origins of state blue-sky laws, the earliest form of securities regulation in the U.S., and 
+
+shows that they were primarily motivated by small banks which sought to erect barriers to competition. 
+
+Context  for  Regulation  D.  The  longstanding  compromise  in  private  capital  markets—codifed  in  the 
+Securities Act of 1933—has been to require that any ofer or sale of a security must either be registered 
+with the SEC or rely on an exemption.5  Registering securities involves a large amount of regular disclosure, 
+obligations to investors, and legal costs.  Private capital markets, by defnition, avoid this type and extent 
+
+of disclosure and its accompanying costs by relying on various exemptions.  The relevant exemption from 
+the 1933 Act is Section 4(a)(2), which allows issuers to conduct small, non-public oferings.6  The law does 
+not defne these terms,  which initially left private placements using this exemption to rely on convoluted 
+
+suggestions  from  case  law.  To  address  the  regulatory  uncertainty  and  encourage  small  business  capital 
+formation, the SEC adopted Regulation D in 1982.7 
+
+The Baseline Exemption under Regulation D: Rule 506(b).  Regulation D’s key element is paragraph 
+(or Rule) 506(b), which ofers a “safe harbor” under Section 4(a)(2) for private securities to be sold with 
+
+no limit on the ofering amount or the number of investors, so long as three conditions are met.  First, there 
+
+can be no general solicitation (i.e., public advertising, which we discuss further below).  Second, resale of 
+
+the securities is restricted.  Unlike registered equity such as publicly traded stocks, an investor cannot easily 
+resell securities purchased under the Regulation D exemption.8  Third,  there is a restriction on who may 
+
+5While there is some debate about the scope of “security”, for our purposes selling ownership in a VC fund certainly qualifes. 
+6VC funds also comply with the Investment Company Act of 1940 either by registering as investment advisors or, more commonly, 
+by making use of the Act’s exemptions 3(c)(1) or 3(c)(7), which are carveouts for VC and PE funds that exempt them if they meet 
+certain conditions. 
+
+7SEC Adoption of fnal rules, rule amendments, and form, and rescission of rules and forms:  Revision of Certain Exemptions 
+
+from Registration for Transactions Involving Limited Ofers and Sales, Release No.  33-6389, 47 FR 11251, March 16, 1982. 
+
+8Resales of securities also need to be registered or have an exemption.  Many resales rely on Section 4(a)(1) of the Securities Act 
+or the safe harbor under Rule 144, which requires among other things that resale has to meet certain requirements such as volume 
+limitations and a minimum holding period. 
+
+7 
+
+invest.  Limiting eligible investors departs from most securities regulation in the U.S., which seeks to protect 
+
+investors by mandating disclosure.  It stems from a Supreme Court interpretation of the law decreeing that 
+
+investors who can “fend for themselves” do not need the protection of mandated disclosure through registered 
+securities.9  Generally, the SEC rules therefore restrict exempt Rule 506(b) oferings to: 
+
+“certain sophisticated or ‘accredited’ investors that are presumed to possess sufcient fnancial 
+
+sophistication and ability to sustain the risk of loss of their investment or to fend for themselves 
+
+to render the protections of the Securities Act’s registration process unnecessary” (SEC, 2019). 
+
+In  an  ofering  that  is  exempt  under  506(b),  investors  must  be  accredited  (except  for  a  maximum  of  35 
+
+unaccredited investors in any 90 day calendar period).  Accredited investors may qualify based on either the 
+
+individual or entity criteria.  Generally, individuals can qualify by:  (a) having income of at least $200,000 
+
+or joint income (with spouse or partner) of at least $300,000 in each of the last two years who reasonably 
+
+expect to meet this income threshold in the current year; (b) having net a worth of at least $1 million outside 
+
+their primary residence;  or (c) meeting the investment professional requirements.  Generally,  entities can 
+
+qualify by: (a) owning more than $5 million in investments or (b) certain entities having more than $5 million 
+
+in assets.  The thresholds for individual accreditation are not especially high.  According to one estimate 
+
+using data from the Federal Reserve’s Survey of Consumer Finances, in 2023 about 15% of Americans were 
+
+eligible, or about 20 million people, a 40% increase from a similar exercise four years earlier and double 
+the 2013 number.10  Issuers need a “reasonable belief” that investors meet accreditation standards.  If issuers 
+have a reasonable belief that the investor is an accredited investor, but that investor does not actually meet 
+
+one of the criteria, the issuer is not liable. 
+
+In 1996, Rule 506 preempted state registration requirements, allowing issuers to fle a single form in 
+
+order  to  comply  with  federal  and  any  state  securities  regulations  (i.e.,  blue  sky  laws)  (Ewens  and  Farre-
+Mensa, 2020).11  Once Rule 506 of Regulation D preempted state securities laws, it became the dominant 
+exemption.  Regulation D requires that issuers fle a Form D with the SEC within 15 calendar days of the 
+
+date of the frst sale (Rule 503).  The Form D is not a disclosure document.  It notifes the SEC that the 
+
+ofering is occurring, who is conducting it for what general purpose (e.g., to raise a VC fund), and when. 
+
+Separate investment adviser, anti-fraud and other obligations require them to furnish investors with some 
+
+sort of disclosure, which commonly for a VC fund will include a private placement memorandum and fund 
+
+subscription document, but this is not provided to the SEC and is typically far less comprehensive than for 
+
+a registered ofering.  Issuers do not always comply with the requirement to fle a Form D, in part because 
+the Form Ds are publicly available.12  This comes with some risk, however, as under Rule 507 (in its modern 
+form), issuers who fail to fle Form D could lose their Regulation D rights in the future.13 
+
+9SEC v.  Ralston Purina; 346 U.S. 119 (1953) 
+10See PK (2023). 
+11The 1996 change was part of the National Securities Markets Improvement Act (NSMIA), which also created a new category 
+of private funds under Section 3(c)7 of the Investment Company Act that may exceed the 100-investor limit if all investors are 
+“qualifed purchasers” (natural persons who own at least $5 million in investments or institutions that own at least $25 million).  See 
+Appendix A.2 for details. 
+
+12See page 13 in Ewens and Malenko (2020). 
+13See CFR (1989) 
+
+8 
+
+Regulation D is today the basis for the enormous private capital industry; the asset classes of PE, VC, 
+real estate, and hedge funds rely on it, as do many large companies, startups, and small businesses.14  To raise 
+a fund from U.S. investors that does not rely on Regulation D, the manager and her investors must typically 
+
+all reside in the same state, in which case they can comply only with that state’s securities laws (a Section 
+
+3(a)(11) ofering).  Because of the onerous costs of complying with state securities laws and restriction on 
+
+fundraising locations, nearly all VC funds choose Regulation D. The amount raised through Regulation D 
+
+oferings substantially exceeds combined U.S. public equity and debt oferings (Bauguess et al., 2018).  The 
+
+disparity between public and private markets has grown over time, as public equity fundraising has modestly 
+
+declined and public debt has not grown as fast as private capital.  Moreover, nearly all Regulation D capital 
+
+is raised by investment vehicles such as VC, PE, and hedge funds.  By our own calculations,  investment 
+
+vehicles raised $1.38 trillion in 2023, compared to $88 billion for non-fnancial issuers. 
+
+Allowing General Solicitation:  Rule 506(c).  The focus of this paper is an amendment to Rule 506 that 
+allowed  issuers  to  generally  solicit  their  ofering  (i.e.,  publicly  advertise).  General  solicitation  includes 
+
+activities such as posting on a public website, making a statement at an event where strangers are present, 
+
+or reaching out to someone with whom the manager does not already have a personal relationship.  One 
+
+way  to  avoid  generally  soliciting  is  for  the  manager  to  have  a  pre-existing,  substantive  relationship  with 
+
+the prospective investor.  Therefore, 506(b) generally requires pre-existing personal networks, and is likely 
+
+to  entrench  well-networked  incumbents,  creating  a  barrier  to  emerging  and  less  well-networked  types  of 
+
+managers. 
+
+The JOBS Act of 2012 created Rule 506(c) precisely to reduce this incumbency beneft and expand 
+
+capital formation to support more small businesses. (SEC, 2013; Zeidel, 2016) Other than general solicitation, 
+
+Congress made the new exemption the same as 506(b) except for two restrictions.  First, issuers could only 
+
+raise from accredited investors,  while 506(b) permits a maximum of 35 unaccredited investors in any 90 
+
+calendar  day  period.  Second,  issuers  using  506(c)  would  need  to  “take  reasonable  steps  to  verify  that 
+
+purchasers of the securities are accredited investors, using such methods as determined by the Commission.” 
+
+(112th Congress, 2012) This contrasts with the reasonable belief standard under the ongoing 506(b). 
+
+Based on this legislation, the SEC developed Rule 506(c).  It was efective on September 23, 2013, at 
+
+which point the pre-existing exemption that had been termed 506 became 506(b).  The full text of Rule 506 
+is in Appendix A.1.  The additional verifcation burden imposed by 506(c) on issuers is not prima facie very 
+
+high (Harrison, 2022).  The issuer need not represent that the investor is actually accredited.  If the investor 
+
+turns out not to be, any test would focus on whether the issuer’s verifcation passed the “reasonable steps” 
+
+14There are several exemptions besides Rule 506 of Regulation D, but they exclude investment companies, and therefore are not 
+relevant to VC funds.  For example, both Rule 504 under Section 3(b) of the Securities Act as well as Regulation A allow companies 
+to raise up to $10 million and $75 million, respectively, within a 12-month period if they meet certain requirements, which include 
+not being an investment company.  Another example is 3(a)(11), which requires all issuers and investors to be in the same state 
+and to comply with that state’s securities laws.  The JOBS Act also created Regulation Crowdfunding, efective starting in May 
+2016, which allows non-investment companies to raise up to $5 million through an SEC-registered crowdfunding intermediary.  In 
+addition, Regulation S is used by companies and funds to raise investment capital outside the U.S.. 
+
+9 
+
+standard.15  The SEC ofers a list of “reasonable steps”, which can take the form of one of their “safe harbors” 
+or  refect  a  “principles-based”  method.  The  safe  harbors  for  verifying  income  or  net  worth  can  rely  on 
+
+written confrmation from a broker-dealer, investment adviser, licensed attorney, certifed public accountant, 
+
+or previously verifed investor. (SEC, 2013) For example, if the manager obtains an email from an accredited 
+
+investor confrming that the verifed investor continues to remain accredited, the manager is in the clear from 
+
+a legal perspective.  The “principles-based” method is vague, but can range from inferences about wealth 
+
+based on past personal interactions to asking for tax flings. 
+
+It  is  useful  to  note  that  general  solicitation  in  fundraising  is  related  to  but  distinct  from  the  rise 
+
+of  marketplace  fnancing,  or  “crowdfunding.”  While  general  solicitation  is  a  necessary  condition  for 
+
+crowdfunding, it encompasses a much broader range, including, for example, simply announcing to a small 
+
+gathering of institutional investors that one is fundraising.  The literature on crowdfunding, such as Agrawal 
+
+et al. (2015) and Xu (2019), has not addressed fnancial intermediaries raising capital.  Nevertheless, our 
+
+fndings are relevant for designing policies for marketplace fnancing. 
+
+2.1  Could the SEC Have Known?  Ex-Ante Comments 
+
+We will show below that 506(c) failed to gain traction despite the apparent benefts of general solicitation 
+
+for relatively less well-networked managers, refecting a nuanced set of mechanisms.  Looking forward to 
+
+implications for this policy and future rulemaking, it is relevant to ask whether the SEC could have anticipated 
+
+any problems.  Did industry stakeholders foresee issues? 
+
+To  assess  this,  we  conduct  a  textual  analysis  of  public  comments  submitted  to  the  SEC  as  part  of 
+
+its rulemaking process.  Like many regulatory agencies,  when the SEC proposes a new rule,  it ofers the 
+
+general public a chance to comment.  The comment period is important and taken seriously by interested 
+stakeholders on all sides.16  We collected the text of all 209 comments regarding the 506(c) rule from the 
+SEC website.17  We classifed each submitter as one of the following:  Entrepreneur, Fund Manager, General 
+Public,  Legal  Professional,  Other  Financial  Professional  (which  includes  lobbying  organizations  for  the 
+
+fnancial services industry), and Politician.  Among the comments, 6% are by Fund Managers and 23% are 
+
+from legal professionals. 
+
+We frst consider general agreement with the 506(c) proposed rule.18  The comments from the private 
+
+15See CDI 260.06 here:  https://www.sec.gov/corpfin/securities-act-rules 
+16See, for example, this SIFMA statement about the importance of comment periods:  https://www.sifma.org/resources/ 
+
+submissions/importance-of-appropriate-length-of-comment-periods/. 
+
+17These are available here:  https://www.sec.gov/comments/jobs-title-ii/jobs-title-ii.shtml and here:  https: 
+//www.sec.gov/comments/s7-07-12/s70712.shtml.  These  comments  refect  attitudes  to  the  proposed  rules  immediately 
+prior to the fnal rule release (the last comment received was July 4, 2013, while the fnal rule was released on July 10, 2013).  We 
+exclude a small number of subsequent comments by the same individual and entirely irrelevant comments. 
+
+18We  manually  identifed  the  sentiment  of  each  comment  in  terms  of  its  general  agreement  with  the  proposal,  with  a  score 
+of  1  being  strong  disagreement  and  5  being  strong  agreement.  For  example,  the  comment  by  Richard  Dunn  (https://www. 
+sec.gov/comments/s7-07-12/s70712-18.htm) only mentions the negatives of the proposal and so is rated a 1, while Chris 
+Barnard  (https://www.sec.gov/comments/s7-07-12/s70712-71.pdf)  fully  supports  the  rules  as  written  and  encourages 
+implementation and so is rated a 5. 
+
+10 
+
+sector, most relevantly from fund managers, were highly positive.  We document this in Figure 1.  There was 
+
+almost no negativity on the part of entrepreneurs, fund managers, legal professionals, and the fnancial lobby 
+
+(i.e.  industry associations).  In contrast, politicians and the general public tended to be more negative. 
+
+Figure 1:  Comment Agreement with Proposed Rule 
+
+Note:  The fgure shows the distribution of agreement among diferent groups of commenters.  Each comment was 
+manually read and assigned a score of 1 to 5, with 1 being strong opposition and 5 being strong agreement. 
+
+Figure 2 examines the reasons for support or opposition of the proposed rule.  We manually identifed 
+
+common  reasons,  of  which  eight  are  supportive  and  14  are  oppositional.  We  count  an  occurrence  if  a 
+
+comment references the reason at all, and allow a comment to reference multiple reasons for or against the 
+
+reform. Concerns—described in a heat map in Panel A—tended to relate to fraud and the need for regulatory 
+
+clarity about verifying accreditation.  In contrast, comments supporting the 506(c) proposal focused on its 
+
+potential  to  increase  access  to  capital  for  frms,  especially  smaller  ones.  There  was  little  concern  about 
+
+the  verifcation  requirements,  in  particular  from  the  stakeholders  in  the  fnance  profession.  In  sum,  the 
+
+comments imply that general solicitation would be broadly useful and did not raise signifcant red fags.  The 
+
+SEC adopted 506(c) as originally proposed.  The implication for policy is that it may be very difcult to 
+
+foresee unintended consequences of regulatory burden. 
+
+11 
+
+Figure 2:  Comments For and Against 
+
+(a) Comments For 
+
+(b) Comments Against 
+
+Note:  This fgure shows the reasons mentioned by each group for either supporting (Panel A) or opposing (Panel B) 
+the proposal.  Each comment was manually read and determined if a particular reason was mentioned. 
+
+12 
+
+3  Data Sources 
+
+In this section, we describe the core data and variables used in this paper.  Other more ancillary sources are 
+
+introduced where they are used in analysis. 
+
+Form D Data.  All Regulation D flings (Form D) since 2008 are publicly available.19  We obtained flings 
+under the 506(b) and (c) exemptions in which the fler has identifed themselves as a Venture Capital fund, 
+
+which is one option within the pooled investment fund category.  We drop amendments, retaining only initial 
+
+flings.  This leaves a dataset of about 37,000 Regulation D flings between 2008 and 2022. 
+
+Fund Data.  To capture the universe of legitimate angel and VC funds, we restrict analysis to Form D funds 
+that we can match to Pitchbook.  This is also practically necessary since Form D contains very little about 
+
+the fund or its managers.  Pitchbook is the leading commercial provider of data on private capital markets, 
+
+and we believe it ofers the most comprehensive venture universe, including funds that raise from individual 
+
+investors.  Indeed, existing on Pitchbook is an important credibility signal for future fundraising and deal 
+
+sourcing.  This incentivizes fund managers to report basic information. 
+
+In Table 1 we describe the matching process.  We can match 9,005 unique funds to Pitchbook’s VC 
+
+universe, which includes angel funds, venture general, venture early stage, and venture later stage.  Nearly 
+
+all the unmatched flings are in various categories that make them irrelevant to our analysis, such as those 
+
+matching  other  PB  deal  types,  duplicate  funds,  funds  that  are  not  based  in  the  U.S.,  roll  up  vehicles,  or 
+REITs.20  After excluding these, as shown in Table 1, there are 4,862 funds that we do not match, most of 
+which likely have not successfully raised funding. Below, we test whether underrepresented groups are more 
+
+prevalent in these unmatched funds. 
+
+We collect from Pitchbook information on fund characteristics, LPs, and managers.  For a subset of 
+
+the funds, Pitchbook provides returns data in the form of Internal Rate of Return (IRR) and Total Value to 
+
+Paid-In (TVPI, or multiple).  We also collect information about portfolio company characteristics, which we 
+
+aggregate to the fund level.  We also identify the top fve industries and top ten cities across all portfolio 
+companies in our data.21 
+
+19They can be accessed here:  https://www.sec.gov/dera/data/form-d 
+20Roll up vehicles were introduced in 2021.  They are direct fnancing vehicles for startups without the involvement of any GPs 
+or fund managers.  RUVs are used by founders to raise money from a single entity (RUV), that pools money from a number of LPs. 
+There are no GPs or fund managers involved other than the entity, who helps set up the vehicle.  The main beneft of RUV is that 
+it ofers a clean, easier-to-manage cap table.  There is also no need to chase signatures and reconcile wirings from dozens of LPs. 
+Instead, startup deals with the RUV directly and have a single RUV on cap table.  Because these are not intermediated fnancing, we 
+remove them from our sample. 
+
+21The  industries  are  Software,  Commercial  Services,  Pharma  and  Biotech,  Media,  and  Healthcare  Tech.  The  cities  are  San 
+
+Francisco, New York City, Boston, Los Angeles, Chicago, Austin, Denver, Seattle, DC, and Atlanta (Appendix Table A.1). 
+
+13 
+
+Table 1:  Matching Between Form D Filings and Pitchbook 
+
+Reg D 506(b)/(c) VC Funds Matched to PB 
+Final Unmatched Reg D 506(b)/(c) VC Funds 
+
+# of Funds 
+9,005 
+4,862 
+
+Maching Process Waterfall: 
+All Reg D 506(b)/(c) VC Funds 
+Unmatched 506(b)/(c) Filings 
+- Less Matched to other PB Fund Types 
+- Less Matched to duplicates of PB Funds 
+- Less Multiple Filings of Same Fund 
+- Less Funds with Address Outside US 
+- Less Funds with Cayman Islands in Name 
+- Less Other International Funds 
+- Less Parallel Funds 
+- Less Sidecar Funds 
+- Less Feeder Funds 
+- Less Rollup Funds 
+- Less REITs 
+- Less Blocker Funds 
+- Less Co-Invest Funds 
+- Less Microventure Funds 
+- Less Belltower Rollup Funds 
+- Less Fundersclub Funds 
+
+37,869 
+28,864 
+27,057 
+24,770 
+14,981 
+14,150 
+14,140 
+14,067 
+14,045 
+14,023 
+13,997 
+5,495 
+5,491 
+5,487 
+5,295 
+5,282 
+5,095 
+4,862 
+
+Note:  This table summarizes the numbers in the matching process between Form D flings and PitchBook between 
+2009  and  2023.  The  matching  process  follows  three  steps.  First,  we  acquire  the  CIK  numbers  for  funds  listed  in 
+PitchBook.  Second, we match based on CIK to the Form D flings.  In the case of multiple flings per CIK, we default 
+to the earliest one ordered by accession number and fle number.  Third, if there is no CIK match, we try a text-based 
+matching between cleaned versions of the fund name.  Again, in the case of multiple matches, we default to the earliest 
+one.  Among the matched sample, 94% are matched based on the CIK code.  The upper panel shows the fnal matched 
+sample number and how many funds remain unmatched from Form D following a paring process.  This process is 
+shown in the lower panel, in which we show how many flings survive an iterative process of removing flings that are 
+either duplicates of matched flings or flings outside the scope of U.S. VC funds. 
+
+Demographic  Variables.  We  are  interested  in  proxies  for  being  less  well-networked  and  traditionally 
+underrepresented.  We focus on gender, race, education, and being a frst-time fund manager.  To identify 
+
+gender, we use the frst name and the publicly available Gender package in R. To identify education, we use 
+
+data from Pitchbook and LinkedIn. We classify the top 10 U.S. universities that LPs in Pitchbook attended as 
+the most relevant for manager networks, and call them “elite schools.”  22  To identify race, we take multiple 
+steps.  First,  we  use  surname  distributions  to  identify  Hispanic  and  East  Asian  managers.  Second,  we 
+
+use LinkedIn pictures to identify Black managers, since surname and geography-based algorithms perform 
+
+22These  are:  University  of  California,  Berkeley,  University  of  Chicago,  Columbia  University,  Cornell  University,  Harvard 
+
+University, University of Michigan, New York University, University of Pennsylvania, Stanford University, Yale University. 
+
+14 
+
+especially poorly in this group (Greenwald et al., 2024).23 
+
+4  The Importance of Personal Networks 
+
+There is widespread belief that VCs rely on personal networks, and concern that this may privilege well-
+
+connected investors and startup founders in ways that are not necessarily correlated with quality and dis-
+
+advantage traditionally underrepresented groups.  For example, Gompers et al. (2016) show that VCs who 
+
+share afnity characteristics in terms of school, ethnicity, and gender are more likely to syndicate together 
+
+on deals, yet this leads to worse performance due to poor post-investment decision-making. 
+
+To gather direct evidence on the role of networks in LP fundraising and to help understand managers 
+
+choices between 506(b) and 506(c) take-up more broadly, we conducted two surveys.  The frst targets VC 
+
+fund managers who appear in our sample (the complete survey is in Appendix B.1).  After a common frst 
+
+page, the survey branches to ask diferent questions depending on whether the respondent indicated that their 
+
+funds have used 506(b), (c), or both.  We asked 506(b)-only users to explain why they did not use 506(c) in 
+
+an open-ended question and then using nine non-mutually exclusive possible reasons.  We also asked them 
+
+how they sourced investors and to provide their opinion about a series of statements concerning 506(c).  We 
+
+asked 506(c) users some of the same questions, but further explored the geographies they targeted and who 
+
+handled verifcation. 
+
+The second survey was targeted at lawyers who support VC funds (Appendix B.2).  Many funds rely 
+
+on lawyers to determine which exemption to use;  indeed,  some managers told us that they did not know 
+
+which exemption they used and advised us to ask their counsel. In addition to being experts in securities law, 
+
+lawyers usually work for many VC frms and thus have a broader understanding of the market.  We asked 
+
+lawyers the same opinion question as the fund managers (question 2).  We also asked them about what kinds 
+
+of funds 506(c) is appropriate for and whether 506(c) requires more work (i.e.  billable hours) than 506(b). 
+
+We  sent  4,112  emails  to  VC  fund  managers  that  did  not  bounce,  and  obtained  responses  from  103 
+unique funds, for a response rate of 2.5%.24  Similarly, we sent 2,335 emails to lawyers that did not bounce, 
+and obtained 49 responses, for a response rate of 2.1%.  As we did not wish to unduly spam, we sent no 
+
+reminders.  Therefore, these response rates are reasonable relative to existing survey literature where much 
+
+more efort was made to obtain responses (e.g., Graham and Harvey (2001) at 8.9% for CFOs, and Da Rin 
+
+and Phalippou (2017) at 13.8% for LPs).  Appendix Table A.14 compares survey respondents to the overall 
+
+emailed sample, and shows that fund manager respondents are equally likely to be female, more likely to 
+
+come from elite universities, and tend to have smaller funds (though the diference is driven by outlier large 
+
+funds in the larger sample).  The lawyer respondents come from largely the same set of top law frms as the 
+
+23An American handcoded each picture as Black or not Black.  For portfolio company leadership, we only use gender as there 
+
+were too many individuals to handcode pictures. 
+
+24The emails were sent by Sabrina Howell and are shown in Appendix B.3.  This survey did not require IRB approval because it 
+
+was directed at funds and frms. 
+
+15 
+
+overall emailed sample. 
+
+We ask users of 506(b) how they source LP investors. The answer is through personal networks; Figure 
+
+3 Panel A shows that almost 90% of respondents report sometimes or frequently using their personal network 
+
+to raise funds, and over 80% report that investors in their previous funds are a source.  In contrast, Figure 
+
+3 Panel B shows that 40% of managers report frequently or sometimes using 506(c) because they lacked a 
+
+personal network, and 55% have some network but are using 506(c) to fnd new investors.  This suggests that 
+
+personal networks are generally crucial to private fundraising, but that 506(c) is serving an important role 
+
+for managers who lack or seek to expand their network. 
+
+5  Take-Up Across Time and Fund Characteristics 
+
+In this section, we examine take-up of general solicitation—i.e., 506(c)—in private fundraising and how it 
+
+relates to measures of diversity and strength of personal networks.  The key message is that take-up has been 
+
+low but is higher among managers who are likely to have weaker personal networks. 
+
+Figure 3:  Survey Evidence on Role of Personal Networks in Fundraising 
+
+(a) 506(b) Fund Manager Source of Investors 
+
+(b) 506(c) Fund Managers on Personal Networks as Reason 
+for Using 506(c) 
+
+Note:  These fgures describe survey responses.  Panel A shows responses to Question 4 among fund managers who 
+have used only 506(b). They were asked how they have sourced investors in general across the funds in which they have 
+been involved in fundraising, and given three non-mutually exclusive options.  Panel B shows responses to Question 
+2 within the set of fund managers who have ever used 506(c).  They were asked whether or not having an existing 
+investor network infuenced their choice to use 506(c).  There were two options and the investors could choose how 
+much infuence each had.  One option was that they did not have an extensive personal network.  The other option was 
+that they had a network but were looking for new investors to scale up.  506(b)   = 73, 506(c)   = 30. 
+
+Take-up of General Solicitation  The frst stylized fact we present is that use of the 506(c) exemption is 
+relatively low,  and the pre-existing 506(b) has remained the overwhelmingly dominant exemption for VC 
+
+funds.  This is somewhat surprising,  since one might expect that the option to publicly advertise—which 
+
+16 
+
+includes, for example, the ability to mention fundraising at a conference—ought to be valuable, and a careful 
+
+reading  of  the  rule  suggests  that  the  additional  investor  verifcation  requirement  need  not  be  very  costly. 
+
+Between the rule’s efective date in late 2013 and the end of 2023, 506(c) has accounted for 8.4% of all VC 
+
+funds in our sample in terms of count,  and 11% weighted by fund size (Table 2 Panel A; note the dollar 
+values in this panel sum across all flings in each category).25 
+
+25Fund size is from Pitchbook.  In Appendix Table A.2 we show that this pattern also holds in the complete Regulation D VC 
+universe, not only in the Pitchbook-matched sample.  Similarly, Appendix Figure A.1 shows that the number of total VC funds in 
+Pitchbook (including those not matched to Regulation D flings) track our matched set (Panel A), and the 506(c) share dynamics in 
+the full Regulation D data are similar to the matched set (Panel B). 
+
+17 
+
+Table 2:  Comparison of 506(b) vs 506(c) Funds, 2014-2023 
+
+Panel A. Total Counts and Volumes 
+
+506(b) 
+7440 
+
+506(c)  506(c) Share 
+
+Count of Filings 
+574.335  45.109 
+Ofering Amount (Bill $) 
+Amount Sold, Initial (Bill $) 
+257.010  22.783 
+Amount Sold, with Amendments (Bill $)  377.264  53.665 
+832.681  98.290 
+Fund Volume (Pitchbook, Bill $) 
+
+685 
+
+0.084 
+0.073 
+0.081 
+0.125 
+0.106 
+
+Panel B. Characteristics 
+
+Fund 
+Mean Fund Size (Mill $) 
+Median Fund Size (Mill $) 
+Non-Top 10 City Fund 
+Non-Top 3 City Fund 
+First Fund of VC Firm 
+Commission & Broker 
+DEI Target 
+ESG Target 
+Mean Number Prior Funds 
+Mean Number Prior Large Exits 
+Fund LP 
+Non-Pension Share 
+Individual Share 
+Fund Return 
+Mean IRR 
+Mean TVPI 
+Fund Manager 
+Female Share 
+Black/Hispanic Share 
+Black Share (Picture) 
+Hispanic Share (Name) 
+Elite School Share 
+First Time Share 
+Finance Experience Share 
+Portfolio Company 
+Non-Top 5 Industry Share 
+Same City as Fund Share 
+Same State as Fund Share 
+Company Filed 506(c) Share 
+Portfolio Company Leadership 
+Has First Time CEO Share 
+Has Female CEO Share 
+Has Elite School CEO Share 
+
+506(c) 
+506(b) 
+120.486  158.788 
+8.659 
+29.697 
+0.469 
+0.312 
+0.658 
+0.500 
+0.289 
+0.256 
+0.142 
+0.004 
+0.029 
+0.014 
+0.034 
+0.013 
+30.482 
+5.252 
+7.053 
+3.826 
+
+506(c) - 506(b) 
+38.302 
+-21.038∗∗∗ 
+0.157∗∗∗ 
+0.158∗∗∗ 
+0.033∗ 
+0.137∗∗∗ 
+0.015∗∗ 
+0.021∗∗∗ 
+25.229∗∗∗ 
+3.226∗∗ 
+
+0.671 
+0.092 
+
+0.739 
+0.168 
+
+15.961 
+1.720 
+
+21.949 
+1.580 
+
+0.144 
+0.058 
+0.015 
+0.043 
+0.466 
+0.395 
+0.176 
+
+0.355 
+0.135 
+0.356 
+0.011 
+
+0.831 
+0.143 
+0.317 
+
+0.169 
+0.088 
+0.039 
+0.053 
+0.470 
+0.417 
+0.458 
+
+0.384 
+0.087 
+0.248 
+0.013 
+
+0.854 
+0.170 
+0.298 
+
+0.068∗∗ 
+0.076∗∗∗ 
+
+5.988 
+-0.140 
+
+0.024 
+0.031∗∗ 
+0.024∗∗ 
+0.010 
+0.004 
+0.021 
+0.282∗∗∗ 
+
+0.029∗∗ 
+-0.048∗∗∗ 
+-0.108∗∗∗ 
+0.003 
+
+0.023∗∗ 
+0.027∗∗ 
+-0.019 
+
+N 
+7530 
+7530 
+8125 
+8125 
+8125 
+8125 
+8125 
+8125 
+8125 
+8120 
+
+2248 
+2248 
+
+880 
+946 
+
+4155 
+4156 
+4155 
+4155 
+3987 
+4156 
+4155 
+
+4889 
+4890 
+4890 
+4817 
+
+4755 
+4755 
+4465 
+
+Note:  This table provides summary statistics about the VC funds in our main analysis sample of Regulation D flings matched 
+to Pitchbook between 2014 to 2023 (i.e.,  post 506(c) implementation).  Panel A shows total fling counts and measures of total 
+fundraising volume.  The frst two columns show the total for each exemption type, and the third column shows the 506(c) share. 
+Panel B compares various characteristics across 506(b) and 506(c) funds.  Panel B uses robust standard errors in conducting a t-test 
+of the sample mean diferences between 506(b) and 506(c), except for comparing the medians, which uses a quantile regression.  * 
+indicates statistical signifcance at the 10% level, ** at the 5% level, and *** at the 1% level.  All $ are 2017 US$. 
+
+18 
+
+This paper focuses on VC fundraising, but it is notable that 506(c) has also not achieved widespread 
+
+use among direct issuers either. In Appendix Figure A.2, we show that the share of 506(c) among companies 
+
+in the Regulation D data matched to VC-backed startups on Pitchbook is about 6%,  even lower than the 
+
+overall share among funds.  We also show the share for all non-investment companies (which includes many 
+
+non-operating vehicles and real estate entities) is about 10%. 
+
+The left chart in Figure 4 highlights how the overall VC industry has grown dramatically as an asset 
+
+class  since  the  Financial  Crisis.  It  also  shows  that  in  the  frst  few  years  following  the  introduction  of 
+
+506(c), there was little take-up (Panel A), with the share at about 5% on a count basis and around 2% on a 
+
+volume-weighted basis (Panel B). During the Covid-19 pandemic, the 506(c) share expanded substantially, 
+
+and  remained  elevated  amid  the  broader  market  downturn  in  2023.  Over  the  past  fve  years,  506(c)  has 
+
+accounted for a little over 9% of funds on a count basis and about 14% on a volume-weighted basis.  In sum, 
+
+506(c) has not yet made signifcant inroads into the VC industry.  This is one motivation for the analyses in 
+
+the remainder of this paper. 
+
+Figure 4:  VC Funds by Vintage Year and Exemption 
+
+(a) Fund Count and Volume 
+
+(b) Share of Funds using General Solicitation 
+
+Note:  This  fgure  describes  VC  fundraising  over  time,  separated  into  the  506(c)  exemption  (permitting  general 
+solicitation) and the conventional 506(b) exemption (which often requires managers to fundraise only via pre-existing 
+personal relationships).  Panel A shows the number and total volume (in 2017 US$) of VC funds that used 506(b) or 
+506(c) exemptions.  Panel B shows the share of VC funds using 506(c),  in terms of the number of funds or dollar 
+volume.  The sample include all VC funds in the Form D data that can be matched to PitchBook. 
+
+Fund Characteristics  We next explore how 506(c) funds are diferentiated in terms of size, returns, and 
+LPs, among other characteristics.  Figure 5 shows that 506(b) funds tend to be larger than 506(c) funds, both 
+over time (using median fund size in each year, Panel A) and across the distribution (Panel B).26 The median 
+506(b) fund size in our sample is almost $30 million, compared to $8.7 million for 506(c) funds (Table 2 
+
+26We use Pitchbook data to measure fund size.  In practice, the raised amounts in Form D flings are almost always lower than 
+those in Pitchbook, because the former refect the amount raised as of the fling, rather than fnal fund size.  This suggests that using 
+Form D flings to summarize private capital raising (e.g., Bauguess et al. (2018)) may sufer from downward bias. 
+
+19 
+
+Figure 5:  Share and Size of VC Funds 
+
+(a) Median Fund Size by Year 
+
+(b) Fund Size Distribution 
+
+Note:  Panel A shows the median fund size by year.  Panel B shows the kernel density distribution of fund size for all 
+years post 2014. 
+
+Panel B). The mean fund size is similar for 506(b) and (c), consistent with 506(c) funds having a fatter right 
+
+tail in size. 
+
+The VC industry is sensitive to macroeconomic trends and clusters in a small set of cities.  To study 
+
+take-up of 506(c) after partially controlling for these factors, we use regressions that condition on state-year 
+
+fxed efects (for geographic outcomes, we condition on year fxed efects only).  The frst set of results are in 
+Table 3.  Column 1 of Panel A shows that with these controls, 506(c) funds are about 49% smaller.27  506(c) 
+funds are 47% more likely to be outside a top-10 city,  and 30% more likely to be outside the top-3 hub 
+
+cities (i.e., SF, NYC, Boston) (Columns 2 and 3).  Figure 6 presents the overall geographic distribution of 
+
+the matched funds in our sample.  Larger circles indicate higher volumes while darker blue indicates higher 
+
+506(c) share.  As expected, oferings under both exemptions are generally concentrated in the major hubs. 
+
+However, 506(c) exhibits some exceptions, such as a few locations in the Midwest, Deep South, as well as 
+
+Manchester, New Hampshire, where a large 506(c) issuer is located.  Table 4 displays the top 10 cities and 
+
+states among each exemption type, which reinforces the conclusion from the map that 506(c) is more likely 
+
+to be outside the major hubs. 
+
+27As the outcome is logged, this percent change represents −0.68. 
+
+20 
+
+Table 3:  506(b) vs 506(c):  Fund Characteristics 
+
+Fund 
+
+Panel A. Fund Characteristics 
+
+Fund Indicator 
+
+Dependent Variable:  Ln(Size)  Non-Top 10  Non-Top 3  First Fund  Commission 
+
+(1) 
+
+City 
+(2) 
+
+City 
+(3) 
+
+(4) 
+
+& Broker 
+(5) 
+
+DEI 
+Target 
+(6) 
+
+ESG 
+Target 
+(7) 
+
+% LPs 
+
+Non-Pension 
+
+Individual 
+
+(8) 
+
+(9) 
+
+1(506(c)) 
+
+-0.680∗∗∗ 
+(0.086) 
+
+0.153∗∗∗ 
+(0.021) 
+
+0.154∗∗∗ 
+(0.016) 
+
+0.094∗∗∗ 
+(0.020) 
+
+0.060∗ 
+(0.035) 
+
+0.024∗∗∗ 
+(0.006) 
+
+0.026∗∗∗ 
+(0.006) 
+
+0.095∗∗ 
+(0.043) 
+
+0.083∗∗ 
+(0.034) 
+
+Year FE 
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+No 
+Yes 
+7445 
+0.145 
+3.138 
+
+Yes 
+No 
+8125 
+0.011 
+0.325 
+
+Yes 
+No 
+8125 
+0.009 
+0.513 
+
+No 
+Yes 
+8041 
+0.062 
+0.258 
+
+No 
+Yes 
+8041 
+0.409 
+0.016 
+
+No 
+Yes 
+8041 
+0.063 
+0.015 
+
+No 
+Yes 
+8041 
+0.046 
+0.015 
+
+No 
+Yes 
+2176 
+0.113 
+0.669 
+
+No 
+Yes 
+2176 
+0.094 
+0.094 
+
+2
+1
+
+Panel B. Fund Return Characteristics 
+
+Continuous 
+
+Above 75th Percentile 
+
+Dependent Variable: 
+
+IRR 
+(1) 
+
+TVPI 
+(2) 
+
+IRR 
+(3) 
+
+TVPI 
+(4) 
+
+1(506(c)) 
+
+9.910 
+(6.267) 
+
+0.259 
+(0.156) 
+
+0.259∗∗∗ 
+(0.050) 
+
+0.240∗∗∗ 
+(0.063) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+Yes 
+807 
+0.265 
+16.694 
+
+Yes 
+876 
+0.310 
+1.726 
+
+Yes 
+807 
+0.135 
+0.238 
+
+Yes 
+876 
+0.119 
+0.243 
+
+Note: This table uses descriptive regressions to compare 506(b) and 506(c) VC funds.  Panel A regresses fund characteristics on an indicator for using the 506(c) 
+exemption as opposed to 506(b).  Panel B regresses fund return variables on the same indicator.  The dependent variable in columns 3 and 4 is an indicator for 
+the fund’s return being in the top quartile for its vintage.  Standard errors are clustered at the state level and are reported in parentheses.  * indicates statistical 
+signifcance at the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+ 
+Table 4:  Top 10 Cities and States By Exemption Type 
+
+506(b) 
+
+506(c) 
+
+Percent  State 
+
+Rank  City 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+... 
+
+San Francisco  28.6 
+16.5 
+New York 
+7.2 
+Los Angeles 
+5.6 
+Boston 
+3.0 
+Chicago 
+2.6 
+Austin 
+1.7 
+Seattle 
+1.6 
+Denver 
+1.5 
+Washington 
+1.1 
+Miami 
+30.9 
+Other 
+
+Percent  City 
+42.1 
+CA 
+17.0 
+NY 
+6.6 
+MA 
+4.8 
+TX 
+3.3 
+IL 
+3.2 
+FL 
+2.2 
+CO 
+2.0 
+WA 
+1.6 
+VA 
+UT 
+1.5 
+Other  15.7 
+
+Percent  State 
+Manchester 
+19.4 
+San Francisco  18.3 
+13.6 
+New York 
+7.6 
+Los Angeles 
+2.9 
+Seattle 
+2.6 
+Austin 
+2.6 
+Boston 
+2.5 
+Denver 
+1.8 
+Chicago 
+1.5 
+Washington 
+27.3 
+Other 
+
+Percent 
+30.1 
+CA 
+19.6 
+NH 
+13.6 
+NY 
+5.1 
+TX 
+3.5 
+WA 
+2.9 
+CO 
+2.6 
+FL 
+2.6 
+MA 
+2.3 
+IL 
+OH 
+1.8 
+Other  15.9 
+
+Note:  This  table  shows  the  top  10  cities  and  states  for  each  exemption  type  in  terms  of  number  of  flings  from 
+2014-2023.  The last row represents all other locations outside the top 10. 
+
+We further observe in Table 3 Panel A that 506(c) funds are 36% more likely to be a VC frm’s frst 
+
+fund (Column 4).  They are more than three times more likely to use an intermediary in fundraising (Column 
+
+5), consistent with arm’s length relationship.  506(c) funds are also more likely to have a DEI objective (i.e., 
+
+investing in women and minority-owned businesses), as well as an ESG objective (Columns 6 and 7).  Their 
+
+investor base is also diferent. Pension funds are the traditional stalwart source of capital for the VC industry, 
+
+and typically raising large funds depends on some institutional LPs.  Within the subset of Pitchbook funds 
+
+with LP information, 506(c) funds have 14% more non-pension LPs and 88% more individual LPs (Columns 
+
+8-9). 
+
+We observe fnancial returns for a subset of the VC funds.  Figure 7 shows that using both Pitchbook-
+
+reported IRR and TVPI, the distribution of returns in 506(c) funds is right-shifted. Table 3 Panel B fnds that 
+
+506(c) funds are signifcantly more likely to be top-quartile, using both Pitchbook-reported IRR and TVPI 
+
+(Columns 3-4).  These facts suggest that 506(c) funds tend to perform better.  Refecting the skewed nature 
+
+of returns in the industry, we do not see a signifcant efect using continuous measures, both in Columns 1-2 
+
+and in the raw data in Table 2. 
+
+6  Take-Up by Manager Demographics 
+
+There is growing attention to diversity in private capital markets (Ewens, 2023).  Much of this work has 
+
+focused on minority- and women-owned small businesses and startups, and has shown that they face greater 
+
+challenges raising both debt and equity capital (Howell and Nanda, 2019; Ewens and Townsend, 2020; Fairlie 
+
+et al., 2022; Cook et al., 2022; Hebert, 2023; Howell et al., 2024).  For example, Gompers and Wang (2017) 
+
+22 
+
+Figure 6:  Geographic Distribution of VC Funds 
+
+Note:  This fgure shows the geographic distribution of VC funds in the whole analysis sample (which includes 2014-
+2023).  We aggregate fund location to the county level.  The color represents the 506(c) share and the size indicates 
+number of flings. 
+
+Figure 7:  Distribution of Fund Returns 
+
+(a) Internal Rate of Return (IRR) 
+
+(b)  Cash-on-Cash  Multiple  (or  Total  Value  to  Paid-In, 
+TVPI) 
+
+Note:  This fgure shows the distribution of fund returns for each exemption type. 
+
+23 
+
+document that women compose less than 9% of VCs active between 2010 and 2015, contrasting with their 
+
+almost even share in the overall labor force and 34% share among investment bankers.  They also fnd that 
+
+Black and Hispanic managers are highly underrepresented, at 1% and 2% of GPs during the same period, 
+
+respectively, with each group accounting for more than 10% of the overall labor force.  Lerner and Nanda 
+
+(2020) show that among top VC GPs, 91% are men and 75% attended an Ivy League+ school.  Cassel et al. 
+
+(2022) show that Black and Hispanic fund managers struggle to enter the private fund market. 
+
+Motivated by this literature, we consider a set of manager characteristics that we expect to be associated 
+
+with underrepresentation and relatively lower access to traditional LPs via personal networks:  whether the 
+
+manager is a woman, is Black or Hispanic, has an elite school education, and is raising their frst fund.  To 
+
+identify a fund as being managed by individuals from a particular group, we use the majority so that large 
+
+funds do not contaminate the statistics.  For example, we defne a fund as “Female” if the majority of the 
+
+GPs are female.  In the raw data, we see a signifcant diference for Black and Hispanic and elite school fund 
+
+managers, though all the groups that we expect to be less well-networked have higher means in 506(c) (Table 
+
+2).  Tables A.3 to A.6 compare the networked and non-networked groups sequentially using the same format 
+
+as Table 2.  We fnd that female and Black/Hispanic funds tend to be smaller and have a weaker track record, 
+
+relative to their counterpart groups.  They are also more likely to raise from non-pension or individual LPs, 
+
+suggesting a greater reliance on the “crowd.”  Finally, female and Black/Hispanic funds are more likely to 
+
+have DEI impact targets, and tend to invest in a more diverse set of portfolio companies in terms of industry 
+
+(less  likely  to  be  in  top-5  industries),  location  (less  likely  to  be  local),  and  leadership  (more  female  and 
+
+frst-time CEOs). 
+
+In the regression models,  there are more striking results.  In Table 5,  we use two types of outcome 
+
+variables:  continuous share of the fund team (Panel A) and an indicator for the majority of the fund team 
+having a certain characteristic (Panel B).28 The estimates show that 506(c) funds have a 5.7 p.p. higher share 
+of female managers and a 5.8 p.p.  higher share of minority (i.e.  Black or Hispanic) managers, representing 
+
+39% and 95% of their respective means (Panel A Columns 1-2).  506(c) funds also have a lower share of 
+
+managers from elite schools (8% of mean) and frst-time managers (27% of mean).  These results persist 
+
+using the majority indicator (Panel B). Notably, the estimates for Black managers are very large, at more 
+
+than 200% of the mean in both panels (Column 3).  These results are not driven by angel funds, as they are 
+
+similar when angel funds are excluded (Appendix Table A.8). 
+
+28We also report similar results in specifcations using individual fund managers in Panel A of Appendix Table A.10. 
+
+24 
+
+Table 5:  506(b) vs 506(c):  Fund Manager Characteristics 
+
+Panel A. Share of Fund Team 
+
+Share of Fund Team 
+
+Dependent Variable:  Female  Black/Hispanic 
+
+Black  Hispanic  Elite School  First Time 
+
+(1) 
+
+(2) 
+
+(3) 
+
+(4) 
+
+(5) 
+
+(6) 
+
+1(506(c)) 
+
+0.057∗ 
+(0.031) 
+
+0.058∗∗∗ 
+(0.018) 
+
+0.034∗∗∗ 
+(0.005) 
+
+0.029 
+(0.018) 
+
+-0.038∗ 
+(0.023) 
+
+0.108∗∗∗ 
+(0.040) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+Yes 
+4067 
+0.068 
+0.146 
+
+Yes 
+4068 
+0.068 
+0.061 
+
+Yes 
+4067 
+0.074 
+0.017 
+
+Yes 
+4067 
+0.057 
+0.044 
+
+Yes 
+3897 
+0.122 
+0.471 
+
+Yes 
+4068 
+0.098 
+0.396 
+
+Panel B. Indicator for Majority of Fund Team 
+
+Majority of Fund Team 
+
+Dependent Variable:  Female 
+
+(1) 
+
+Black/Hispanic 
+(2) 
+
+Black 
+(3) 
+
+Hispanic 
+(4) 
+
+Elite School 
+(5) 
+
+First Time 
+(6) 
+
+1(506(c)) 
+
+0.051∗∗ 
+(0.022) 
+
+0.047∗∗∗ 
+(0.014) 
+
+0.031∗∗∗ 
+(0.005) 
+
+0.021∗ 
+(0.012) 
+
+-0.021 
+(0.029) 
+
+0.107∗∗ 
+(0.051) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+Yes 
+4067 
+0.067 
+0.075 
+
+Yes 
+4068 
+0.060 
+0.029 
+
+Yes 
+4067 
+0.069 
+0.010 
+
+Yes 
+4067 
+0.049 
+0.019 
+
+Yes 
+3897 
+0.102 
+0.405 
+
+Yes 
+4068 
+0.094 
+0.341 
+
+Note:  This table uses descriptive regressions to compare 506(b) and 506(c) VC funds.  It focuses on fund manager 
+characteristics.  Panel A regresses the share of fund managers in each category on an indicator for using the 506(c) 
+exemption.  Panel  B  regresses  an  indicator  for  the  given  group  representing  at  least  half  of  the  fund  team  on  the 
+same indicator.  Standard errors are clustered at the state level and are reported in parentheses.  * indicates statistical 
+signifcance at the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+We next conduct two supplementary analyses.  First, we document that underrepresented demographic 
+
+groups tend to have weaker networks using LinkedIn connections as a proxy for network.  Our LinkedIn 
+
+connections data have two limitations: they are right-censored at 500, and they are as of late 2023. Therefore, 
+
+we use a Tobit regression specifed for the censorship and restrict analysis to funds launched in 2022-3, because 
+
+otherwise the networks would endogenously refect the fund outcome. In Appendix Table A.11, we follow the 
+
+fund-level approach that we use in the rest of our analysis. The outcome variable is the number of connections 
+
+averaged across managers.  The key results are for our underrepresented demographic groups:  female and 
+
+Black/Hispanic. Shifting from zero to 100% female managers is associated with 73 fewer connections, which 
+
+is 26% of the mean of 275 connections (column 1).  The parallel result for Black/Hispanic is 21% fewer 
+
+connections (column 2).  We also consider other fund characteristics.  The elite school share is associated 
+
+25 
+
+with 51% more connections (column 3).  As we would expect,  there is also a large negative relationship 
+
+for frst-time managers (column 4).  Overall, these results are strongly consistent with our assumption that 
+underrepresented groups tend to be less well-networked.29 
+
+The second supplementary analysis asks whether our main relationships refect the Pitchbook match. 
+
+Recall  that  there  are  funds  in  the  Regulation  D  data  that  we  are  not  able  to  match  to  Pitchbook  or  rule 
+
+out as irrelevant to VC. While we think Pitchbook captures the universe of meaningful VC and plays an 
+
+important certifcation role in the industry, we test whether underrepresented groups are more prevalent in 
+
+the unmatched funds.  Appendix Table A.12 shows that the female share of related individuals (usually the 
+
+fund partners) in the unmatched funds is actually smaller than in the matched funds.  While we cannot do 
+
+this for race as we do not have the LinkedIn websites for these unmatched individuals, the result for gender 
+
+ofers comforting evidence that unmatched funds are not a reservoir of underrepresented managers. 
+
+7  Implications for Portfolio Companies 
+
+The diferences in take-up extend to portfolio company characteristics.  Table 6 shows that 506(c) funds are 
+
+11% more likely to fund startups outside the top industries (Column 1).  They are 16% more likely to invest 
+
+outside of their own city and 7% more likely to invest outside their own state (Columns 2-3).  Appendix 
+
+Figure A.3 shows the location of portfolio companies according to the fund exemption.  Iowa has a notable 
+concentration of 506(c) investments.30 
+
+Startups invested by 506(c) funds are more likely to have frst-time or female entrepreneurs (columns 
+
+5-6) (we did not collect race for portfolio company leaders).  Finally, 506(c) funds are also more likely to 
+
+meet their portfolio companies through the latter’s general solicitation (column 4).  These relationships also 
+
+appear in the raw means shown at the bottom of Table 2.  These results suggest that general solicitation may 
+
+have implications for real outcomes, potentially making capital deployment more inclusive. 
+
+8  Has General Solicitation Moved the Needle? 
+
+Thus far, we have discussed how 506(c)—by enabling arm’s length fundraising—leads to diferential take-up. 
+
+However, it is unclear whether these cross-sectional results matter in the aggregate.  A key policy objective 
+
+of  securities  regulations  is  to  enable  broad  and  inclusive  capital  formation.  To  what  extent  has  general 
+
+solicitation achieved this?  In this section, we evaluate whether the introduction of general solicitation has 
+
+moved the needle for private funds in the dimensions of demographic and geographic diversity. 
+
+29There  is  no  relationship  for  non-hub  city  funds,  suggesting  that  this  variable  is  not  a  proxy  for  being  personally  less  well-
+networked  (column  5).  The  quality  of  connections  also  matters;  unfortunately,  we  cannot  observe  the  identities  of  a  person’s 
+LinkedIn connections. 
+
+30Appendix Table A.7 reports the top ten cities and industries in which portfolio companies operate for each exemption type. 
+
+26 
+
+Table 6:  506(b) vs 506(c):  Fund Portfolio Company Characteristics 
+
+% not in top 
+
+% in same 
+
+% fled 
+
+% Has CEO that is 
+
+Dependent Variable: 
+
+5 Industry 
+(1) 
+
+City 
+(2) 
+
+State 
+(3) 
+
+506(c) 
+(4) 
+
+First time 
+(5) 
+
+Female 
+(6) 
+
+Elite School 
+(7) 
+
+1(506(c)) 
+
+0.041∗∗∗ 
+(0.010) 
+
+-0.021∗∗ 
+(0.009) 
+
+-0.023∗ 
+(0.013) 
+
+0.006∗∗ 
+(0.003) 
+
+0.026∗∗ 
+(0.009) 
+
+0.023∗ 
+(0.012) 
+
+-0.013 
+(0.009) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+Yes 
+4802 
+0.081 
+0.357 
+
+Yes 
+4803 
+0.116 
+0.132 
+
+Yes 
+4803 
+0.256 
+0.349 
+
+Yes 
+4731 
+0.073 
+0.011 
+
+Yes 
+4667 
+0.066 
+0.832 
+
+Yes 
+4667 
+0.081 
+0.145 
+
+Yes 
+4374 
+0.080 
+0.318 
+
+Note:  This table uses descriptive regressions to compare portfolio companies of 506(b) and 506(c) VC funds.  Each 
+column regresses the share of portfolio companies of a given fund on an indicator for using the 506(c) exemption. 
+Standard errors are clustered at the state level and are reported in parentheses.  * indicates statistical signifcance at the 
+10% level, ** at the 5% level, and *** at the 1% level. 
+
+Demographics  Our  results so  far  indicate that  general  solicitation has  been  disproportionately used  by 
+underrepresented managers.  To what extent has general solicitation improved entry by underrepresented 
+
+managers since its introduction in 2013? Figure 8 shows how the shares of managers in diferent demographic 
+
+categories have changed since the start of our data in 2009.  When viewed as a percent change relative to 
+
+2009, there has been substantial growth in all categories, with for example the Black/Hispanic share rising 
+
+60%, and the female share rising about 100% (Panel A). The non-elite school share also increased by 50% 
+
+from 2009.  While the data do not permit an event study with causal interpretation, it is clear that this growth 
+
+began mainly after the implementation of 506(c) in late 2013. 
+
+27 
+
+Figure 8:  Fund Manager Characteristics Over Time and Compared to Benchmarks 
+
+(a) Changes Relative to 2009 
+
+(b) Levels Compared to Population Benchmarks 
+
+Note:  This fgure describes the dynamics of fund manager demographics and key characteristics,  with the vertical 
+dashed line representing 506(c) implementation.  Panel A shows the percent change in the share of fund managers with 
+each characteristic among all flers in a year relative to 2009.  Panel B shows the level of the share for each year and 
+includes horizontal lines representing a relevant benchmark for potential supply.  The benchmarks (described in more 
+detail in Section 8) are the shares of:  university graduates for Black/Hispanic and Female, non-elite graduates relative 
+to total graduates, the share of non-top 10 city new frms, and the share of VC-backed founders who are are female or 
+Black/Hispanic. 
+
+28 
+
+When viewed as levels in Figure 8 Panel B, however, we see that 506(c) has not enabled signifcant 
+
+entry of new managers and the disproportionate use of 506(c) by traditionally underrepresented groups is 
+
+not meaningfully contributing to a shift toward parity.  For example, while Black/Hispanic fund managers 
+
+have  increased  from  0.4%  in  2009  to  9%  in  the  two  years  of  2022  and  2023,  this  is  still  far  from  their 
+
+26% share among college graduates in recent years (indicated by the horizontal line), or their share among 
+
+MBA graduates (18%).  As a share of all VC fund managers,  506(c) Black/Hispanic managers were just 
+
+0.1% during 2022-23.  Similarly, female managers have increased from 9% in 2009 to 19% in 2022/2023, 
+
+yet the female share among recent college and MBA graduates is 58% and 43%,  respectively.  Non-elite 
+
+school managers have increased from 40% to 60%, while 96% of recent college graduates are from non-elite 
+schools.31 
+
+We do not observe the pipeline of individuals who would wish to become VCs but do not successfully 
+
+raise a fund, but these results point to remaining entry barriers for underrepresented managers.  Consistent 
+
+with this, we do not see that fund returns for these groups lags that of their majority counterparts, which 
+
+is  what  we  would  expect  if  supply  were  the  explanation  (Appendix  Tables  A.3,  A.4,  and  A.13).  What 
+
+might constrain entry for underrepresented managers?  They may face frictions not addressed by general 
+
+solicitation, such as discrimination. Within our context, the overall low takeup of 506(c) can help explain the 
+
+limited progress.  Recall that 506(c) represents only 8.4% of all funds.  Furthermore, despite a higher share 
+
+of underrepresented managers than in 506(b), the share remains low.  For example, Panel B of Table 2 shows 
+
+that the Black/Hispanic share in 506(c) is only 9%.  Appendix Figure A.4 shows that within in 506(c), there 
+
+is a similar pattern to Figure 8 Panel B for all manager types.  Based on Column 2 of Table 5 Panel A, if we 
+
+extrapolated the takeup rates and supposed that 100% of funds used 506(c), the Black/Hispanic share would 
+
+still be only 11.9%, far from the supply benchmarks. 
+
+Geography  Venture capital and high-growth entrepreneurship are much more geographically concentrated 
+than other economic activity (Glaeser et al., 2010; Chen et al., 2010). Focusing on our setting of VC, in 2022 
+
+the three states of California, New York, and Massachusetts accounted for over 85% of all U.S. fundraising 
+(NVCA, 2023).32  The returns to investors are also concentrated, leading to ever-increasing buildup of wealth 
+in a few areas;  investment in Northern California has traditionally been more lucrative than other regions 
+
+(Woodward and Hall, 2004).  This flters down to technological innovation; Kalyani et al. (2023) show that 
+
+California and the Northeast Corridor are responsible for more than half of major new technologies, which 
+
+in turn leads to more high-quality jobs down the road. Motivated by these economic benefts of local VC and 
+
+the percieved challenges facing high-potential frms born outside the hub cities—which often are pressured 
+
+to move to VC hubs (Chen and Ewens, 2021)—many policies try to encourage VC activity in traditionally 
+
+underserved areas.  However, this is challenging to accomplish.  For example, Denes et al. (2023) fnd no 
+
+31Black/Hispanic and female shares among college graduates are from National Center for Education Statistics (NCES) based on 
+2019-2021 data.  Their shares among MBA graduates are from Graduate Management Admission Council (GMAC). The non-elite 
+school share is from various university alumni pages and total degree holders from the U.S Census. 
+
+32The same is true globaly, with the top 10 urban areas accounting for 62% of global venture investment (Florida and Hathaway, 
+
+2018). 
+
+29 
+
+impact of state-level angel investment tax credits on local entrepreneurial activity. 
+
+By  removing  the  need  for  personal  relationships  with  investors  and  opening  up  to  arm’s  length, 
+
+nationwide fundraising, general solicitation may reduce the geographic clustering of funds.  Figure 8 Panel 
+
+A  shows  that  in  relative  terms,  the  share  of  funds  in  non-top  10  cities  increased  by  60%  between  2009 
+
+and 2023, with the increase concentrated in the post-2015 period.  However, in levels, this increase has not 
+
+meaningfully shifted the spatial distribution closer to the benchmark we use,  which is the distribution of 
+
+new frms.  In 2023, the non-top 10 city share among VC funds was only 38%, far from the 87% non-top 
+
+10 share among new frms.  This large gap is due to both the low overall take-up of 506(c) funds, as well as 
+the modest non-top 10 city share within 506(c), which was 49% in 2023.33  These results suggest that there 
+remain important place-based frictions constraining the geography of fund formation. 
+
+9  Understanding the Limits on 506(c) Take-up 
+
+Thus far we have shown that 506(c) did not meaningfully move the needle on participation by underrepre-
+
+sented managers, despite being relatively more intensively used by these groups. We ofer three mechanisms 
+
+that help to explain the relatively low use of 506(c), all of which are relevant to securities regulation broadly 
+
+and are particularly important for whether emerging or underrepresented managers can enter a market. These 
+
+are: 
+
+•  The paradox presented by the benefts of a track record in 506(c). 
+
+•  Regulatory barriers some private funds face in accessing “the crowd” in 506(c). 
+
+•  Investor verifcation costs in 506(c). 
+
+9.1  The Track Record Paradox 
+
+Arms’ length fnancing makes information asymmetry between prospective fund managers and their targeted 
+
+investors  a  greater  challenge.  In  the  absence  of  soft  information  and  the  benefts  of  personal  networks, 
+
+investors must rely on hard information.  The most relevant hard information is the frm’s and manager’s 
+
+track record.  Since the primary beneft of 506(c)—public advertising—is arm’s length fnancing, we expect 
+
+that  success  in  506(c)  should  depend  more  on  a  strong  track  record.  In  turn,  this  could  explain  why  it 
+
+is not widely taken up by emerging managers and why it does not help to meaningfully move the needle 
+for underrepresented managers:  When a person develops a track record, they typically develop a personal 
+network  at  the  same  time.  To  the  degree  success  in  506(c)  requires  a  track  record,  it  will  primarily  be 
+
+available to managers who could alternatively use 506(b) through their network.  As we will show below, 
+
+506(b) is less costly and avoids a signaling problem, leading managers who do not need 506(c) to avoid it. 
+
+33We fnd similar patterns with non-top 3 city shares. 
+
+30 
+
+The two phenomena of (a) needing to signal quality in arm’s length fnancing; and (b) a co-dependence 
+
+between  personal  networks  and  a  track  record  together  create  what  we  call  the  “track  record  paradox” 
+
+constraining 506(c) take-up by underrepresented managers.  To document this in the data,  we plot funds 
+
+according to proxies for personal network and track record.  The personal network index, on the y-axis, is the 
+
+sum of the fractions of the team being male, White, and elite school graduates.  We also create a track record 
+index that is the sum of prior exits plus the fraction of team with fnance experience.34  We plot red lines at 
+the midpoint of each index, creating four quadrants.  Panel A of Figure 9 contains a scatterplot of the funds 
+
+in this space, with orange dots indicating 506(c) funds and blue dots 506(b) funds.  We also note the fraction 
+
+of 506(c) funds within each quadrant.  Panel B aggregates the funds by quadrant.  The orange bubble size 
+
+and percent represent the share of all 506(c) funds in each quadrant, and similarly for 506(b) in blue. 
+
+Figure 9:  Joint Distribution of Track Record and Network 
+
+(a) Scatterplot of Track Record and Network 
+
+(b) Share of Funds by Quadrant 
+
+Note:  These fgures show the location of funds in the distribution of network and track record strength, with red lines 
+at the midpoints of each.  Panel A plots each fund as a point.  We report the fraction of funds within each quadrant 
+that are 506(c).  Panel B aggregates the funds by quadrant.  The orange bubble size and orange percent represent each 
+quadrant’s share among all 506(c) funds (similarly for 506(b) in blue.) 
+
+It is clear from the fgures that funds tend to cluster around and above the 45-degree line; they concentrate 
+
+in the top-left quadrant and are most sparse in the bottom-right quadrant.  In other words, few funds have a 
+
+strong track record but a weak network.  Consistent with arm’s length fnancing requiring a track record, the 
+
+distribution of 506(c) users is more weighted towards strong track records than that of 506(b) users.  506(c) 
+
+funds also tend to have lower values of our network proxy, as we showed earlier.  The absence of funds in the 
+
+bottom-right indicates that there are few managers with the characteristics we expect who are most suitable 
+
+for 506(c):  people who lack the demographics associated with a strong network but who do have a strong 
+
+34To facilitate comparison, we standardize each component before summing them up and shift the minimum to zero.  Each index 
+
+is winsorized at the 1% level. 
+
+31 
+
+track record. 
+
+Indeed, we see that 506(c) take-up is highest in the bottom-right quadrant.  Within this quadrant, 33% 
+
+of all funds are 506(c) (Panel A). The share of all 506(c) funds that are in this quadrant is 4%, while just 
+
+1% of all 506(b) funds are in this quadrant (Panel B). This is consistent with 506(c) being most appealing 
+
+to the small group of people with weak networks but who possess, typically via their frm, a track record 
+
+strong enough to overcome information asymmetry in arm’s length fnancing. In contrast, those with a strong 
+
+network but a weak track record raise through personal relationships via 506(b) (top left).  In sum,  these 
+
+fgures ofer evidence for the track record paradox as an explanation for low 506(c) take-up. 
+
+The track record paradox leads to two predictions. First, success in raising 506(c) funds should be more 
+
+sensitive to track record than 506(b) funds.  Second, underrepresented groups (who tend to have relatively 
+
+weaker personal networks) using 506(c) should have strong frm and personal track records relative to 506(b) 
+
+users, yet few funds will fall in both categories (low network but high track record), helping to explain overall 
+
+low take-up. 
+
+To test these hypotheses, we develop measures of track record and fundraising success.  We use three 
+
+track record measures, all of which are observed as of the time the focal fund is raised:  1) the frm’s number 
+
+of prior successful portfolio company exits; 2) the frm’s number of prior funds; and 3) the share of the fund 
+team with past work experience in fnance.35  For past VC activity, we use the frm level because it is the 
+most important vector of signaling (and also recall that 506(c) managers are more likely to be frst-time from 
+Table 5).  We measure fundraising success as the ultimate fund size, controlling for initially targeted size.36 
+
+The results are in Table 7. Column 1 shows that one standard deviation increase in prior exit is associated 
+
+with a 4.3% increase in the amount raised conditioning on target amount (i.e.  success) in 506(b), but a 8.9% 
+
+increase in 506(c)—or 2.1 times more.  The diference is 2.3 times when measured by the number of prior 
+
+funds (Column 2).  The next column uses prior fnance experience as the measure.  We fnd that fund teams 
+
+with one standard deviation more fnance experience is associated with 9.1% higher raised amount relative 
+
+to target for 506(c), while there is no signifcant relationship for 506(b).  These results show that fundraising 
+success is signifcantly more sensitive to track records for 506(c) funds than for 506(b) funds.37  Since female 
+and Black/Hispanic fund managers on average have weaker track records than their majority counterparts 
+
+(Tables A.3 and A.4), this may deter 506(c) entry among prospective underrepresented managers. 
+
+If  track  record  matters  more  for  the  fundraising  success  of  506(c)  than  506(b),  then  conditional  on 
+
+launching a fund, 506(c) fund managers should have (or be at frms with) better track records.  We confrm 
+
+35We  defne  exits  as  acquisitions  or  IPOs  valued  at  more  than  $200  million.  We  defne  fnance  as  including  PE,  investment 
+banking, asset management, etc.  This information is from LinkedIn, while the frm-level measures are from Pitchbook.  Between 
+(1) and (2), our preferred measure is exits because it also captures the success of funds.  We do not use returns as fund success 
+measure as return data are sparse. 
+
+36Note that this analysis examines intensive margin variation in fundraising success, because we not observe funds that failed to 
+
+launch.  Both targeted and actual fund size are from Pitchbook. 
+
+37We fnd similarly positive but noisier (statistically insignifcant) results if we measure prior exits and funds at the manager level. 
+This seems to refect underrepresented managers generally having weaker track records at the manager level compared to the frm 
+level. 
+
+32 
+
+Table 7:  The Role of Track Record in 506(c) Take-up 
+
+Dependent Variable: 
+
+Ln(Fund Size) 
+
+(1) 
+
+(2) 
+
+(3) 
+
+Prior Exits 
+
+Prior Exits × 1(506(c)) 
+
+Prior Funds 
+
+Prior Funds × 1(506(c)) 
+
+Finance Experience Share 
+
+Finance Experience Share × 1(506(c)) 
+
+1(506(c)) 
+
+Ln(Fund Target Size) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+0.043∗∗∗ 
+(0.012) 
+
+0.046∗∗∗ 
+(0.011) 
+
+0.045∗∗∗ 
+(0.012) 
+
+0.059∗∗ 
+(0.023) 
+
+-0.002 
+(0.014) 
+
+0.091∗ 
+(0.048) 
+
+-0.530∗∗∗ 
+(0.071) 
+
+-0.532∗∗∗ 
+(0.071) 
+
+-0.304∗∗ 
+(0.138) 
+
+0.979∗∗∗ 
+(0.018) 
+
+0.982∗∗∗ 
+(0.017) 
+
+0.992∗∗∗ 
+(0.011) 
+
+Yes 
+5713 
+0.831 
+3.246 
+
+Yes 
+5713 
+0.831 
+3.246 
+
+Yes 
+3183 
+0.850 
+3.781 
+
+Note:  This  table  shows  how  the  sensitivity  of  fundraising  success  to  track  record  difers  by  exemption  type.  The 
+dependent variable is log fund size.  The coefcient of interest is the interaction between using the 506(c) exemption 
+and track record, represented by prior successful portfolio company exits, prior funds, or past fnance experience, each 
+standardized.  We control for log fundraising target size.  Standard errors are clustered by state and are reported in 
+parentheses.  * indicates statistical signifcance at the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+this  in  Panel  B  of  Table  7  (columns  1,  3,  and  5).  Consistent  with  the  second  prediction,  this  diference 
+
+is much larger for underrepresented managers (columns 2,  4,  and 6).  We defne “underrepresented” as a 
+
+fund  team  with  at  least  one  female,  Black,  or  Hispanic  manager.  For  example,  column  4  suggests  that 
+
+being underrepresented and using 506(c) is associated with 7.6 more prior funds, which is more than 100% 
+
+of  the  outcome  mean  (which  is  5.7  prior  funds).  In  other  words,  when  underrepresented  managers  do 
+
+successfully use 506(c), they tend to possess a stronger track record than both majority 506(c) managers and 
+
+underrepresented 506(b) managers.  We fnd positive but much weaker (statistically insignifcant) results in 
+
+Panel B if we measure prior exits and funds at the manager level.  This seems to refect underrepresented 
+
+33 
+
+managers generally having weaker track records at the manager level compared to the frm level, as seen in 
+
+Table 8. 
+
+Table 8:  Underrepresented Track Records, VC Firm vs Manager Level 
+
+Underrepresented 
+
+Majority 
+
+Prior Exits 
+Prior Funds 
+
+VC Firm 
+10.24 
+5.17 
+
+Manager 
+7.05 
+1.89 
+
+Manager - VC-Firm 
+-3.19∗∗∗ 
+-3.28∗∗∗ 
+
+VC Firm 
+4.95 
+5.89 
+
+Manager 
+6.27 
+2.14 
+
+Manager - VC-Firm 
+1.32∗∗ 
+-3.75∗∗∗ 
+
+Note:  The frst two columns in each section are sample means of each experience type.  The third column uses robust 
+standard errors in conducting a t-test of the sample mean diferences between the VC Firm and Manager columns.  * 
+indicates statistical signifcance at the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+When do underrepresented managers escape the track record paradox? Some do, of course, have strong 
+
+networks.  On average, however, the literature and our results thus far indicate they have weaker networks, 
+
+which is what matters for whether 506(c) might enable broader and more inclusive entry.  Specifcally, we 
+
+fnd that underrepresented managers tend to have smaller networks on LinkedIn (see Appendix Table A.11). 
+
+Underrepresented managers who lack a network are more likely to choose 506(c), yielding our results from 
+
+Table 5.  By virtue of using 506(c),  they were able to overcome information asymmetry at arm’s length. 
+
+One way they may accomplish this is through impact objectives, which can be transmitted across space, and 
+
+may exploit investors’ non-pecuniary preferences.  Table 9 shows that the stated investment preference of 
+
+underrepresented 506(c) managers is more likely to include identity-based targeting than other managers. 
+
+Specifcally, they are 2.7 times more likely to target women and minority owned businesses relative to the 
+
+mean.  The efect is insignifcant for ESG targeting, suggesting a signaling advantage in targeting through 
+
+manager-founder homophily (i.e., more credible signals). 
+
+34 
+
+Table 9:  Fund Impact Target Comparison 
+
+Dependent Variable: 
+
+1(DEI Target) 
+
+1(ESG Target) 
+
+1(506(c)) 
+
+1(Underrepresented) 
+
+1(506(c)) × 1(Underrepresented) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+(1) 
+
+(2) 
+
+(3) 
+
+(4) 
+
+0.024∗∗∗ 
+(0.006) 
+
+-0.002 
+(0.010) 
+0.037∗∗∗ 
+(0.011) 
+0.061∗ 
+(0.031) 
+
+0.026∗∗∗ 
+(0.006) 
+
+0.030∗∗∗ 
+(0.008) 
+0.007∗ 
+(0.004) 
+0.017 
+(0.031) 
+
+Yes 
+8041 
+0.063 
+0.015 
+
+Yes 
+4067 
+0.123 
+0.023 
+
+Yes 
+8041 
+0.046 
+0.015 
+
+Yes 
+4067 
+0.065 
+0.020 
+
+Note:  This  table  compares  the  likelihood  of  a  fund  being  a  targeted  fund  by  exemption  type  and  manager  type. 
+A targeted fund is one identifed by Pitchbook as describing itself as targeting DEI, i.e.,  minority-women business 
+enterprises (MWBE), and/or ESG investments.  Underrepresented is an indicator for the fund team having at least one 
+female, Black, or Hispanic manager.  Standard errors are clustered at the state level and are reported in parentheses.  * 
+indicates statistical signifcance at the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+9.2  Accessing the Crowd 
+
+By virtue of depending on public advertising, 506(c) is thought to be most useful for managers seeking to 
+raise from a large number of small-time retail investors.38  Access to the “crowd” is especially important 
+for less well-networked GPs who lack connections with institutional LPs, family ofces, and very wealthy 
+
+individuals.  They  would beneft  from the  opportunity  to raise  small  amounts from  many small-time  but 
+
+accredited retail investors.  Indeed, 506(c) funds appear more dependent on the crowd than 506(b) funds. 
+
+Both Table 2 as well as Table 3 show that 506(c) funds tend to have more LPs and more individual LPs, and 
+
+are more likely to have non-pension fund investors (note that Pitchbook has poor coverage of non-institutional 
+
+LPs).  This pattern holds even after controlling for fund size (Appendix Table A.9).  Lawyers for VC funds 
+
+also told us that institutional and very wealthy LPs are almost always directly solicited and generally do not 
+
+look for public advertisements.  This leaves the accredited retail investor as the most obvious audience for 
+
+506(c) fundraising. 
+
+However, the Investment Company Act of 1940 restricts 3(c)(1) funds, which most smaller VCs fall 
+
+under, to no more than 100 investors.  This could constrain use of 506(c).  On May 25, 2018, the SEC raised 
+
+the cap from 100 investors to 250 investors for VC funds with less than $10 million assets, while keeping 
+
+38For example,  one law frm explains that “Rule 506 c oferings can allow you to collect small sums from a huge number of 
+investors, which add up to a larger capital raise.”  (Moschetti, 2023; Turbine, 2023) This point is also based on author conversations 
+with practitioners, including investors and lawyers. 
+
+35 
+
+the cap unchanged at 100 for VC funds larger than $10 million.39  The goal was to allow small funds without 
+access to institutional or very wealthy LPs to raise from many smaller investors.  In Howell et al. (2024), we 
+
+examine the impact of the 2018 investor cap increase on 506(c) take-up using an event study design.  We 
+
+show that after the 2018 new exemption, smaller VC funds below the $10m regulatory cutof are much more 
+
+likely to use 506(c) relative to funds larger than $10m.  The investor cap is likely more constraining for larger 
+funds because they tend to have more investors.40  Furthermore, we show that the cap raise disproportionately 
+benefted underrepresented managers.  We expect they will depend more on the crowd, as they tend to have 
+
+more LPs (Appendix Table A.15) and have higher fractions of individual or non-pension LPs (Appendix 
+
+Tables A.3 and A.4). 
+
+It might also be the case that 506(c) is constrained in accessing the crowd because there are insufcient 
+
+accredited investors.  In Howell et al. (2024), we use an SEC rule amendment that expanded the defnition 
+
+of  accredited  investors  to  include  those  with  professional  experience  or  qualifcations,  in  addition  to  the 
+
+traditional income/net worth-based defnition.  The rules were efective in December 2020.  If the supply of 
+
+accredited investors is a constraint in general solicitation, we should observe higher take-up of 506(c) after 
+
+the amendments.  However, we do not see any change around the time period when the amendments went 
+
+into place, suggesting that low 506(c) take-up is not driven by low supply of accredited investors. 
+
+9.3  Verifcation Costs and Negative Signaling 
+
+If the 506(c) rule permitted general solicitation with no additional requirements and there were no signaling 
+
+efects, we should expect broad take-up as the new policy would ofer a free option.  Of course, this is not 
+
+the case.  506(c) required the issuer to take “reasonable steps” to verify investor accreditation,  instead of 
+
+the “reasonable belief” standard in 506(b).  A positive view is that the additional burden on issuers is not 
+
+very high.  For example, “reasonable steps” to verify accreditation includes an email from an attorney or 
+
+previously verifed accredited investor confrming that the verifed investor continues to remain accredited. A 
+
+more negative view is that the requirement might create substantial new paperwork costs, legal liability risk 
+
+if investors are in fact not accredited, and awkwardness in asking investors for intimate fnancial information. 
+
+Legal uncertainty could have a chilling efect, especially in the absence of a body of existing case law. 
+
+39See Appendix A.2 for defnition of venture capital fund by the SEC. 
+40In the Pitchbook data, the number of LPs and log fund size have a correlation coefcient of 0.395 with a signifcance at the sub 
+
+1% level. 
+
+36 
+
+Figure 10:  Fund Manager and Lawyer Opinions about 506(c) 
+
+(a) VC Fund Managers 
+
+(b) VC Lawyers 
+
+Note:  These fgures describe survey responses, with VC fund managers in Panel A and lawyers to VC frms in Panel 
+B. Respondents were asked whether they agreed with a series of statements about 506(c), which are summarized on 
+the y-axis.  The statements,  in order,  are:  The 506(c) exemption sends a negative signal about quality/ability;  The 
+506(c) investor accreditation verifcation requirements create legal risks for the GP; It is burdensome to verify investor 
+accreditation status for 506(c); In principle, the 506(c) exemption should be useful for new fund managers who do not 
+have a pre-existing network of investors (i.e.  LPs).;  The 506(c) investor accreditation verifcation requirements are 
+unclear; The 506(c) exemption is underutilized.  See Section 3 for a description of the survey and responses.  In Panel 
+A, 506(b)   = 73, 506(c)   = 30.  In Panel B, 506(b)   = 22, 506(c)   = 27 
+
+37 
+
+Our survey results are extremely useful for understanding whether, in practice, the verifcation costs 
+
+are relevant.  Figure 10, Panel A indicates that the majority of fund managers, especially those who do not 
+
+use 506(c), agree that investor verifcation is burdensome and creates risks.  There is also some agreement 
+
+about verifcation rules being unclear.  We observe similar opinions from VC lawyers (Panel B). Figure 11 
+
+shows that, when asked about why they do not use 506(c), nearly 80% of fund managers cited the time and 
+
+money required to verify investor’s accreditation status as having major or some infuence on their decision. 
+
+Legal risk was the second-most.  Supporting this, Figure A.6 shows that the majority of VC fund lawyers 
+
+report that 506(c) takes more legal work than 506(b), and that this is due to more complex compliance and 
+
+greater legal risks of 506(c). 
+
+Because  there  is  a  non-negligible  additional  cost  to  506(c),  using  506(c)  to  fundraise  could  send  a 
+
+negative signal to investors. The most direct way is that using 506(c) could signal that a GP does not have the 
+
+requisite personal network to fundraise without general solicitation.  More broadly, there is likely status quo 
+
+bias, where experienced VCs default to the option they have used in the past (Samuelson and Zeckhauser, 
+
+1988). If most well-reputed VCs use 506(b) and there is adverse selection into 506(c), managers may pool on 
+
+506(b) (Spence, 1973).  Alternatively, a separating equilibrium could emerge in which low-quality managers 
+
+use  506(c)  and  generally  solicit,  recruiting  unsophisticated  retail  accredited  investors,  while  high-quality 
+
+managers  use  506(b)  and  recruit  sophisticated  institutional  and  very  wealthy  investors  through  personal 
+
+networks. This predicts that generally solicited investments will underperform. Our earlier result that 506(c) 
+
+funds do not underperform 506(b) in returns speaks against a separating equilibrium. Instead, the low take-up 
+
+of 506(c) is consistent with many managers who would have benefted from 506(c) pooling into 506(b) to 
+
+avoid negative signaling. 
+
+The fund managers in our survey generally agreed with the proposition that 506(c) sends a negative 
+
+signal.  Notably, this opinion is strongest among managers who do not use 506(c) and their lawyers, with the 
+
+majority agreeing about the statement of negative signaling (Figure 10).  Furthermore, Figure 11 shows that 
+
+more than 70% of 506(b) users chose not to use 506(c) in part because it sends a negative signal.  One VC 
+
+fund lawyer wrote to us: 
+
+“At a high level, I don’t think the underutilization of 506(c) is due to policy/rule construction, 
+
+but rather selection bias that going out to smaller/potentially less sophisticated investors (the 
+
+lower end of the market), sends a bad signal to the market (and in turn might impact their ability 
+
+to line-up desirable portco investments).” 
+
+There are demographic diferences in these concerns about verifcation.  Female managers are more 
+
+concerned about verifcation costs and legal risks than male managers, while Black/Hispanic managers are 
+
+more concerned about verifcation costs and negative signaling than White managers (Figure A.5).  Overall, 
+
+these survey results point to substantial costs of investor verifcation and the concomitant negative signaling, 
+
+and  suggest  these  that  the  costs,  including  negative  signaling,  may  be  higher  among  underrepresented 
+
+managers. 
+
+38 
+
+Figure 11:  506(b) Fund Managers’ Reasons for Not Using 506(c) 
+
+Note:  This  fgure  describes  survey  responses  within  the  set  of  fund  managers  who  have  used  only  506(b).  Fund 
+managers were asked whether any of the non-mutually exclusive options listed on the y-axes had no infuence, some 
+infuence, or major infuence on their choice to not use 506(c).    = 73 . 
+
+10  Conclusion and Policy Discussion 
+
+With over $13 trillion in private capital assets under management, the issue of who can be a manager and 
+
+how they can fundraise is economically important (McKinsey, 2024) As the private capital markets have 
+
+matured, fund sizes have increased and the benefts of incumbency, track records, and pre-existing networks 
+
+with institutional and high-net worth LPs have grown stronger (Carmean et al., 2024).  This is especially true 
+
+in VC, where information asymmetry between GPs and LPs is acute. 
+
+In theory, permitting general solicitation can help level the playing feld for traditionally underrepre-
+
+sented managers, who are less well-networked.  This policy—implemented in the U.S. in 2013—sought to 
+
+address the barriers to entry imposed by the traditional exemption to securities registration, which requires 
+
+39 
+
+Figure 12:  Investor Verifcation Burden for 506c (Lawyer Responses 
+
+(a) Amount of Legal Work Required for 506c 
+
+(b) Reason for More Legal Work for 506c 
+
+Note:  This fgure employs data from the lawyer survey about the amount of legal work (i.e.  billable hours) required 
+to verify that investors are accredited.  Lawyers were frst asked if 506(c) required more work.  If they said it did, then 
+they were asked why. 
+
+managers in private capital markets fundraise using personal relationships.  In this paper, we study an impor-
+
+tant instance of the how the fundamental tension facing securities regulation—enabling broad and inclusive 
+
+capital formation while protecting investors—makes it difcult to meaningfully lower barriers for new and 
+
+underrepresented managers. 
+
+We show that general solicitation (506(c)) is disproportionately used by female, Black/Hispanic, frst 
+
+time, and non-elite school managers, all groups we expect to have weaker networks, which we verify with 
+
+LinkedIn connections data.  We present three, non-mutually exclusive mechanisms that help to explain the 
+
+relatively low use of 506(c), and why the rule did not dramatically increase the ranks of underrepresented 
+
+managers.  These  mechanisms  may  apply  to  securities  regulation  beyond  Regulation  D.  The  frst  is  the 
+
+paradox  presented  by  the  benefts  of  a  track  record,  which  derives  from  the  important  role  for  personal 
+
+networks; in the absence of personal networks, investors rely on track record, but managers who establish 
+
+a track record typically build a network along the way,  leaving only a relatively small segment with one 
+
+resource (track record) but not the other (a personal network with which to raise using 506(b)).  The second 
+
+mechanism is regulatory barriers to accessing “the crowd” in public solicitation, imposed by a ceiling on 
+
+the number of investors who may participate.  The third mechanism is the presence of verifcation costs, 
+
+which are perceived by regulators as necessary at arm’s length but deter participation and lead to a negative 
+
+signaling equilibrium. 
+
+Our  results  have  implications  for  policy.  It  may  be  that  restricting  the  type  of  investor  who  may 
+
+participate—via  the  accreditation  requirement—is  more  challenging  and  creates  more  frictions  than  the 
+
+conventional SEC regulation applied to public frms, which focuses on requiring disclosure.  The opinions 
+
+summarized in Figure 10 suggest that there is broad agreement in the survey that 506(c) is underutilized. 
+
+To the extent that 506(c) managers do not perform worse than 506(b) and their fundraising success is more 
+
+40 
+
+sensitive to track record,  adverse selection seems to be limited,  or at least outweighed by the benefts of 
+
+removing frictions previously constraining emerging managers.  As such, the SEC may be over-protecting 
+
+investors  at  the  expense  of  democratizing  the  private  fund  space.  To  improve  policy  design  and  506(c) 
+
+take-up, the SEC could shift some of the compliance burden from GPs to investors by, for example, letting 
+
+investors  use  the  reasonable  belief  standard  that  is  currently  in  Rule  506(b);  it  could  also  allow  greater 
+
+fexibility to switch between 506(b) and 506(c) as managers learn about investor demand and the costs and 
+
+benefts of general solicitation. 
+
+41 
+
+References 
+
+112th Congress (2012).  Hr 3606.  Technical report, United States Congress. 
+
+113th Congress (2013).  S.hrg. 113-178 - the jobs act at a year and a half:  Assessing progress and unmet 
+opportunities.  Technical  report,  United  States  Congress  Committee  on  Banking,  Housing,  and  urabn 
+Afairs, United States Senate. 
+
+Abuzov, R., W. Gornall, and I. A. Strebulaev (2022). The value of privacy and the choice of limited partners 
+
+by venture capitalists.  Available at SSRN 4235337. 
+
+Admati, A. R. and P. Pfeiderer (2000). Forcing frms to talk: Financial disclosure regulation and externalities. 
+
+The Review of Financial Studies 13(3), 479–519. 
+
+Agrawal,  A.,  C.  Catalini,  and  A.  Goldfarb  (2015).  Crowdfunding:  Geography,  social  networks,  and  the 
+
+timing of investment decisions.  Journal of Economics & Management Strategy 24(2), 253–274. 
+
+Bauguess, S., R. Gullapalli, and V. Ivanov (2018).  Capital raising in the us:  An analysis of the market for 
+unregistered securities oferings, 2009-2017.  US Securities and Exchange Commission White Paper. 
+Bergstresser, D., J. M. Chalmers, and P. Tufano (2008).  Assessing the costs and benefts of brokers in the 
+
+mutual fund industry.  The Review of Financial Studies 22(10), 4129–4156. 
+
+Bernstein, S., X. Giroud, and R. R. Townsend (2016). The impact of venture capital monitoring. Journal of 
+
+Finance 71(4), 1591–1622. 
+
+Bolton, P., X. Freixas, and J. Shapiro (2007).  Conficts of interest, information provision, and competition 
+
+in the fnancial services industry.  Journal of Financial Economics 85(2), 297–330. 
+
+Calder-Wang, S. and P. A. Gompers (2021).  And the children shall lead:  Gender diversity and performance 
+
+in venture capital.  Journal of Financial Economics 142(1), 1–22. 
+
+Carmean, Z., S. Hu, K. Gao, and V. Le (2024).  Pitchbook analyst note:  Establishing a case for emerging 
+
+managers.  Technical report, Pitchbook. 
+
+Cassel, J., J. Lerner, and E. Yimfor (2022).  Racial diversity in private capital fundraising.  Technical report, 
+
+National Bureau of Economic Research. 
+
+CFR (1989).  Disqualifying provision relating to exemptions under Â§Â§ 230.504 and 230.506. 
+
+Chang, M. (2024).  Women and minority-owned businesses in regulation crowdfunding.  Technical report, 
+
+Securities and Exchange Commission. 
+
+Chen, H., P. Gompers, A. Kovner, and J. Lerner (2010). Buy local? the geography of venture capital. Journal 
+
+of Urban Economics 67(1), 90–102. 
+
+Chen,  J. and M. Ewens (2021).  Venture capitalists’ access to fnance and its impact on startups.  NBER 
+
+Working Paper (w29211). 
+
+Chhaochharia, V. and Y. Grinstein (2007).  Corporate governance and frm value:  The impact of the 2002 
+
+governance rules.  Journal of Finance 62(4), 1789–1825. 
+
+Christensen,  H.  B.,  L.  Hail,  and  C.  Leuz  (2016).  Capital-market  efects  of  securities  regulation:  Prior 
+
+conditions, implementation, and enforcement.  The Review of Financial Studies 29(11), 2885–2924. 
+
+Cook, L. D., M. Marx, and E. Yimfor (2022). Funding black high-growth startups. Technical report, National 
+
+Bureau of Economic Research. 
+
+Da Rin, M. and L. Phalippou (2017).  The importance of size in private equity:  Evidence from a survey of 
+
+limited partners.  Journal of Financial Intermediation 31, 64–76. 
+
+Denes, M., S. T. Howell, F. Mezzanotti, X. Wang, and T. Xu (2023). Investor tax credits and entrepreneurship: 
+
+42 
+
+Evidence from us states.  Journal of Finance 78(5), 2621–2671. 
+
+Doidge,  C.,  G. A. Karolyi,  and R. M. Stulz (2009).  Has new york become less competitive than london 
+in global markets?  evaluating foreign listing choices over time.  Journal of Financial Economics 91(3), 
+253–277. 
+
+Easterbrook, F. H. and D. R. Fischel (1984).  Mandatory disclosure and the protection of investors.  Virginia 
+
+Law Review, 669–715. 
+
+Ewens, M. (2023).  Gender and race in entrepreneurial fnance.  Handbook of the Economics of Corporate 
+
+Finance:  Private Equity and Entrepreneurial Finance, 239. 
+
+Ewens, M. and J. Farre-Mensa (2020).  The deregulation of the private equity markets and the decline in 
+
+ipos.  The Review of Financial Studies 33(12), 5463–5509. 
+
+Ewens, M. and N. Malenko (2020).  Board dynamics over the startup life cycle.  Technical report, National 
+
+Bureau of Economic Research. 
+
+Ewens, M. and R. R. Townsend (2020). Are early stage investors biased against women?  Journal of Financial 
+
+Economics 135(3), 653–677. 
+
+Ewens, M., K. Xiao, and T. Xu (2024). Regulatory costs of being public: Evidence from bunching estimation. 
+
+Journal of Financial Economics 153, 103775. 
+
+Fairlie, R., A. Robb, and D. T. Robinson (2022). Black and white:  Access to capital among minority-owned 
+
+start-ups.  Management Science 68(4), 2377–2400. 
+
+Florida, R. and I. Hathaway (2018).  How the geography of startups and innovation is changing.  Harvard 
+
+Business Review 27. 
+
+Garfnkel, J. A., E. J. Mayer, I. A. Strebulaev, and E. Yimfor (2021).  Alumni networks in venture capital 
+
+fnancing.  SMU Cox School of Business Research Paper (21-17). 
+
+Glaeser,  E.  L.,  W.  R.  Kerr,  and  G.  A.  Ponzetto  (2010).  Clusters  of  entrepreneurship.  Journal  of  Urban 
+
+Economics 67(1), 150–168. 
+
+Gompers,  P.  A.,  V.  Mukharlyamov,  and  Y.  Xuan  (2016).  The  cost  of  friendship.  Journal  of  Financial 
+
+Economics 119(3), 626–644. 
+
+Gompers,  P.  A.  and  S.  Q.  Wang  (2017).  Diversity  in  innovation.  Technical  report,  National  Bureau  of 
+
+Economic Research. 
+
+Gornall, W. and I. A. Strebulaev (2021).  The economic impact of venture capital:  Evidence from public 
+
+companies.  Available at SSRN 2681841. 
+
+Goyal, A., S. Wahal, and M. D. Yavuz (2021).  Picking partners:  Manager selection in private equity.  Swiss 
+
+Finance Institute Research Paper (21-86). 
+
+Goyal, A., S. Wahal, and M. D. Yavuz (2023).  Choosing investment managers.  Journal of Financial and 
+
+Quantitative Analysis, 1–33. 
+
+Graham, J. R. and C. R. Harvey (2001).  The theory and practice of corporate fnance:  Evidence from the 
+
+feld.  Journal of Financial Economics 60(2-3), 187–243. 
+
+Greenstone, M., P. Oyer, and A. Vissing-Jorgensen (2006). Mandated disclosure, stock returns, and the 1964 
+
+securities acts amendments.  The Quarterly Journal of Economics 121(2), 399–460. 
+
+Greenwald, D., S. T. Howell, C. Li, and E. Yimfor (2024).  Regulatory arbitrage or random errors?  implica-
+
+tions of race prediction algorithms in fair lending analysis.  Journal of Financial Economics. 
+
+Harrison, J. (2022).  506(c) oferings:  No loss of exemption if reasonable steps fail to fnd nonaccredited 
+
+investors.  Alternative Investments Quarterly 16. 
+
+43 
+
+Hebert,  C.  (2023).  Gender  stereotypes  and  entrepreneur  fnancing.  In  10th  Miami  behavioral  fnance 
+
+conference. 
+
+Hochberg, Y. V., A. Ljungqvist, and Y. Lu (2007).  Whom you know matters:  Venture capital networks and 
+
+investment performance.  Journal of Finance 62(1). 
+
+Hochberg,  Y. V.,  A. Ljungqvist,  and Y. Lu (2010).  Networking as a barrier to entry and the competitive 
+
+supply of venture capital.  Journal of Finance 65(3), 829–859. 
+
+Hochberg,  Y.  V.,  P.  Sapienza,  and  A.  Vissing-Jørgensen  (2009).  A  lobbying  approach  to  evaluating  the 
+
+sarbanes-oxley act of 2002.  Journal of Accounting Research 47(2), 519–583. 
+
+Howell,  S.,  D.  Parker,  and  T.  Xu  (2024).  Tyranny  of  the  personal  network:  The  limits  of  arm’s  length 
+
+fundraising in venture capital.  Technical report, Working Paper. 
+
+Howell, S. T. (2020). Reducing information frictions in venture capital: The role of new venture competitions. 
+
+Journal of Financial Economics 136(3), 676–694. 
+
+Howell,  S.  T.,  T.  Kuchler,  D.  Snitkof,  J.  Stroebel,  and  J.  Wong  (2024).  Lender  automation  and  racial 
+
+disparities in credit access.  The Journal of Finance 79(2), 1457–1512. 
+
+Howell,  S.  T.  and  R.  Nanda  (2019).  Networking  frictions  in  venture  capital,  and  the  gender  gap  in  en-
+
+trepreneurship.  Journal of Financial and Quantitative Analysis, 1–29. 
+
+Hu, A. and S. Ma (2021).  Persuading investors:  A video-based study.  Journal of Finance, Forthcoming. 
+Iliev,  P.  (2010).  The  efect  of  sox  section  404:  Costs,  earnings  quality,  and  stock  prices.  Journal  of 
+
+Finance 65(3), 1163–1196. 
+
+Inderst, R. and M. Ottaviani (2009). Misselling through agents. American Economic Review 99(3), 883–908. 
+Jackson, H. E. and M. J. Roe (2009).  Public and private enforcement of securities laws:  Resource-based 
+
+evidence.  Journal of Financial Economics 93(2), 207–238. 
+
+Kalyani,  A.,  N. Bloom,  M. Carvalho,  T. Hassan,  J. Lerner,  and A. Tahoun (2023).  The difusion of new 
+
+technologies. 
+
+Kiernan, P. (2019).  Sec proposes giving more investors access to private markets.  Technical report, The 
+
+Wall Street Journal, December 8. 
+
+Kortum,  S. and J. Lerner (2000).  Assessing the contribution of venture capital to innovation.  The Rand 
+
+Journal of Economics 31(4), 674. 
+
+La  Porta,  R.,  F.  Lopez-de  Silanes,  and  A.  Shleifer  (2006).  What  works  in  securities  laws?  Journal  of 
+
+Finance 61(1), 1–32. 
+
+La  Porta,  R.,  F.  Lopez-de  Silanes,  A.  Shleifer,  and  R.  Vishny  (2002).  Investor  protection  and  corporate 
+
+valuation.  Journal of Finance 57(3), 1147–1170. 
+
+Lerner,  J. and R. Nanda (2020).  Venture capital’s role in fnancing innovation:  What we know and how 
+
+much we still need to learn.  Journal of Economic Perspectives 34(3), 237–261. 
+
+Mahoney, P. G. (2003).  The origins of the blue-sky laws:  A test of competing hypotheses.  The Journal of 
+
+Law and Economics 46(1), 229–251. 
+
+McHenry,  P. and S. Garrett (2013).  Letter to  sec chairman mary white.  Technical report,  United States 
+
+House of Representatives Committee on Financial Services, July 22. 
+
+McKinsey (2024).  Mckinsey global private markets review 2024.  Technical report, McKinsey & Co. 
+
+Moschetti,  T. (2023).  Rule 506c of reg d - solicitation & no non-accredited investors.  Technical report, 
+
+Moschetti Law. 
+
+Mulherin,  J.  H.  (2007).  Measuring  the  costs  and  benefts  of  regulation:  Conceptual  issues  in  securities 
+
+44 
+
+markets.  Journal of Corporate Finance 13(2-3), 421–437. 
+
+NVCA (2023).  Yearbook.  Technical report, National Venture Capital Association. 
+
+PK (2023).  How many accredited investors are there in america? 
+
+Posner,  R. A. (1974).  Theories of economic regulation.  Technical report,  National Bureau of Economic 
+
+Research. 
+
+Rajan, R. and L. Zingales (1998).  Financial development and growth.  American Economic Review 88(3), 
+
+559–586. 
+
+Reese Jr, W. A. and M. S. Weisbach (2002).  Protection of minority shareholder interests, cross-listings in 
+
+the united states, and subsequent equity oferings.  Journal of Financial Economics 66(1), 65–104. 
+
+Samuelson,  W.  and  R.  Zeckhauser  (1988).  Status  quo  bias  in  decision  making.  Journal  of  Risk  and 
+
+Uncertainty 1, 7–59. 
+
+Schwartz,  N.,  Z. Carmean,  and A. Akers (2024).  Private capital’s path to $20 trillion.  Technical report, 
+
+Pitchbook. 
+
+SEC (2013). Adopting release: Eliminating the prohibition against general solicitation and general advertising 
+
+in rule 506 and rule 144a oferings. 
+
+SEC (2019). Concept release on harmonization of securities ofering exemptions. Technical report, Securities 
+
+and Exchange Commission, 84 FR 30460. 
+
+SEC (2020a).  Adopting release:  Facilitating capital formation and expanding investment opportunities by 
+improving access to capital in private markets.  Technical report, Securities and Exchange Commission, 
+17 CFR Parts 227, 229, 230, 239, 249, 270, and 274 (November 2020). 
+
+SEC (2020b).  Proposing release:  Facilitating capital formation and expanding investment opportunities by 
+improving access to capital in private markets.  Technical report, Securities and Exchange Commission, 
+17 CFR Parts 227, 229, 230, 239, 249, 270, and 274 (March 2020). 
+
+SEC  (2023).  Ofce  of  the  advocate  for  small  business  capital  formation  annual  report  fscal  year  2023. 
+Technical report, Securities and Exchange Commission Ofce of the Advocate for Small Business Capital 
+Formation. 
+
+Shleifer,  A.  and  D.  Wolfenzon  (2002).  Investor  protection  and  equity  markets.  Journal  of  Financial 
+
+Economics 66(1), 3–27. 
+
+Spence, M. (1973).  Job market signaling.  Quarterly Journal of Economics 87, 354–374. 
+Stigler, G. J. (1964).  Public regulation of the securities markets.  The Journal of Business 37(2), 117–142. 
+Turbine, G. (2023). Is reg d-506(c) still the gold standard in equity crowdfunding in 2024?  Technical report, 
+
+Growth Turbine. 
+
+Wang,  S.  Q.,  P.  A.  Gompers,  K.  K.  Huang,  and  W.  Levinson  (2023).  Diversity  in  venture  capital.  The 
+
+Palgrave Encyclopedia of Private Equity. 
+
+Woodward, S. E. and R. E. Hall (2004).  Benchmarking the returns to venture. 
+Xu, T. (2019). Learning from the crowd:  The feedback value of crowdfunding. Available at SSRN 2637699. 
+Zeidel, M. (2016).  The jobs act:  Did it accomplish its goals? 
+Zingales, L. (2009).  The future of securities regulation.  Journal of Accounting Research 47(2), 391–425. 
+
+45 
+
+Appendix Figures and Tables 
+
+Figure A.1:  Count and 506(c) Share of all Regulation D and Pitchbook Funds Identifed as VC 
+
+(a) Count of VC Funds by Type 
+
+(b) Share of 506(c) 
+
+Note:  These fgures use data from all Form D flings and Pitchbook Funds, rather than only those that match between 
+the two datasets (which is the sample used in the main text).  Panel A shows the count of VC funds in Form D using 
+506(b) and 506(c) by year, as well as the number of Pitchbook VC funds of that vintage.  Panel B shows the share of 
+506(c) funds in Form D data in terms of count relative to the total number of funds (not restricted to the Pitchbook 
+match). 
+
+46 
+
+Figure A.2:  Share of 506(c) Among Non-Investment Companies 
+
+Note:  This fgure shows the share of 506(c) among non-investment companies in overall Form D flings and among 
+those companies we can match to companies in Pitchbook.  From raw flings,  we perform basic cleaning to isolate 
+companies by removing any flings with an investment fund type listed, as well as flings where the entity name contains 
+terms related to investments. 
+
+47 
+
+Figure A.3:  Geographic Distribution of Portfolio Companies 
+
+4
+8
+
+Note:  This fgure shows the geographic distribution of portfolio companies in the whole analysis sample (which includes 2014-2023).  We aggregate company 
+location to the county level.  The color represents the 506(c) share of these investments and the size indicates number of companies. 
+
+ 
+Figure A.4:  Levels Compared to Population Benchmarks, 506(c) Only 
+
+Note:  This  fgure  shows  the  share  of  fund  managers  of  each  type  within  506(c)  flings  in  each  year,  with  the 
+vertical  dashed  line  representing  506(c)  implementation.  The  horizontal  lines  represent  a  relevant  benchmark  for 
+potential supply.  The benchmarks (described in more detail in Section 8) are the shares of:  university graduates for 
+Black/Hispanic and Female, non-elite graduates relative to total graduates, the share of non-top 10 city new frms, and 
+the share of VC-backed founders who are are female or Black/Hispanic. 
+
+49 
+
+Figure A.5:  506(b) Fund Manager Reasons for not using 506(c) Across Demographics 
+
+(a) Male vs.  Female 
+
+(b) White vs.  Black/Hispanic 
+
+Note:  These fgures shows the responses of page 2, question 3 of the fund manager survey.  The responses show how 
+often fund managers reference various reasons for avoiding using 506(c) split by the characteristics of their fund.  For 
+Panel A, Male   = 45, Female   = 28. For Panel B, White   = 62, Black/Hispanic   = 11. For Panel C, Elite School 
+  = 34, Non-Elite School   = 39. 
+
+50 
+
+Figure A.6:  Investor Verifcation Burden for 506(c) (Lawyer Responses) 
+
+(a) Amount of Legal Work Required for 506(c) 
+
+(b) Reason for More Legal Work for 506(c) 
+
+Note:  This fgure employs data from the lawyer survey about the amount of legal work (i.e.  billable hours) required 
+to verify that investors are accredited.  Lawyers were frst asked if 506(c) required more work.  If they said it did, then 
+they were asked why. 
+
+51 
+
+Table A.1:  Hub City and Industry 
+
+Rank  City 
+
+Industry 
+
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+
+Commercial Services 
+Pharmaceuticals and Biotechnology 
+
+Healthcare Technology Systems 
+
+San Francisco, CA  Software 
+New York, NY 
+Boston, MA 
+Los Angeles, CA  Media 
+Chicago, IL 
+Austin, TX 
+Denver, CO 
+Seattle, WA 
+Washington, DC 
+Atlanta, GA 
+
+Note:  This table shows the list of fund hub cities and portfolio company top industries used in the main body tables. 
+
+Table A.2:  Fundraising Volume of 506(b) and 506(c), All Filings, 2014-2023 
+
+506(b) 
+11314 
+Count of Filings 
+619.154  38.728 
+Ofering Amount (Bill $) 
+Amount Sold, Initial (Bill $) 
+277.600  17.545 
+Amount Sold, with Amendments (Bill $)  397.685  49.075 
+
+923 
+
+0.075 
+0.059 
+0.059 
+0.110 
+
+506(c)  506(c) Share 
+
+Note:  This table shows total fling counts and measures of total fundraising volume in the period 2014 to 2023 across 
+506(b) and 506(c) based on all Form D flings (removed of flings deemed erroneous as shown in Table 1).  All dollar 
+volumes are in terms of 2017 US Dollars. 
+
+52 
+
+Table A.4:  Comparison of Black/Hispanic vs White Funds 
+
+Fund 
+Mean Fund Size (Mill $) 
+Median Fund Size (Mill $) 
+Non-Top 10 City Fund 
+Non-Top 3 City Fund 
+First Fund of VC Firm 
+Commission & Broker 
+DEI Target 
+ESG Target 
+Mean Number Prior Funds 
+Mean Number Prior Large Exits 
+Fund LP 
+Number of LPs 
+Non-Pension Share 
+Individual Share 
+Fund Return 
+Mean IRR 
+Mean TVPI 
+Fund Manager 
+Female Share 
+Black/Hispanic Share 
+Black Share (Picture) 
+Hispanic Share (Name) 
+Elite School Share 
+First Time Share 
+Finance Experience Share 
+Portfolio Company 
+Non-Top 5 Industry Share 
+Same City as Fund Share 
+Same State as Fund Share 
+Company Filed 506(c) Share 
+Portfolio Company Leadership 
+Has First Time CEO Share 
+Has Female CEO Share 
+Has Elite School CEO Share 
+
+White  Black/Hispanic  Black/Hispanic - White 
+157.426 
+29.697 
+0.311 
+0.498 
+0.280 
+0.015 
+0.020 
+0.020 
+5.694 
+7.310 
+
+-69.093∗ 
+-21.038∗∗∗ 
+-0 
+0.040 
+0.149∗∗∗ 
+-0.015∗∗∗ 
+0.089∗∗∗ 
+-0.012 
+-3.484∗∗∗ 
+-6.478∗∗∗ 
+
+88.333 
+8.659 
+0.311 
+0.538 
+0.429 
+0.000 
+0.109 
+0.008 
+2.210 
+0.832 
+
+3.832 
+0.691 
+0.093 
+
+18.771 
+1.829 
+
+0.144 
+0.033 
+0.007 
+0.026 
+0.468 
+0.391 
+0.198 
+
+0.351 
+0.132 
+0.356 
+0.011 
+
+0.828 
+0.144 
+0.313 
+
+3.676 
+0.983 
+0.156 
+
+14.543 
+2.134 
+
+0.229 
+0.964 
+0.342 
+0.637 
+0.429 
+0.613 
+0.192 
+
+0.426 
+0.099 
+0.328 
+0.016 
+
+0.863 
+0.219 
+0.322 
+
+-0.157 
+0.292∗∗∗ 
+0.063 
+
+-4.228 
+0.305 
+
+0.085∗∗ 
+0.931∗∗∗ 
+0.335∗∗∗ 
+0.610∗∗∗ 
+-0.039 
+0.222∗∗∗ 
+-0.005 
+
+0.075∗∗ 
+-0.033∗∗ 
+-0.028 
+0.005 
+
+0.035∗ 
+0.075∗∗∗ 
+0.009 
+
+N 
+4001 
+4001 
+4156 
+4156 
+4156 
+4156 
+4156 
+4156 
+4156 
+4156 
+
+1654 
+1654 
+1654 
+
+707 
+730 
+
+4155 
+4156 
+4155 
+4155 
+3987 
+4156 
+4155 
+
+3953 
+3954 
+3954 
+3921 
+
+3893 
+3893 
+3764 
+
+Note:  This table compares various characteristics across Black/Hispanic and white led funds.  Black/Hispanic is an 
+indicator for whether the fund had a majority of Black or Hispanic managers involved with the fund at the time of 
+fling.  Fund size is in terms of 2017 US Dollars.  The third column uses robust standard errors in conducting a t-test 
+of the sample mean diferences between 506(b) and 506(c), except for comparing the medians, which uses a quantile 
+regression.  The last column shows the observation count for each variable.  * indicates statistical signifcance at the 
+10% level, ** at the 5% level, and *** at the 1% level. 
+
+53 
+
+Table A.3:  Comparison of Female vs Male Funds 
+
+Fund 
+Mean Fund Size (Mill $) 
+Median Fund Size (Mill $) 
+Non-Top 10 City Fund 
+Non-Top 3 City Fund 
+First Fund of VC Firm 
+Commission & Broker 
+DEI Target 
+ESG Target 
+Mean Number Prior Funds 
+Mean Number Prior Large Exits 
+Fund LP 
+Number of LPs 
+Non-Pension Share 
+Individual Share 
+Fund Return 
+Mean IRR 
+Mean TVPI 
+Fund Manager 
+Female Share 
+Black/Hispanic Share 
+Black Share (Picture) 
+Hispanic Share (Name) 
+Elite School Share 
+First Time Share 
+Finance Experience Share 
+Portfolio Company 
+Non-Top 5 Industry Share 
+Same City as Fund Share 
+Same State as Fund Share 
+Company Filed 506(c) Share 
+Portfolio Company Leadership 
+Has First Time CEO Share 
+Has Female CEO Share 
+Has Elite School CEO Share 
+
+Male 
+
+Female  Female - Male 
+
+159.970  100.344 
+8.659 
+29.697 
+0.272 
+0.314 
+0.473 
+0.501 
+0.431 
+0.272 
+0.010 
+0.015 
+0.163 
+0.011 
+0.032 
+0.019 
+3.843 
+5.738 
+3.355 
+7.434 
+
+3.873 
+0.688 
+0.090 
+
+3.338 
+0.802 
+0.149 
+
+18.828 
+1.844 
+
+16.757 
+1.638 
+
+0.083 
+0.056 
+0.015 
+0.041 
+0.463 
+0.388 
+0.199 
+
+0.349 
+0.131 
+0.357 
+0.011 
+
+0.827 
+0.130 
+0.312 
+
+0.928 
+0.112 
+0.044 
+0.069 
+0.518 
+0.501 
+0.177 
+
+0.407 
+0.138 
+0.332 
+0.009 
+
+0.857 
+0.343 
+0.324 
+
+-59.625∗∗∗ 
+-21.038∗∗∗ 
+-0.043 
+-0.028 
+0.159∗∗∗ 
+-0.005 
+0.152∗∗∗ 
+0.013 
+-1.894∗ 
+-4.079∗∗∗ 
+
+-0.535∗ 
+0.115∗∗∗ 
+0.059∗∗ 
+
+-2.071 
+-0.205 
+
+0.845∗∗∗ 
+0.057∗∗∗ 
+0.029∗∗∗ 
+0.028∗∗ 
+0.056∗∗ 
+0.113∗∗∗ 
+-0.022 
+
+0.058∗∗∗ 
+0.007 
+-0.025 
+-0.003 
+
+0.030∗∗∗ 
+0.213∗∗∗ 
+0.012 
+
+N 
+4000 
+4000 
+4155 
+4155 
+4155 
+4155 
+4155 
+4155 
+4155 
+4155 
+
+1654 
+1654 
+1654 
+
+707 
+730 
+
+4155 
+4155 
+4155 
+4155 
+3987 
+4155 
+4155 
+
+3953 
+3954 
+3954 
+3921 
+
+3893 
+3893 
+3764 
+
+Note: This table compares various characteristics across female and male led funds. Female is an indicator for whether 
+the fund had a majority of female managers at the time of fling.  Fund size is in terms of 2017 US Dollars.  The third 
+column uses robust standard errors in conducting a t-test of the sample mean diferences between 506(b) and 506(c), 
+except for comparing the medians, which uses a quantile regression.  The last column shows the observation count for 
+each variable.  * indicates statistical signifcance at the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+54 
+
+Table A.5:  Comparison of Elite School vs Non-Elite School Funds 
+
+Fund 
+Mean Fund Size (Mill $) 
+Median Fund Size (Mill $) 
+Non-Top 10 City Fund 
+Non-Top 3 City Fund 
+First Fund of VC Firm 
+Commission & Broker 
+DEI Target 
+ESG Target 
+Mean Number Prior Funds 
+Mean Number Prior Large Exits 
+Fund LP 
+Number of LPs 
+Non-Pension Share 
+Individual Share 
+Fund Return 
+Mean IRR 
+Mean TVPI 
+Fund Manager 
+Female Share 
+Black/Hispanic Share 
+Black Share (Picture) 
+Hispanic Share (Name) 
+Elite School Share 
+First Time Share 
+Finance Experience Share 
+Portfolio Company 
+Non-Top 5 Industry Share 
+Same City as Fund Share 
+Same State as Fund Share 
+Company Filed 506(c) Share 
+Portfolio Company Leadership 
+Has First Time CEO Share 
+Has Female CEO Share 
+Has Elite School CEO Share 
+
+Non-Elite 
+123.034 
+29.697 
+0.364 
+0.563 
+0.302 
+0.013 
+0.025 
+0.022 
+4.647 
+4.247 
+
+Elite 
+213.709 
+8.659 
+0.228 
+0.400 
+0.227 
+0.018 
+0.014 
+0.017 
+7.357 
+11.890 
+
+Elite - Non-Elite 
+90.675∗∗∗ 
+-21.038∗∗∗ 
+-0.136∗∗∗ 
+-0.163∗∗∗ 
+-0.075∗∗∗ 
+0.005 
+-0.011∗∗ 
+-0.005 
+2.710∗∗∗ 
+7.643∗∗∗ 
+
+3.398 
+0.742 
+0.105 
+
+4.389 
+0.643 
+0.075 
+
+19.584 
+1.832 
+
+17.580 
+1.840 
+
+0.138 
+0.059 
+0.018 
+0.042 
+0.191 
+0.426 
+0.197 
+
+0.359 
+0.135 
+0.351 
+0.012 
+
+0.827 
+0.142 
+0.279 
+
+0.154 
+0.060 
+0.016 
+0.044 
+0.881 
+0.319 
+0.210 
+
+0.337 
+0.124 
+0.361 
+0.009 
+
+0.830 
+0.144 
+0.363 
+
+0.991∗∗∗ 
+-0.099∗∗∗ 
+-0.030∗∗ 
+
+-2.004 
+0.008 
+
+0.016∗ 
+0.001 
+-0.002 
+0.001 
+0.690∗∗∗ 
+-0.107∗∗∗ 
+0.013 
+
+-0.022∗∗∗ 
+-0.011∗ 
+0.010 
+-0.003∗ 
+
+0.003 
+0.003 
+0.084∗∗∗ 
+
+N 
+3843 
+3843 
+3987 
+3987 
+3987 
+3987 
+3987 
+3987 
+3987 
+3987 
+
+1623 
+1623 
+1623 
+
+702 
+725 
+
+3987 
+3987 
+3987 
+3987 
+3987 
+3987 
+3987 
+
+3805 
+3806 
+3806 
+3775 
+
+3749 
+3749 
+3636 
+
+Note:  This table compares various characteristics across elite school and non-elite school led funds.  Elite School is 
+an indicator for whether the fund had a majority of elite school educated managers (as defned in the main text) at the 
+time of fling.  Fund size is in terms of 2017 US Dollars.  The third column uses robust standard errors in conducting 
+a t-test of the sample mean diferences between 506(b) and 506(c), except for comparing the medians, which uses a 
+quantile regression.  The last column shows the observation count for each variable.  * indicates statistical signifcance 
+at the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+55 
+
+Table A.6:  Comparison of First Time vs Non-First Time Funds 
+
+Fund 
+Mean Fund Size (Mill $) 
+Median Fund Size (Mill $) 
+Non-Top 10 City Fund 
+Non-Top 3 City Fund 
+First Fund of VC Firm 
+Commission & Broker 
+DEI Target 
+ESG Target 
+Mean Number Prior Funds 
+Mean Number Prior Large Exits 
+Fund LP 
+Number of LPs 
+Non-Pension Share 
+Individual Share 
+Fund Return 
+Mean IRR 
+Mean TVPI 
+Fund Manager 
+Female Share 
+Black/Hispanic Share 
+Black Share (Picture) 
+Hispanic Share (Name) 
+Elite School Share 
+First Time Share 
+Finance Experience Share 
+Portfolio Company 
+Non-Top 5 Industry Share 
+Same City as Fund Share 
+Same State as Fund Share 
+Company Filed 506(c) Share 
+Portfolio Company Leadership 
+Has First Time CEO Share 
+Has Female CEO Share 
+Has Elite School CEO Share 
+
+Non-FT 
+198.686 
+29.697 
+0.284 
+0.467 
+0.080 
+0.019 
+0.014 
+0.016 
+7.792 
+10.674 
+
+FT 
+71.101 
+8.659 
+0.364 
+0.561 
+0.679 
+0.005 
+0.039 
+0.028 
+1.340 
+0.256 
+
+FT - Non-FT 
+-127.585∗∗∗ 
+-21.038∗∗∗ 
+0.080∗∗∗ 
+0.094∗∗∗ 
+0.598∗∗∗ 
+-0.014∗∗∗ 
+0.025∗∗∗ 
+0.012∗∗ 
+-6.452∗∗∗ 
+-10.418∗∗∗ 
+
+4.130 
+0.649 
+0.071 
+
+2.857 
+0.854 
+0.173 
+
+-1.273∗∗∗ 
+0.206∗∗∗ 
+0.103∗∗∗ 
+
+16.180 
+1.739 
+
+29.431 
+2.254 
+
+13.251∗∗∗ 
+0.515∗∗∗ 
+
+0.135 
+0.048 
+0.011 
+0.038 
+0.502 
+0.114 
+0.215 
+
+0.332 
+0.128 
+0.359 
+0.010 
+
+0.823 
+0.133 
+0.321 
+
+0.167 
+0.083 
+0.029 
+0.055 
+0.392 
+0.945 
+0.163 
+
+0.395 
+0.137 
+0.346 
+0.014 
+
+0.841 
+0.171 
+0.297 
+
+0.032∗∗∗ 
+0.035∗∗∗ 
+0.019∗∗∗ 
+0.018∗∗∗ 
+-0.110∗∗∗ 
+0.830∗∗∗ 
+-0.052∗∗∗ 
+
+0.064∗∗∗ 
+0.009 
+-0.013 
+0.004∗∗ 
+
+0.018∗∗∗ 
+0.037∗∗∗ 
+-0.024∗∗∗ 
+
+N 
+4001 
+4001 
+4156 
+4156 
+4156 
+4156 
+4156 
+4156 
+4156 
+4156 
+
+1654 
+1654 
+1654 
+
+707 
+730 
+
+4155 
+4156 
+4155 
+4155 
+3987 
+4156 
+4155 
+
+3953 
+3954 
+3954 
+3921 
+
+3893 
+3893 
+3764 
+
+Note:  This table compares various characteristics across frst time and non-frst time led funds.  First time (FT) is an 
+indicator for whether the fund had a majority of frst time fund managers (with no prior funds) at the time of fling. Fund 
+size is in terms of 2017 US Dollars.  The third column uses robust standard errors in conducting a t-test of the sample 
+mean diferences between 506(b) and 506(c), except for comparing the medians, which uses a quantile regression.  The 
+last column shows the observation count for each variable.  * indicates statistical signifcance at the 10% level, ** at 
+the 5% level, and *** at the 1% level. 
+
+56 
+
+Table A.7:  Top 10 Portfolio Companies and Industries By Exemption Type 
+
+506(b) 
+
+506(c) 
+
+Rank  City 
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+... 
+
+San Francisco 
+New York 
+Los Angeles 
+Boston 
+Austin 
+Seattle 
+Chicago 
+Denver 
+San Diego 
+San Jose 
+Other 
+
+Percent 
+26.7 
+14.2 
+6.2 
+4.2 
+2.8 
+2.2 
+2.1 
+1.9 
+1.4 
+1.4 
+46.9 
+
+Industry 
+Software 
+Comm.  Services 
+Other Fin.  Serv. 
+Biotech 
+Health Serv. 
+Media 
+Non-Fin.  Serv. 
+Health Tech. 
+Cons.  Non-Durab. 
+Health Devices 
+Other 
+
+Percent  City 
+37.5 
+16.2 
+6.1 
+6.0 
+3.6 
+3.5 
+3.3 
+3.2 
+3.1 
+2.3 
+15.3 
+
+San Francisco 
+New York 
+Los Angeles 
+Boston 
+Chicago 
+Austin 
+Seattle 
+Denver 
+San Jose 
+Washington 
+Other 
+
+Percent 
+24.4 
+14.0 
+6.9 
+3.6 
+2.5 
+2.4 
+2.2 
+1.7 
+1.4 
+1.4 
+39.6 
+
+Industry 
+Software 
+Comm.  Serv. 
+Other Fin.  Serv. 
+Media 
+Biotech 
+Non-Fin.  Serv. 
+Health Serv. 
+Cons.  Non-Durab. 
+Health Tech. 
+Health Devices 
+Other 
+
+Percent 
+36.5 
+15.1 
+6.9 
+4.0 
+3.6 
+3.5 
+3.4 
+3.0 
+3.0 
+3.0 
+18.1 
+
+Note:  This table shows the top 10 cities and industries in which VC-invested portfolio companies are located for each 
+exemption type between 2014-2023.  The last row represents the remaining locations and industries outside the top 10. 
+
+57 
+
+Table A.8:  506(b) vs 506(c):  Fund Manager Characteristics, Excluding Angel Funds 
+
+Panel A. Share of Fund Team 
+
+Share of Fund Team 
+
+Dependent Variable:  Female  Black/Hispanic 
+
+Black  Hispanic  Elite School  First Time 
+
+(1) 
+
+(2) 
+
+(3) 
+
+(4) 
+
+(5) 
+
+(6) 
+
+1(506(c)) 
+
+0.057∗ 
+(0.031) 
+
+0.058∗∗∗ 
+(0.018) 
+
+0.034∗∗∗ 
+(0.005) 
+
+0.029 
+(0.018) 
+
+-0.038∗ 
+(0.023) 
+
+0.108∗∗∗ 
+(0.040) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+Yes 
+4042 
+0.065 
+0.146 
+
+Yes 
+4043 
+0.068 
+0.061 
+
+Yes 
+4042 
+0.074 
+0.017 
+
+Yes 
+4042 
+0.058 
+0.044 
+
+Yes 
+3874 
+0.121 
+0.472 
+
+Yes 
+4043 
+0.098 
+0.396 
+
+Panel B. Indicator for Majority of Fund Team 
+
+Majority of Fund Team 
+
+Dependent Variable:  Female 
+
+(1) 
+
+Black/Hispanic 
+(2) 
+
+Black 
+(3) 
+
+Hispanic 
+(4) 
+
+Elite School 
+(5) 
+
+First Time 
+(6) 
+
+1(506(c)) 
+
+0.052∗∗ 
+(0.022) 
+
+0.048∗∗∗ 
+(0.014) 
+
+0.031∗∗∗ 
+(0.005) 
+
+0.021∗ 
+(0.012) 
+
+-0.022 
+(0.029) 
+
+0.107∗∗ 
+(0.050) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+Yes 
+4042 
+0.066 
+0.075 
+
+Yes 
+4043 
+0.061 
+0.029 
+
+Yes 
+4042 
+0.069 
+0.010 
+
+Yes 
+4042 
+0.050 
+0.019 
+
+Yes 
+3874 
+0.102 
+0.406 
+
+Yes 
+4043 
+0.094 
+0.340 
+
+Note:  This table compares fund variables concerning manager characteristics in a regression context excluding angel 
+funds.  Panel A regresses the share of fund managers in levels against an indicator for if the fling used 506(c).  Panel 
+B regresses an indicator for if the given group represents at least half of the fund team for a given fling against the 
+same indicator.  Standard errors are clustered at the state level and are reported in parentheses.  * indicates statistical 
+signifcance at the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+58 
+
+Table A.9:  506(b) vs 506(c):  Fund Characteristics with Size Controls 
+
+Dependent Variable:  Non-Top 10 City 
+
+1(506(c)) 
+
+Mean Log Fund Size 
+
+Year FE 
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+(1) 
+
+0.103∗∗∗ 
+(0.021) 
+-0.042∗∗∗ 
+(0.004) 
+
+Yes 
+No 
+7530 
+0.045 
+0.324 
+
+Panel A. Fund Characteristics 
+
+Fund Indicator 
+
+% LPs 
+
+Non-Top 3 City 
+(2) 
+
+Firm’s First 
+(3) 
+
+Commission & Broker 
+(4) 
+
+DEI Target 
+(5) 
+
+ESG Target 
+(6) 
+
+Non-Pension 
+(7) 
+
+Individual 
+(8) 
+
+0.088∗∗∗ 
+(0.025) 
+-0.055∗∗∗ 
+(0.004) 
+
+Yes 
+No 
+7530 
+0.059 
+0.517 
+
+0.064∗∗∗ 
+(0.022) 
+-0.035∗∗∗ 
+(0.005) 
+
+No 
+Yes 
+7445 
+0.086 
+0.257 
+
+0.057∗ 
+(0.034) 
+-0.000 
+(0.001) 
+
+No 
+Yes 
+7445 
+0.412 
+0.015 
+
+0.021∗∗∗ 
+(0.007) 
+-0.001 
+(0.001) 
+
+No 
+Yes 
+7445 
+0.067 
+0.016 
+
+0.029∗∗∗ 
+(0.006) 
+0.002∗∗∗ 
+(0.001) 
+
+No 
+Yes 
+7445 
+0.051 
+0.015 
+
+0.083∗∗ 
+(0.034) 
+-0.075∗∗∗ 
+(0.010) 
+
+0.079∗∗ 
+(0.033) 
+-0.040∗∗∗ 
+(0.004) 
+
+No 
+Yes 
+2119 
+0.189 
+0.670 
+
+No 
+Yes 
+2119 
+0.148 
+0.094 
+
+5
+9
+
+Panel B. Fund Return Characteristics 
+
+Continuous 
+
+Above 75th Percentile 
+
+Dependent Variable: 
+
+IRR 
+(1) 
+
+TVPI 
+(2) 
+
+IRR 
+(3) 
+
+TVPI 
+(4) 
+
+1(506(c)) 
+
+Mean Log Fund Size 
+
+9.258 
+(5.552) 
+-2.602∗∗∗ 
+(0.564) 
+
+0.256∗ 
+(0.144) 
+-0.064∗∗ 
+(0.026) 
+
+0.248∗∗∗ 
+(0.043) 
+-0.041∗∗∗ 
+(0.013) 
+
+0.237∗∗∗ 
+(0.061) 
+-0.032 
+(0.019) 
+
+Year FE 
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+No 
+Yes 
+803 
+0.285 
+16.715 
+
+No 
+Yes 
+868 
+0.316 
+1.727 
+
+No 
+Yes 
+803 
+0.152 
+0.238 
+
+No 
+Yes 
+868 
+0.128 
+0.242 
+
+Note:  This table compares fund characteristics across 506(b) and 506(c) in a regression context controlling for fund size.  Fund size is in terms of 2017 US 
+Dollars.  Standard errors are clustered at the state level and are reported in parentheses.  * indicates statistical signifcance at the 10% level, ** at the 5% level, 
+and *** at the 1% level. 
+
+ 
+Table A.10:  506(b) vs 506(c):  Fund Manager Characteristics, Individual Fund Manager Specifcation 
+
+Panel A. Individual Indicator 
+
+Individual Indicator 
+
+Dependent Variable:  Female  Black/Hispanic  Black  Hispanic  Elite School  First Time 
+
+(1) 
+
+(2) 
+
+(3) 
+
+(4) 
+
+(5) 
+
+(6) 
+
+1(506(c)) 
+
+0.036 
+(0.025) 
+
+0.035∗∗ 
+(0.014) 
+
+0.005∗∗ 
+(0.002) 
+
+0.031∗ 
+(0.016) 
+
+-0.035∗∗ 
+(0.014) 
+
+0.045 
+(0.056) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+Yes 
+13829 
+0.033 
+0.148 
+
+Yes 
+13831 
+0.031 
+0.058 
+
+Yes 
+13829 
+0.034 
+0.014 
+
+Yes 
+13829 
+0.027 
+0.044 
+
+Yes 
+12696 
+0.074 
+0.491 
+
+Yes 
+13831 
+0.076 
+0.355 
+
+Panel B. Individual Indicator with Elite School 
+
+Individual Indicator + Elite School 
+
+Dependent Variable:  Female  Black/Hispanic  Black  Hispanic  First Time 
+(2) 
+
+(3) 
+
+(4) 
+
+(5) 
+
+(1) 
+
+1(506(c)) 
+
+0.038∗∗ 
+(0.015) 
+
+0.017∗∗∗ 
+(0.006) 
+
+-0.001 
+(0.004) 
+
+0.018∗∗ 
+(0.008) 
+
+-0.009 
+(0.020) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+Yes 
+12696 
+0.026 
+0.079 
+
+Yes 
+12696 
+0.019 
+0.030 
+
+Yes 
+12696 
+0.023 
+0.008 
+
+Yes 
+12696 
+0.016 
+0.023 
+
+Yes 
+12696 
+0.041 
+0.135 
+
+Note:  This table compares fund variables concerning manager characteristics in a regression context without sum-
+marizing to the fund level.  Panel A regresses the an indicator for if a given manager is of the given group against 
+an indicator for if the fling used 506(c).  Panel B interacts the dependent variable with if the manager attended an 
+elite college.  Standard errors are clustered at the state level and are reported in parentheses.  * indicates statistical 
+signifcance at the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+60 
+
+Table A.11:  Correlation between Network and Underrepresentation Measures 
+
+Dependent Variable: 
+
+# LinkedIn Connections 
+
+(1) 
+
+(2) 
+
+(3) 
+
+(4) 
+
+(5) 
+
+Female Share 
+
+Black/Hispanic Share 
+
+-73.465∗∗ 
+(37.081) 
+
+Elite School Share 
+
+First Time Share 
+
+1(Non-Hub Fund) 
+
+-58.587∗∗ 
+(23.638) 
+
+147.924∗∗∗ 
+(31.628) 
+
+-301.933∗∗∗ 
+(28.832) 
+
+0.885 
+(47.914) 
+
+N 
+Outcome Mean 
+
+577 
+275.25 
+
+577 
+275.25 
+
+530 
+287.79 
+
+577 
+275.25 
+
+577 
+275.25 
+
+Note:  This  table  shows  the  correlations  between  fund  manager  demographics  and  network  on  LinkedIn  measured 
+by number of connections.  The dependent variable is the average number of LinkedIn connections among the fund 
+managers.  We use a right-censored Tobit model since the LinkedIn connection count is censored at 500 due to privacy 
+restrictions. Because our LinkedIn connection data is as of late 2023, we restrict to recently launched funds to minimize 
+measurement errors; specifcally, we focus on funds launched in 2022-2023. Standard errors are reported in parentheses 
+and are clustered by fund state.  * indicates statistical signifcance at the 10% level, ** at the 5% level, and *** at the 
+1% level. 
+
+Table A.12:  Female Share within Form D VC Filings 
+
+Executive Ofcer  Director  Promoter 
+
+1(506(b)) 
+1(506(c)) 
+
+0.117 
+0.071 
+21576 
+
+0.125 
+0.092 
+12232 
+
+0.128 
+0.146 
+4265 
+
+Note:  This table shows the share of women among associated persons of Form D flings for both 506(b) and 506(c). 
+Each person is identifed as female by a frst name matching. 
+
+61 
+
+ 
+Table A.13:  Fund Returns by Manager Characteristics 
+
+Dependent Variable: 
+
+IRR 
+
+TVPI 
+
+(1) 
+
+(2) 
+
+(3) 
+
+(4) 
+
+(5) 
+
+(6) 
+
+(7) 
+
+(8) 
+
+1(Majority Female) 
+
+3.496 
+(3.228) 
+
+1(Majority Black/Hispanic) 
+
+-6.515 
+(3.950) 
+
+1(Majority Non-Elite School) 
+
+1(Majority First Time) 
+
+-0.095 
+(0.153) 
+
+0.639∗ 
+(0.330) 
+
+-1.511 
+(1.221) 
+
+9.124∗∗∗ 
+(1.427) 
+
+-0.040 
+(0.117) 
+
+0.334∗∗∗ 
+(0.101) 
+
+6
+2
+
+Log Fund Size 
+
+-3.373∗∗∗ 
+(0.381) 
+
+-3.440∗∗∗ 
+(0.384) 
+
+-3.179∗∗∗ 
+(0.359) 
+
+-2.522∗∗∗ 
+(0.393) 
+
+-0.089∗∗ 
+(0.032) 
+
+-0.082∗∗ 
+(0.032) 
+
+-0.088∗∗ 
+(0.032) 
+
+-0.061∗ 
+(0.029) 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+Yes 
+630 
+0.275 
+19.170 
+
+Yes 
+630 
+0.275 
+19.170 
+
+Yes 
+625 
+0.272 
+19.064 
+
+Yes 
+630 
+0.290 
+19.170 
+
+Yes 
+652 
+0.256 
+1.845 
+
+Yes 
+652 
+0.259 
+1.845 
+
+Yes 
+647 
+0.255 
+1.849 
+
+Yes 
+652 
+0.264 
+1.845 
+
+Note:  This table compares the fund returns (IRR and TVPI listed by Pitchbook) by whether a fund has a majority of their management team led by each group. 
+Standard errors are clustered at the state level and are reported in parentheses.  Fund size is in terms of 2017 US Dollars.  * indicates statistical signifcance at 
+the 10% level, ** at the 5% level, and *** at the 1% level. 
+
+ 
+Table A.14:  Survey Respondent GPs and Law Firms Compared to Population 
+
+Panel A: VC Firms 
+
+Variable 
+
+Population  Respondents 
+
+Fund Size (MM) 
+Pct Female Fund Managers 
+Pct Minority Fund Managers 
+Pct Elite University Fund Managers 
+
+122.19 
+0.12 
+0.07 
+0.32 
+
+57.95 
+0.12 
+0.03 
+0.47 
+
+Panel B: Law Firms 
+
+Population 
+
+Respondents 
+
+Rank  Firm 
+
+Count  Firm 
+
+Count 
+
+1 
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+
+DLA Piper 
+Kirkland & Ellis 
+Goodwin Procter 
+Latham & Watkins 
+Sidley Austin 
+King & Spalding 
+Gottlieb Steen & Hamilton 
+Cooley 
+Ropes & Gray 
+Hogan Lovells 
+
+287  Cooley 
+Latham & Watkins 
+281 
+250  Gunderson Dettmer 
+249  DLA Piper 
+183 
+168 
+157 
+156  Goodwin Procter 
+144  K&L Gates 
+123  Kirkland & Ellis 
+
+Perkins Coie 
+Sidley Austin 
+Foley&Lardner 
+
+9 
+5 
+4 
+3 
+3 
+3 
+2 
+2 
+2 
+2 
+
+Note:  This table compares the makeup of survey respondents to the overall population in Pitchbook.  Panel A shows 
+characteristics of the population of VC Firms and respondent VC Firms.  Panel B shows the top 10 names of law frms 
+in the population and among the respondents. 
+
+63 
+
+Table A.15:  Number of LPs by Groups 
+
+Dependent Variable: 
+
+Number of LPs 
+
+(1) 
+
+(2) 
+
+(3) 
+
+(4) 
+
+1(Majority Female) 
+
+0.919∗∗∗ 
+(0.229) 
+
+1(Majority Black/Hispanic) 
+
+1(Majority Non-Elite School) 
+
+1(Majority First Time) 
+
+2.122∗∗∗ 
+(0.293) 
+
+0.400∗∗ 
+(0.175) 
+
+0.103 
+(0.241) 
+
+Log Fund Size 
+
+State × Year FE 
+N 
+2 
+Outcome Mean 
+
+1.297∗∗∗  1.299∗∗∗  1.291∗∗∗  1.271∗∗∗ 
+(0.144) 
+(0.153) 
+
+(0.149) 
+
+(0.150) 
+
+Yes 
+1537 
+0.278 
+3.893 
+
+Yes 
+1537 
+0.280 
+3.893 
+
+Yes 
+1508 
+0.281 
+3.922 
+
+Yes 
+1537 
+0.275 
+3.893 
+
+Note: This table compares the number of LPs listed by Pitchbook by whether a fund has a majority of their management 
+team led by each group.  Standard errors are clustered at the state level and are reported in parentheses.  Fund size is in 
+terms of 2017 US Dollars.  * indicates statistical signifcance at the 10% level, ** at the 5% level, and *** at the 1% 
+level. 
+
+64 
+
+A  Appendix:  Regulations and Institutional Details 
+
+A.1  Complete Rule 506 Text 
+
+Below,  we  copy  the  entire  Rule  506  from  the  Code  of  Federal  Regulations.41  We  omit  the  “bad  actor” 
+
+disqualifcation material at the end,  which essentially bars an issuer or another relevant person that have 
+
+experienced a disqualifying event, such as a conviction, from relying on the exemptions identifed in Rule 
+
+506. 
+
+§230.506 Exemption for limited ofers and sales without regard to dollar amount of ofering. 
+
+(a) Exemption.  Ofers and sales of securities by an issuer that satisfy the conditions in paragraph (b) or (c) 
+
+of this section shall be deemed to be transactions not involving any public ofering within the meaning of 
+
+section 4(a)(2) of the Act. 
+
+(b) Conditions to be met in oferings subject to limitation on manner of ofering 
+
+(1) General conditions.  To qualify for an exemption under this section, ofers and sales must satisfy all 
+
+the terms and conditions of §§230.501 and 230.502. 
+
+(2) Specifc conditions: 
+
+(i) Limitation on number of purchasers.  There are no more than, or the issuer reasonably believes that 
+
+there are no more than,  35 purchasers of securities from the issuer in oferings under this section in any 
+
+90-calendar-day period. 
+
+Note  to  paragraph  (b)(2)(i):  See  §230.501(e)  for  the  calculation  of  the  number  of  purchasers  and 
+
+§230.502(a) for what may or may not constitute an ofering under paragraph (b) of this section. 
+
+(ii) Nature of purchasers.  Each purchaser who is not an accredited investor either alone or with his 
+
+purchaser representative(s) has such knowledge and experience in fnancial and business matters that he is 
+
+capable of evaluating the merits and risks of the prospective investment, or the issuer reasonably believes 
+
+immediately prior to making any sale that such purchaser comes within this description. 
+
+(c) Conditions to be met in oferings not subject to limitation on manner of ofering 
+
+(1) General conditions.  To qualify for exemption under this section, sales must satisfy all the terms and 
+
+conditions of §§230.501 and 230.502(a) and (d). 
+
+(2) Specifc conditions: 
+
+(i) Nature of purchasers.  All purchasers of securities sold in any ofering under paragraph (c) of this 
+
+section are accredited investors. 
+
+41Available here:  https://www.ecfr.gov/current/title-17/chapter-II/part-230/subject-group-ECFR6e651a4c86c0174 
+
+65 
+
+(ii)  Verifcation  of  accredited  investor  status.  The  issuer  shall  take  reasonable  steps  to  verify  that 
+
+purchasers of securities sold in any ofering under paragraph (c) of this section are accredited investors.  The 
+
+issuer shall be deemed to take reasonable steps to verify if the issuer uses, at its option, one of the following 
+
+non-exclusive and non-mandatory methods of verifying that a natural person who purchases securities in 
+
+such ofering is an accredited investor; provided, however, that the issuer does not have knowledge that such 
+
+person is not an accredited investor: 
+
+(A) In regard to whether the purchaser is an accredited investor on the basis of income, reviewing any 
+
+Internal Revenue Service form that reports the purchaser’s income for the two most recent years (including, 
+
+but not limited to, Form W-2, Form 1099, Schedule K-1 to Form 1065, and Form 1040) and obtaining a 
+
+written representation from the purchaser that he or she has a reasonable expectation of reaching the income 
+
+level necessary to qualify as an accredited investor during the current year; 
+
+(B) In regard to whether the purchaser is an accredited investor on the basis of net worth, reviewing 
+
+one or more of the following types of documentation dated within the prior three months and obtaining a 
+
+written representation from the purchaser that all liabilities necessary to make a determination of net worth 
+
+have been disclosed: 
+
+(1) With respect to assets:  Bank statements, brokerage statements and other statements of securities 
+
+holdings, certifcates of deposit, tax assessments, and appraisal reports issued by independent third parties; 
+
+and 
+
+(2) With respect to liabilities: A consumer report from at least one of the nationwide consumer reporting 
+
+agencies; 
+
+(C) Obtaining a written confrmation from one of the following persons or entities that such person or 
+
+entity has taken reasonable steps to verify that the purchaser is an accredited investor within the prior three 
+
+months and has determined that such purchaser is an accredited investor: 
+
+(1) A registered broker-dealer; 
+
+(2) An investment adviser registered with the Securities and Exchange Commission; 
+
+(3) A licensed attorney who is in good standing under the laws of the jurisdictions in which he or she 
+
+is admitted to practice law; or 
+
+(4) A certifed public accountant who is duly registered and in good standing under the laws of the 
+
+place of his or her residence or principal ofce; 
+
+(D) In regard to any person who purchased securities in an issuer’s Rule 506(b) ofering as an accredited 
+
+investor prior to September 23, 2013 and continues to hold such securities, for the same issuer’s Rule 506(c) 
+
+ofering, obtaining a certifcation by such person at the time of sale that he or she qualifes as an accredited 
+
+investor; or 
+
+66 
+
+(E) In regard to any person that the issuer previously took reasonable steps to verify as an accredited 
+
+investor in accordance with this paragraph (c)(2)(ii), so long as the issuer is not aware of information to the 
+
+contrary, obtaining a written representation from such person at the time of sale that he or she qualifes as 
+
+an accredited investor.  A written representation under this method of verifcation will satisfy the issuer’s 
+
+obligation to verify the person’s accredited investor status for a period of fve years from the date the person 
+
+was previously verifed as an accredited investor. 
+
+Instructions to paragraph (c)(2)(ii):  of this section. 
+
+1.  The issuer is not required to use any of these methods in verifying the accredited investor status 
+
+of  natural  persons  who  are  purchasers.  These  methods  are  examples  of  the  types  of  non-exclusive  and 
+
+non-mandatory methods that satisfy the verifcation requirement in §230.506(c)(2)(ii). 
+
+2.  In  the  case  of  a  person  who  qualifes  as  an  accredited  investor  based  on  joint  income  with  that 
+
+person’s spouse, the issuer would be deemed to satisfy the verifcation requirement in §230.506(c)(2)(ii)(A) 
+
+by reviewing copies of Internal Revenue Service forms that report income for the two most recent years in 
+
+regard to, and obtaining written representations from, both the person and the spouse. 
+
+3.  In the case of a person who qualifes as an accredited investor based on joint net worth with that 
+
+person’s spouse, the issuer would be deemed to satisfy the verifcation requirement in §230.506(c)(2)(ii)(B) 
+
+by reviewing such documentation in regard to, and obtaining written representations from, both the person 
+
+and the spouse. 
+
+A.2  Private Fund Categories under the 1940 Investment Company Act 
+
+Private  Fund  Categories  Private  funds  are  not  required  to  be  registered  or  regulated  as  investment 
+
+companies under the federal securities laws.  Private funds are structured to qualify for one of the following 
+exclusions from the defnition of investment company:42 
+
+1.  Traditional 3(c)(1) funds:  Any fund not publicly ofered with fewer than 100 benefcial owners who 
+
+are all accredited investors 
+
+2.  Qualifying venture capital 3(c)(1) funds:  venture capital funds managing less than $10M with fewer 
+
+than 250 benefcial owners (fewer than 100 benefcial owners before May, 2018). 
+
+3.  3(c)(7) funds:  Any fund not publicly ofered whose investors are qualifed purchasers.  The fund is 
+
+limited to 1,999 investors to avoid SEC registration under the Securities Exchange Act of 1934.  Most 
+
+qualifed purchasers are directly solicited by the fund sponsors and thus would fall under 506(b). 
+
+A qualifed purchaser is an investor that meets certain fnancial and sophistication standards, as defned 
+
+42See https://www.sec.gov/education/capitalraising/building-blocks/private-fund for details. 
+
+67 
+
+in the Investment Company Act and its rules.  For example, an individual may be a qualifed purchaser if 
+
+the investor owns $5 million or more in investments, and an entity may qualify if it owns and invests on a 
+
+discretionary basis at least $25 million in investments.  Note that qualifed purchase is much higher bar than 
+
+accredited investors. 
+
+Defnition of venture capital funds  The 1940 Act defnes a fund as venture capital fund if it satisfes the 
+
+following criteria: 
+
+1.  Does not invest more than 20% of the fund’s committed capital in non-qualifying investments, such 
+
+as debt, secondaries, public issuances, fund-of-fund investments, or digital assets. 
+
+2.  Restricts borrowing and all other leverage to 15% of the fund size,  and repays any leveraged debts 
+
+within 120 days. 
+
+3.  Limits LP redemption rights (their ability to cash out of the fund) to “extraordinary circumstances”. 
+
+4.  Represents to investors and potential investors that it pursues a venture capital strategy. 
+
+68 
+
+B  Appendix:  Surveys 
+
+B.1  Fund Manager Survey 
+
+B.1.1  Common First Page 
+
+69 
+
+B.1.2  Remainder of Survey for 506(b)-Only Users 
+
+70 
+
+71 
+
+B.1.3  Remainder of Survey for 506(c)-Only Users 
+
+72 
+
+73 
+
+B.1.4  Remainder of Survey for both 506(b) & 506(c) Users 
+
+74 
+
+75 
+
+B.2  Lawyer Survey 
+
+76 
+
+77 
+
+78 
+
+B.3  Emails Requesting Survey Participation 
+
+1.  Email to VC Fund Managers: 
+
+79 
+
+2.  Email to Lawyers: 
+
+80 
+
+

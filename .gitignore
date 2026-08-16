@@ -1,0 +1,16 @@
+.venv/
+data/raw/
+data/interim/
+docs/*.pdf
+*.log
+logs_*.txt
+paper/*.aux
+paper/*.out
+paper/*.log
+paper/*.png
+paper/*.bbl
+paper/*.blg
+sp.html
+duo.html
+cc_page.html
+cc_sample.json

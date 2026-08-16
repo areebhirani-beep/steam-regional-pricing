@@ -1,0 +1,2223 @@
+Can Digital Distribution Defy the Law of Gravity?
+
+Han Yang*
+
+Yuta Watabe†
+
+Eugene Kanasheuski‡
+
+February 3, 2023
+
+Abstract
+
+Online delivery of digital media content is expected to nullify geographical fric-
+
+tion. However, we provide evidence that physical distances still matter for sales on
+
+digital distribution platforms. Using data from country-level game sales collected
+
+from Steam, the world’s largest computer game distribution platform, we show that
+
+consumers are less likely to buy games developed in distant countries. The effect
+
+is driven by changes in quantity, not by changes in price. Further analysis shows
+
+that information friction partially explains the tendency. By developing a model, we
+
+quantify the signiﬁcance of this effect on gains from free trade.
+
+Keywords: Digital Economics, International Trade, Gravity Equations
+
+JEL codes: F15, F23, L96
+
+*Institute of Economics, Academia Sinica, han.yang271@gmail.com.
+†Xiamen University, yutawatabe@gmail.com.
+‡Solsten, evgen.kanashevsky@gmail.com.
+
+1
+
+1
+
+Introduction
+
+Digital distribution drastically transformed the trade in digital goods. Companies such
+as Netﬂix, Spotify, and Youtube have built platforms that deliver digital content inter-
+nationally without any additional cost for consumers. The digital nature of these com-
+panies’ content distribution strategies allows them to overcome distance. For example,
+streaming Japanese anime in the US is as easy as streaming Mexican dramas in India.
+With the adoption of the internet and digitization, these services seem to embody a ﬂat
+world as depicted by Friedman (2007), where anyone can consume digital content from
+any country around the world. Nevertheless, the conventional gravity model of interna-
+tional trade implies that international sales tend to fall as trading partners become more
+distant from each other. Whether this phenomenon, which people often refer to as a law
+of gravity, holds true in digital content has yet to be discovered.
+
+We investigate whether the distance effect perishes or thrives in a purely digital
+world. Digital distribution is an extreme case of how the internet and digitization trans-
+formed the nature of trade. Studying gravity in a purely digital environment is a sig-
+niﬁcant step toward understanding the geographical barriers in international trade and
+how it is affected by digitization. If distance still matters in the pure digital world, where
+there is no physical cost of trade, the force of gravity is ubiquitous. Furthermore, by
+precluding the trade cost explanation, we will better understand the underlying mech-
+anisms of trade frictions.
+
+In this paper, we study effects of geographical distance on trade using a novel dataset
+from Steam, which is the world’s largest digital distributor of computer games. The
+platform is completely virtual, hence physical distances do not play any practical role
+in the availability and the delivery of games. We collect sales, prices, genres and the
+developer’s location for games curated by Steam. Using our data, we then perform
+gravity regressions, and ﬁnd a robust negative effect of distance on game sales. Our
+results suggest that, even in the pure digital environment, online sales of PC games on
+Steam decline as developers and consumers are further apart, indicating distance still
+matters for trade in digital world. In our speciﬁcations, the distance elasticity ranges
+between -0.1 to -0.2, which are about 10% to 20% of the conventional estimates of trade
+of physical goods in the literature Disdier and Head (2008). The results suggests that,
+even in a completely digital environment, there are enduring trade frictions.
+
+To further dissect the driving forces of gravity in digital trade, we perform various
+regressions to understand the underlying mechanism for the effect of distance on digital
+sales. Speciﬁcally, we test the cost channel and the information channel. To test the cost
+explanation, we ﬁrst decompose the effect of distance on sales into prices and quantities.
+
+2
+
+We ﬁnd that, as sellers and consumers become more distant, total sales decline mostly
+through changes in quantity sold rather than changes in the pricing. The results indicate
+that the cost, which should be reﬂected in the price, is not driving the gravity.
+
+We look into information channels. Consumers may be ill-informed about games
+developed in distant locations, hence, it may require longer time for games from dis-
+tant countries to be acknowledged by gamers. We investigate this channel by grouping
+games by their release dates. Since older games had more time to become known, they
+are less likely to be subjected to information friction through distance. Our regression re-
+sults show that sales of older games are indeed less affected by physical distance, while
+sales of newer games are more affected by distance. Similar contrasts are found by sep-
+arating games into non-indie games and indie games. Non-indie developers, which are
+more afﬂuent in the advertising budget, usually tend to utilize ofﬂine advertising, which
+is more likely to be subjected to distance. On the other hand, indie developers rely more
+heavily on online advertising.1 Our results shows that, compared with sales of indie
+games, sales of non-indie games decline more intensively with increased distance be-
+tween consumers and developers. Overall, the results indicate that information friction
+can be potential contributing factors of gravity in digital international trade.
+
+We also perform additional regressions by adding different proximity measures,
+such as language and cultural distance. Our results are robust; the inclusion of these
+proximity measures does not change the coefﬁcients of physical distance on game sales.
+We then examine whether the distance effect is coming from regional commonality
+and ﬁnd that distance is still signiﬁcant even when we control for the common region
+dummy.
+
+As we highlight the existence of the gravity force present in the digital economy, a
+natural question arises: how quantitatively important are these enduring frictions? To
+answer this, we include the enduring frictions to the Armington model and calibrate
+the model using both the conventional commodity trade data and our Steam dataset to
+calibrate physical trade costs and the residual frictions separately. The key difference
+between the two calibrations is that while physical trade costs can be eliminated by re-
+ducing trade costs, the latter remains in the economy even if the trade is free. Using
+our calibrated model, we perform counterfactual experiments to evaluate the welfare
+implications of residual friction. We consider two cases: the total elimination of both
+the physical trade barrier and residual friction and the elimination of only the physical
+trade barrier while keeping residual friction intact. The former counterfactual experi-
+ment ignores the fact that the residual friction cannot be eliminated. We compare the
+
+1Examples of ofﬂine advertising are participation in trade events (e.g., E3, Tokyo Game show) and
+
+street advertising.
+
+3
+
+welfare gains from both counterfactual scenarios to elucidate the quantitative impor-
+tance of residual frictions. The result suggests there are quantitatively substantial dif-
+ferences in trade potential when the residual frictions are considered. For example, the
+welfare gains for India are 60% smaller when the residual friction is incorporated into
+the model. The result also shows that the effects of friction are unevenly distributed;
+some countries even have higher welfare gains by keeping the residual frictions.
+
+As IT technology and computer become more widely adopted, research on digitiza-
+tion and the economy is also growing. As discussed in Goldfarb and Tucker (2019), one
+of the most important consequences of digitization is the reduction of trade costs. To the
+best of our knowledge, our paper is the ﬁrst study to quantify the effect of geographical
+distances on international transaction in the purely digital world.
+
+Our paper contributes to the literature on gravity and digital economy. Blum and
+Goldfarb (2006) offer insights on digital contents and geography. They study the internet
+browsing activities of US users, and show that viewers are less likely to visit websites
+that are farther away from the US. They also ﬁnd that distance matters only to taste
+related websites, and conclude that the taste differences correlated with distances can
+be explained by the law of gravity. Our paper also sheds light on the role of internet and
+geography. Moreover, our dataset provides an unique vantage point to examine online
+transaction of digital goods, where the goods are coherently organizes by one uniﬁed
+digital platform. Compared to website visits on the internet, cross-border purchase of
+digital goods provides a more striking resemblance to cross-country consumption of
+commodities. Hence, our results can be extended to conventional mode of international
+trade in commodities.
+
+This paper examines a new aspect of how the internet changes the nature of trade.
+Freund and Weinhold (2004) study on how increased internet access induced more
+trade. Subsequent study shows that the internet makes trade more sensitive to distance
+(Akerman, Leuven and Mogstad, 2022). Various studies show how E-commerce reduce
+distance-related trade costs (Hortaçsu, Martínez-Jerez and Douglas (2009), Lendle et al.
+(2016), Fan et al. (2018)). We complement these studies by looking at international trade
+in digital goods, where physical trade costs are absent. While E-commerces such as eBay
+and Alibaba reduced trade costs via the utilization of the internet, transactions in these
+platforms still involves transportation and shipping. In contrast, Steam completely ex-
+tinguishes physical activities associated with trade. Instead of focusing on trade costs
+reduced by the internet, we look at frictions that endure in the completely digital plat-
+form.
+
+Our paper also highlights the increasing role of information on trade. Allen (2014)
+demonstrates the signiﬁcance of information friction on trade and our results insinuate
+
+4
+
+that information play a role in explaining the effect of distance on trade. Several studies
+suggest that information friction plays important roles in online e-commerce platforms
+(Chen and Wu, 2021), and e-commerce platforms make an active effort to alleviate the
+relevant information friction (Carballo et al. (2022) and Lendle et al. (2016)).
+In this
+paper, we show that even in Steam — an uniﬁed and organized digital distribution
+platform — information is likely to be a possible determining force of gravity.
+
+Finally, we believe our study provides an interesting example of trade in cultural
+goods (Disdier et al., 2010). Digital distribution platform is well suited for consumption
+of cultural goods like media such as music, movies, and games. One noticeable study
+is Ferreira and Waldfogel (2013), which examines patterns of global music consumption
+using popular music chart data. They show that domestic consumption is still relatively
+more substantial (and even increasing) in recent decades.2 Our study adds to the litera-
+ture by showing that trade in PC games, a modern example of cultural goods, is subject
+to gravity.
+
+In our quantitative exercises, we borrow the concept of trade potential, which is the
+welfare gains from completely eliminating trade costs, as deﬁned in Waugh and Raviku-
+mar (2016). Based on the theoretical observation that free trade equilibrium must equal-
+ize trade shares across destinations, they construct a sufﬁcient statistic approach to study
+the welfare implication of trade potential. We complement their analysis by demon-
+strating that the implications of trade potential can be drastically different if there are
+enduring frictions that persist in a free trade environment.
+
+The remainder of the paper is as follows. In section 1, we introduce our data from
+Steam and provide some descriptive statistics. In section 2, we perform gravity regres-
+sions to test whether the global sales of games are affected by geography. Finally, in
+section 3, we develop a quantitative model to demonstrate the role of enduring frictions
+we unveil in the Steam data.
+
+2 Data
+
+Our analysis relies on unique sales data from Steam, which is a digital distribution plat-
+form of video games developed by Valve Corporation. The video games distributed
+by Steam only include PC games; console games and mobile games are not available
+on Steam. The platform is compatible with major computer operating systems, includ-
+ing Microsoft Windows, Apple Mac OS, and Linux. Steam was ﬁrst launched in 2003
+and was originally developed to deliver updates or patches for Valve’s own games,
+In 2005, Valve started negotiating
+including the Half-Life series and Counter-Strike.
+
+2In their study, they do not specify how these music are traded (e.g., streaming, internet, CD, ...).
+
+5
+
+with third-party publishers and developers to publish their games on Steam. Although
+Steam started with only seven games in 2004, by May of 2007, even though there were
+only 150 games available on Steam, 13 million user proﬁles had already been created.
+Steam grew rapidly and became the largest digital distribution platform for PC gaming.
+In 2013, Steam had around 75% of the market share of the digital distribution platform
+in PC games. By 2019, Steam curated more than 30,000 games and had over 95 million
+active monthly users.
+
+The virtual environment we have chosen has several novel features that are distinc-
+tive from traditional merchandise trade.3 The most unique characteristic of Steam is
+that goods being traded are completely digital. Games being purchased are delivered
+via the internet; users do not get physical copies of contents they purchase. There are
+various studies on digital platforms, which utilize data from Alibaba, Ebay, and Ama-
+zon, etc. Most merchandise being traded on those platforms are physical, while in our
+dataset, both the distribution platform and traded goods are digital. The second dis-
+tinctive feature of Steam is that its markets are geographically segregated. Users from
+different regions can only purchase content in local currencies, and each developer also
+sets different prices for different regions. Most digital retail platforms, such as Amazon
+and Alibaba, only allow sellers to set one price pegged to one single currency for each
+product. Steam has geographical differentiation in both pricing and currencies. Mean-
+while, Steam also implements strong measures to enforce geo-blocking, making it very
+difﬁcult for users to switch regions. These novel features of the Steam dataset provide a
+unique vantage point to analyze international trade in digital goods.
+
+For the sales data on games, we use the dataset created by Steam Spy, which is a
+website founded by Sergey Galyonkin and launched in 2015. Steam Spy estimates the
+number of copies sold and average playtime for game titles available on Steam by using
+the platform’s application programming interface (API), which allows programmers to
+pull information on user proﬁles, including titles in the inventory, location of users and
+total playtime for each title. The data from Steam Spy records the monthly number of
+copies sold for each country at title level. For example, sales of The Witcher 3: Wild
+Hunt developed by CD PROJEKT RED. Steam Spy was deemed as the most reliable
+data source for PC gaming. PCGameN reports that Steam Spy is accurate to within 10%
+of actual sales for games. Many developers use data from Steam Spy to navigate their
+business decisions. The dataset we collect from Steam Spy covers sales for more than
+9,000 unique games in 75 destination countries between February of 2017 to March of
+
+3However, we believe this environment is close to merchandise trade rather than service trade. These
+games are usually purchased outright, and consumers do not communicate or negotiate with sellers. The
+transaction resembles buying an e-book on Amazon.
+
+6
+
+2018.
+
+We also utilize Steam’s API to extract detailed game-level information, including
+genres, prices and developers’ name. Games in our sample include variety of genres, i.g.
+ﬁrst-person shooter (FPS), role-playing games (RPG), ﬁghting games, etc. To construct
+bilateral trade ﬂow in game sales. We utilize the prices of games across all destination
+countries, the names of developers/studios. Our data include titles developed by almost
+6,000 developers. We use the developer’s name to match each studio to the country of
+its headquarters manually. Our cleaned sample includes measured bilateral sales from
+67 origin countries to 75 destination countries for each title and developer.4
+
+ISO-3 Frequency Percentage
+
+Frequency Percentage
+
+USA
+GBR
+RUS
+CAN
+JPN
+DEU
+FRA
+POL
+AUS
+SWE
+ESP
+UKR
+ITA
+BRA
+FIN
+
+3,060
+1,026
+772
+592
+565
+560
+363
+285
+249
+231
+173
+172
+164
+157
+157
+
+30.50543
+10.22829
+7.696142
+5.901705
+5.632539
+5.582694
+3.618782
+2.841192
+2.482305
+2.302861
+1.724654
+1.714684
+1.634932
+1.565148
+1.565148
+
+CHN
+NLD
+CZE
+HUN
+ROM
+HRV
+DNK
+IND
+MEX
+TUR
+AUT
+KOR
+NOR
+ZAF
+BEL
+
+147
+135
+109
+82
+69
+64
+60
+54
+53
+52
+50
+48
+42
+39
+38
+
+1.465457
+1.345828
+1.086631
+.8174659
+.6878676
+.6380221
+.5981457
+.5383312
+.5283621
+.518393
+.4984548
+.4785166
+.418702
+.3887947
+.3788256
+
+Table 1: Top 30 countries for headquarters’ location
+
+Mean
+
+s.d.
+
+p25
+
+p50
+
+p75
+
+238746
+Sales
+Price
+10.77393
+Quantity 14593.73
+
+1327088
+11.76527
+47898.17
+
+3510.54
+4.99
+1111
+
+27469.62
+7.99
+4243
+
+120653.2
+14.99
+13538
+
+Table 2: Summary of sales, price and quantity sold in the US
+
+We show descriptive statistics of the data. Table 1 shows the top 30 countries that
+host the most game titles. Games developed in the US take the largest share of games in
+
+4The list of countries are in the appendix.
+
+7
+
+Countries sold
+
+73.00432
+
+5.567719
+
+66
+
+75
+
+75
+
+Mean
+
+s.d.
+
+p10 p50 p90
+
+Source: Calculated by authors
+
+Table 3: Number of countries sold
+
+our data but there are games from various countries. Table 2 presents summary statistics
+of the sales, price, and quantity sold in the US market. The mean and median sales in
+the US are 238,746 USD and 27,469 USD respectively. The mean and the median price
+in the US is 10.7 USD and 7.99 USD5. The mean and median quantity sold in the US is
+about 14,600 copies and 4,243 copies, respectively, and the larger mean compared to the
+median indicates that there are some superstar triple A titles in our data which sell great
+number of copies. Table 3 shows the number of countries these games are available.
+We consider a game being available in a country if we can observe the game’s price in
+the country’s digital storefront. The majority of games in our sample are available in all
+75 destination countries in our data set, indicating that Steam’s global digital storefront
+assures the access to games regardless of users’ location.
+
+3 The Empirical Model
+
+First, we aggregate our data on cross-country game-level level sales into country-level
+total sales. Then we run gravity regressions with various conventional bilateral resis-
+tance variables, including bilateral distance, to outline the effect of geography in trade
+of digital goods. The speciﬁcation is as follows:
+
+ln Xin =βdistln(Distancein) + βcontContiguityin + βcolonyColonyin
+
++ βcommonlangCommon languagein + βHM KHome marketin + ξi + ζn + εin,
+
+where subscript i is origin country (developer’s location), subscript n is the desti-
+nation country, and Xin is the total sales in country n for games developed in i. Our
+main focus is on βdist, which is the coefﬁcient on physical distance between i and n.
+Other variables include whether the countries are contiguous, whether they were in
+colonial relationships, whether they have common ofﬁcial languages, and whether the
+origin and the destination are the same. These geographical variables between countries
+are from CEPII GeoDist (Mayer and Zignago, 2011). The last two terms, ξi and ζn, are
+dummy variables for the origin country i and the destination country n.
+
+5The price of games are much lower than typical AAA games since Steam sells indie games developed
+
+in a smaller scale.
+
+8
+
+Table 4: Gravity: Country level sales
+
+Distance
+
+Contiguity
+
+Colonial relationship
+
+(1)
+OLS
+-0.12∗∗∗
+(0.042)
+
+(2)
+OLS
+-0.12∗∗∗
+(0.043)
+
+(3)
+PPML
+-0.20∗∗
+(0.099)
+
+0.12
+(0.078)
+
+0.12
+(0.079)
+
+-0.41∗
+(0.25)
+
+(4)
+PPML
+-0.20∗∗
+(0.095)
+
+-0.40∗
+(0.23)
+
+-0.020
+(0.082)
+
+-0.018
+(0.080)
+
+0.18∗∗
+(0.073)
+
+0.16∗∗∗
+(0.057)
+
+Common ofﬁcial languages
+
+0.053
+(0.072)
+
+0.062
+(0.069)
+
+0.049
+(0.098)
+
+0.11
+(0.081)
+
+Home market
+
+0.36∗∗∗
+(0.11)
+
+Observations
+
+3088
+
+3132
+
+4940
+
+Standard errors in parentheses
+
+-0.27
+(0.22)
+
+5007
+
+Origin / Destination ﬁxed effects are included and standard errors are clustered
+∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01
+
+The results are shown in Table 4. Where Columns (1)-(2) show the OLS regression
+results that exclude zero sales. And the columns (3)-(4) include observations containing
+zero sales using Poisson Pseudo Maximum Likelihood Silva and Tenreyro (2006). For
+each speciﬁcation, we show the results with both exclusion and inclusion the domestic
+sales.
+
+In our context, international trade of digital goods is accomplished by digital deliv-
+ery, physical trade costs are completely absent, hence we expect βdist to be both very
+small and statistically insigniﬁcant. However, we ﬁnd that the coefﬁcients on distance
+are statistically signiﬁcant and non-negligible in its magnitudes, and the results are ro-
+bust across various speciﬁcations. Compared with exiting estimates in the literature us-
+ing conventional trade data of physical goods, the distance coefﬁcients typically range
+around -1.1. Meanwhile, in our estimation using cross-country sales of PC games, the
+coefﬁcients on distance range from -0.12 to -0.2. The distance elasticity in our envi-
+ronment of digital trade facilitated by digital platform is about only 10% to 20% of the
+size of the estimates using conventional commodity trade. Our distance coefﬁcients
+from e-commerce data are smaller than the existing estimates that also use data from
+
+9
+
+e-commerce platforms; Fan et al. (2018) utilize data on Chinese inter-provincial trade
+in Alibaba, and ﬁnd that the distance coefﬁcient is -0.47. Lendle et al. (2016) use in-
+ternational transaction data from eBay, and their estimate on the distance coefﬁcient is
+-0.44. Our estimated distance effect is about 25% to 50% of the estimates using other
+e-commerce platform that mostly focus on trade in physical goods. The coefﬁcients of
+other bilateral geographical variables, in both magnitude and signiﬁcance, do not vary
+much across speciﬁcations. The signs of the coefﬁcients on contiguity and the colo-
+nial relationship changes when zero sales are included. The common language dummy,
+which we expect to have strong impacts on sales, is surprisingly insigniﬁcant. To sum,
+for international trade of PC games on the digital platform, physical distances play more
+important role than other geographical variables. The sign of the home bias depends on
+the speciﬁcation.
+
+3.1 Game-level gravity
+
+In this section, we fully utilize our cross-country game-level sales information to per-
+form gravity regressions at product level. This allows us to include game ﬁxed effects
+and language adoption variables, which is deﬁned as whether a game supports the ofﬁ-
+cial language in the destination market. Our speciﬁcation is as follows:
+
+lnXi(j)n(j) = βdistln(Distancei(j)n) + βcontContiguousi(j)n + βcolonyColonyi(j)n
+
++ βcommonlangCommon languagei(j)n + βHM KHome marketi(j)n
++ βlangadoptionLanguage adoption(j)jn + ξj + ζn + εjn,
+
+where Xi(j)n(j) is the total sales in n of game j developed in i. In addition to country-
+level variables, we include the dummy variable Language adoption(j)n, which takes
+one if game j supports the language used in country n. This represents the role of
+language in a ﬁner level than the common language indicator. The last two variables, ξj
+and ζn, are game-j and destination-n speciﬁc ﬁxed effects.
+
+The results are shown in Table 5. Each column follows the speciﬁcations shown in
+the previous table. The coefﬁcients on distance are statistically signiﬁcant at the 5% level
+for all speciﬁcations. The magnitude of the coefﬁcients of OLS is much smaller than that
+of country-level estimation, which is likely due to numerous zero sales for games. When
+zero sales are included, the coefﬁcients are even larger than the country-level estimates,
+at -0.19 for both with and without domestic sales. A novel fact we found is the role of
+language adoption. When the game adopts the local language, the sales increases about
+19% to 40%. While this is not a causal estimate, the regression indicates language’s
+
+10
+
+Table 5: Gravity: Game level sales
+
+Distance
+
+Contiguity
+
+Colonial relationship
+
+Common ofﬁcial languages
+
+Local language adopted
+
+Home market
+
+(1)
+OLS
+-0.043∗∗∗
+(0.0099)
+
+(2)
+OLS
+-0.041∗∗∗
+(0.010)
+
+(3)
+PPML
+-0.19∗∗
+(0.086)
+
+(4)
+PPML
+-0.19∗∗
+(0.080)
+
+0.028
+(0.030)
+
+0.018
+(0.029)
+
+-0.39∗
+(0.21)
+
+-0.38∗∗
+(0.19)
+
+0.091∗∗∗
+(0.033)
+
+0.093∗∗∗
+(0.031)
+
+0.17∗∗
+(0.069)
+
+0.16∗∗∗
+(0.051)
+
+0.082∗∗∗
+(0.030)
+
+0.19∗∗∗
+(0.048)
+
+0.11∗∗∗
+(0.030)
+
+0.19∗∗∗
+(0.048)
+
+0.16∗∗∗
+(0.045)
+
+0.038
+(0.083)
+
+0.095
+(0.074)
+
+0.35∗∗∗
+(0.11)
+
+0.40∗∗∗
+(0.11)
+
+-0.25
+(0.19)
+
+Observations
+
+106,060
+
+111,694
+
+609,538
+
+661200
+
+Standard errors in parentheses
+
+Game / Destination ﬁxed effects are included and standard errors are clustered
+∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01
+
+signiﬁcant role in trade at the product level. Other geographical variables and the home
+bias remain unstable across speciﬁcations.
+
+4 Discussion
+
+International transactions of digital goods are facilitated by digital means in that no
+physical shipping and transportation costs are involved in product delivery. However,
+we still observe a signiﬁcant and sizable effect of distance on bilateral sales. This dispar-
+ity leads us to ask Why distances may still be relevant in a purely digital environment.
+We rule out two explanations discussed in the literature of E-Commerce. We ﬁrst rule
+out the role of physical geographical barriers. Games sold on Steam do not come in
+physical medium; hence, we believe that physical trade costs do not explain the ob-
+served gravity in game sales. The second potential mechanism for the distance effect
+
+11
+
+is the geographically correlated transaction risks. Cheating is a common concern for
+e-commerce. For example, sellers may not deliver goods or ship low-quality products.
+This dishonest behavior may become more prevalent when sellers and consumers are
+more distant from each other. 6 In usual trade, for consumer to resolve for these cheat-
+ing behaviors, it would require buyers to negotiate with dishonest sellers. The costs of
+potential negotiation are higher when sellers are farther away. As a result, the buyer
+may be more hesitant to buy products from distant locations. However, the transaction
+risks are small on Steam because game purchases are simple outright purchases, and
+Steam also has an established uniform returning policy (the platform issue a refund for
+any game title that is requested within fourteen days of purchase and has been played
+for less than 2 hours). Even if the quality of a game is much lower than the developer
+promised, consumers can easily receive refund without interacting with the developer.
+Therefore, based on the robust consumer protection policies, we rule out geographically
+correlated transaction risk as an explanation to observed distance effects.
+
+We investigate various potential mechanisms for the observed gravity, including
+trade costs, information channels, and taste frictions. We ﬁrst discuss the trade costs
+channel. Conventional theory suggests that trade costs increase with distance, which
+would indicate that the prices are higher when games are delivered to places farther
+from the developers, leading to lower sales. To investigate this channel, we decompose
+sales to price and quantity, and we examine the effect of each force separately. Our
+regression speciﬁcation follows:
+
+lnZi(j)n(j) = βdistln(Distancei(j)n) + βcontContiguousi(j)n + βcolonyColonyi(j)n
+
++ βlangadoptionLanguage adoption(j)n + βHM KHome marketi(j)n
+
++ +βcommonlangCommon languagei(j)n + ξj + ζn + εjn,
+
+where Zi(j)n(j) is the price or quantity sold in n for game j developed in i.
+The results are shown in Table 6 and Table 7. Each column on the table displays the
+coefﬁcients from our regressions. The coefﬁcients of distance on prices are very small.
+Even though the coefﬁcients in OLS are statistically signiﬁcant, they are much smaller
+when compared to the coefﬁcients on total sales. In contrast, the distance coefﬁcients on
+quantity are close to that of sales. The coefﬁcients are statistically signiﬁcant at the 10%
+level, and the magnitude is in line with that of sales regression. These results suggest
+that the decline in total sales due to distances is mainly driven by changes in quantity
+sold, not through changes in prices. Hence, we rule out the trade-cost explanation; if
+
+6This is close to the argument in Lendle et al. (2016). They found that sales of Power seller – a seller
+
+with a higher rating – is less affected by distance.
+
+12
+
+Table 6: Gravity: Game level price
+
+Distance
+
+Contiguity
+
+Colonial relationship
+
+(1)
+OLS
+0.0029∗∗
+(0.0012)
+
+(2)
+OLS
+0.0030∗∗
+(0.0012)
+
+(3)
+PPML
+
+(4)
+PPML
+
+-0.00061
+(0.0021)
+
+-0.0013
+(0.0020)
+
+0.0079
+(0.0052)
+
+0.0078
+(0.0051)
+
+-0.013
+(0.0086)
+
+-0.013
+(0.0083)
+
+0.0038
+(0.0028)
+
+0.0039
+(0.0027)
+
+0.0060∗
+(0.0032)
+
+0.0062∗∗
+(0.0031)
+
+Common ofﬁcial languages
+
+0.0033
+(0.0036)
+
+0.0037
+(0.0036)
+
+0.00039
+(0.0019)
+
+0.00047
+(0.0021)
+
+Local language adopted
+
+0.00070
+(0.0039)
+
+0.0016
+(0.0038)
+
+0.0019
+(0.0059)
+
+0.0026
+(0.0058)
+
+Home market
+
+0.013
+(0.0077)
+
+0.0055
+(0.0089)
+
+Observations
+
+733,439
+
+743,468
+
+733,439
+
+743,468
+
+Standard errors in parentheses
+
+Game / Destination ﬁxed effects are included and standard errors are clustered
+∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01
+
+trade costs are responsible for the distance effect, prices should also respond to geo-
+graphical distances. The result on quantity suggests there are other possible channels:
+information frictions and taste differences, which we discuss below.
+
+We move on to the information channel. Steam users can directly look up informa-
+tion about games within the platform7 or they can also learn about these games from
+external sources. We argue that the information, especially the information outside of
+the Steam platform, plays an important role, because games developed in farther away
+
+7We believe friction to search games within Steam, should not be the explanation. Consumers from
+different countries face the exact same storefront. Unlike Amazon, where the storefronts are different
+across countries (e.g., amazon.com, amazon.co.uk, etc.), consumers can easily search the games from
+different countries. This does not mean that Steam suggests the exact same games. While differential
+suggestions of the game could be possible and likely to happen, we believe this is not the reason for
+gravity. Valve, the company operating Steam, has no incentive to recommend games by the origin of the
+developer.
+
+13
+
+Table 7: Gravity: Game level quantity
+
+Distance
+
+Contiguity
+
+Colonial relationship
+
+Common ofﬁcial languages
+
+Local language adopted
+
+Home market
+
+(1)
+OLS
+-0.042∗∗∗
+(0.0097)
+
+(2)
+OLS
+-0.040∗∗∗
+(0.0099)
+
+(3)
+PPML
+-0.17∗
+(0.085)
+
+(4)
+PPML
+-0.15∗
+(0.085)
+
+0.022
+(0.026)
+
+0.012
+(0.026)
+
+-0.25
+(0.16)
+
+-0.23
+(0.16)
+
+0.088∗∗∗
+(0.032)
+
+0.090∗∗∗
+(0.031)
+
+0.22∗∗∗
+(0.077)
+
+0.19∗∗∗
+(0.067)
+
+0.079∗∗∗
+(0.028)
+
+0.19∗∗∗
+(0.048)
+
+0.10∗∗∗
+(0.028)
+
+0.20∗∗∗
+(0.047)
+
+0.15∗∗∗
+(0.042)
+
+0.10
+(0.077)
+
+0.19∗∗∗
+(0.071)
+
+0.29∗∗
+(0.12)
+
+0.34∗∗∗
+(0.12)
+
+-0.11
+(0.17)
+
+Observations
+
+106,060
+
+111,694
+
+609,538
+
+661,200
+
+Standard errors in parentheses
+
+Game / Destination ﬁxed effects are included and standard errors are clustered
+∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01
+
+places may be less likely to be noticed by consumers. To examine this plausible channel,
+we split our sample into new games and old games by their release dates. News about
+releases of new games may take longer to travel if the developers are far away from
+gamers, which may explain the effect of geographical distance in the observed gravity.
+Furthermore, since older games had more time to establish the reputation, they are less
+likely to be inﬂuenced by the presence of physical distances. Games in our sample are
+split into new games and old games according to the release dates. A game is considered
+a new game if it is released after January 1, 2017, and is considered an old game if it is
+released before January 1, 2017.8 Our results are shown in Table 8, and we observe that
+distance has much weaker impact on old games than the on new games. Our results cor-
+roborate the information channel story. Newer games are more affected by geographical
+
+8We also tried to split the sample with the median release date, around October 2015. We obtained a
+
+similar result.
+
+14
+
+distances, because time is needed for information about new games to travel to gamers
+that are farther away.9 Nevertheless, when we only focus on older games, distances
+still have signiﬁcant impact on sales, which indicates that thee are other potential forces
+beyond information channels driving the distance effect.
+
+We next discuss the information channel from a different perspective. We split our
+sample into games that are labelled as indie games and that are not labelled as indie
+games. Indie games usually are developed by smaller developers with more limited
+resources, while non-indie games are usually developed by larger studios with more
+abundant resources. Furthermore, indie games developers usually advertise less inten-
+sively, and they often focus more on online advertising if any. In contrast, non-indie
+game developers utilize both online and ofﬂine advertising as their marketing strate-
+gies.10 The results are shown in table 9. Columns (1)-(4) show the regression results for
+only indie games, and columns (5)-(8) show the results for only non-indie games. While
+distance coefﬁcients are statistically signiﬁcant for both indie and non-indie games in
+the PPML speciﬁcation, the magnitudes of the coefﬁcients vary vastly. The distance co-
+efﬁcients on indie games are much smaller compared to non-indie games. These results
+highlight the possible role of information channel through advertisement. Since non-
+indie games rely more on ofﬂine ad campaigns, and may advertise less intensively in
+more distant countries, they often result in lower sales in a remote market.
+
+We ﬁnally argue about the role of taste friction. The taste of games can be geograph-
+ically correlated. Hence people favor games that are developed in closer countries. As
+seen in the results, our proposed information channel does not fully account for the
+distance effect in digital trade. We conjecture this unexplained component may be an
+indirect evidence of taste friction.
+
+9This could be a quality concern (consumers may hesitate to buy goods without enough reviews),
+but we believe this is less likely. Steam has a return policy that allows testing games before returning.
+Furthermore, given the nature of the goods, the cost of returning goods is uniform and does not depend
+on the distance.
+
+10Online advertising utilizes Social Network Services, YouTube and other online mediums, while ofﬂine
+
+advertising utilizes trade shows, and physical ad campaigns.
+
+15
+
+Distance
+
+Contiguity
+
+Colonial relationship
+
+1
+6
+
+Common ofﬁcial language
+
+Local language adopted
+
+Home market
+
+Table 8: Gravity: Games before and after 2017
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+(5)
+
+(6)
+
+(7)
+
+(8)
+
+Old games Old games Old games Old games New games New games New games New games
+
+OLS
+-0.0340∗∗∗
+(-3.71)
+
+OLS
+-0.0362∗∗∗
+(-4.10)
+
+PPML
+-0.0571∗∗
+(-2.74)
+
+PPML
+-0.0608∗∗
+(-3.10)
+
+OLS
+-0.0943∗∗∗
+(-3.82)
+
+OLS
+-0.0890∗∗∗
+(-3.90)
+
+PPML
+-0.343∗∗∗
+(-3.75)
+
+-0.108
+(-1.80)
+
+0.0740
+(1.34)
+
+0.0512
+(0.84)
+
+0.260∗∗
+(2.90)
+
+0.0323
+(1.40)
+
+0.0643∗
+(2.31)
+
+0.0840∗∗
+(3.14)
+
+0.164∗∗∗
+(3.68)
+
+0.0187
+(0.80)
+
+0.0698∗
+(2.62)
+
+0.101∗∗∗
+(3.96)
+
+0.169∗∗∗
+(3.86)
+
+0.128∗∗∗
+(4.05)
+
+-0.111∗
+(-2.30)
+
+0.0689
+(1.56)
+
+0.0970
+(1.61)
+
+0.304∗∗
+(3.12)
+
+-0.0342
+(-0.56)
+
+-0.0426
+(-0.83)
+
+0.134∗∗
+(3.27)
+
+0.0850
+(1.99)
+
+0.200∗
+(2.45)
+
+-0.0611
+(-1.34)
+
+0.136∗∗∗
+(3.71)
+
+0.122∗∗
+(2.80)
+
+0.212∗
+(2.58)
+
+0.129∗
+(2.61)
+
+-0.698∗
+(-2.51)
+
+0.221∗
+(2.41)
+
+0.103
+(0.70)
+
+0.491∗∗∗
+(4.50)
+
+PPML
+-0.334∗∗∗
+(-4.00)
+
+-0.661∗∗
+(-2.66)
+
+0.200∗
+(2.00)
+
+0.155
+(1.16)
+
+0.560∗∗∗
+(4.85)
+
+-0.367
+(-1.53)
+
+N
+
+86,215
+
+90,602
+
+451,619
+
+481,804
+
+10,945
+
+11,750
+
+109,944
+
+126,317
+
+Standard errors in parentheses
+
+Origin (Game) / Destination ﬁxed effects are included and standard errors are clustered
+∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01
+
+Table 9: Gravity: Comparing indie games and non-indie games
+
+(1)
+Indie
+OLS
+
+(2)
+Indie
+OLS
+
+-0.019
+(0.012)
+
+-0.016
+(0.014)
+
+(3)
+Indie
+PPML
+-0.032∗∗
+(0.016)
+
+(4)
+
+(5)
+
+(6)
+
+(7)
+
+(8)
+
+Indie Non-Indie Non-Indie Non-Indie Non-Indie
+PPML
+-0.033∗
+(0.017)
+
+OLS
+-0.071∗∗∗
+(0.012)
+
+OLS
+-0.070∗∗∗
+(0.014)
+
+PPML
+-0.23∗∗∗
+(0.089)
+
+PPML
+-0.23∗∗
+(0.096)
+
+Distance
+
+Contiguity
+
+Colonial relationship
+
+1
+7
+
+0.080∗
+(0.041)
+
+0.066∗
+(0.039)
+
+0.026
+(0.052)
+
+0.019
+(0.039)
+
+0.075∗∗
+(0.037)
+
+0.079∗∗
+(0.034)
+
+0.13∗∗∗
+(0.047)
+
+0.12∗∗∗
+(0.040)
+
+Common ofﬁcial languages 0.080∗∗
+(0.030)
+
+0.11∗∗∗
+(0.033)
+
+0.071
+(0.054)
+
+0.14∗∗
+(0.057)
+
+Local language adopted
+
+0.15∗∗∗
+(0.048)
+
+0.17∗∗∗
+(0.048)
+
+0.22∗∗∗
+(0.077)
+
+0.27∗∗∗
+(0.084)
+
+0.20∗∗∗
+(0.049)
+
+Home market
+
+0.21∗∗∗
+(0.061)
+
+0.19∗∗∗
+(0.056)
+
+Observations
+
+57,482
+
+60,834
+
+381,819
+
+417,706
+
+48,578
+
+Standard errors in parentheses
+
+Game / Destination ﬁxed effects are included and standard errors are clustered
+∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01
+
+-0.050
+(0.031)
+
+0.095∗∗∗
+(0.032)
+
+0.095∗∗∗
+(0.035)
+
+-0.057∗
+(0.030)
+
+0.095∗∗∗
+(0.030)
+
+0.11∗∗∗
+(0.033)
+
+0.21∗∗∗
+(0.048)
+
+0.091∗∗
+(0.042)
+
+50,860
+
+-0.54∗∗
+(0.27)
+
+0.16∗∗
+(0.075)
+
+0.036
+(0.11)
+
+0.41∗∗∗
+(0.12)
+
+-0.52∗∗
+(0.24)
+
+0.14∗∗
+(0.059)
+
+0.090
+(0.10)
+
+0.44∗∗∗
+(0.11)
+
+-0.42∗
+(0.24)
+
+227,719
+
+243,494
+
+To summarize, we argue that, because of the institutional features of the Steam plat-
+form, the observed distance effects are unlikely to be explained by trade costs and con-
+tract issues, in contrast to more conventional understanding of trade. Our price regres-
+sions solidify the fact that prices are not affected by distance, hence refute the trade costs
+explanation. We estimate game-level gravity by splitting games in our sample into indie
+games and non-indie games, and new games and old games. We ﬁnd that information
+channels can be potential drivers for the observed distance effects. We also believe that
+geographically correlated tastes can partially explain the results.
+
+4.1 Robustness
+
+We use additional empirical speciﬁcations for robustness. The ﬁrst concern is that ge-
+ographical distance may be a simple proxy for cultural and language proximity. To
+address this concern, we incorporate other variables, such as language and cultural
+proximity between buyers’ and developers’ locations. We adopt the language proximity
+index constructed by Melitz and Toubal (2014).11, and cultural distances as in Hofstede’s
+Cultural Dimensions constructed by Geert Hofstede. The language proximity capture
+the closeness and similarity for languages used by each country pair, while Hofstede’s
+cultural dimensions measures cultural aspects across countries, including individual-
+ism, masculinity, and uncertainty avoidance. We calculate the Mahalanobis’ distance
+of these cultural variables to construct a single-dimensional cultural distance for each
+country pair. The results are shown in Table 11. Columns (1)-(2) are results from data
+aggregated to country-level, and columns (3)-(4) are results from game-level data. For
+all of our speciﬁcations, coefﬁcients on distance all remain statistically signiﬁcant and
+are close to that of our previous estimates. Furthermore, the coefﬁcients on language
+proximity are positive, implying that the closer the languages in origin country and
+In contrast, the coefﬁcients on cultural
+destination country are, the larger the sales.
+distance share the same positive sign, but are statistically insigniﬁcant in most of our
+speciﬁcations. We show that physical distance on bilateral sales is robust even when
+other possible cultural distances are controlled for.
+
+In addition, we consider the same-region effect by examining whether trading part-
+ners are situated in the same region. Using regions deﬁned in the United Nations
+Geoscheme, we include a dummy variable that takes a value one if the origin coun-
+try and the destination country are located in the same region, and takes a value of zero
+otherwise. By using this classiﬁcation, we investigate whether the inclusion of regional
+
+11We use the unadjusted value of linguistic proximity (Tree). The result remains unchanged when we
+
+use other variables constructed in the paper.
+
+18
+
+Table 10: Gravity: Regional dummies
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Country sales Country sales Game sales Game sales
+
+Distance
+
+Contiguity
+
+Colonial relationship
+
+Common ofﬁcial languages
+
+Language proximity
+
+Cultural distance
+
+Common region
+
+Local language adopted
+
+OLS
+-0.083∗∗
+(0.040)
+
+0.056
+(0.082)
+
+0.054
+(0.088)
+
+0.055
+(0.11)
+
+0.056∗∗
+(0.026)
+
+-0.022
+(0.039)
+
+0.025
+(0.057)
+
+PPML
+-0.15∗∗
+(0.060)
+
+-0.45∗∗
+(0.22)
+
+0.18∗∗
+(0.070)
+
+0.14
+(0.14)
+
+0.070∗
+(0.039)
+
+-0.023
+(0.026)
+
+0.15∗∗
+(0.075)
+
+Observations
+
+1,996
+
+2,593
+
+Standard errors in parentheses
+
+OLS
+-0.020∗∗
+(0.0094)
+
+0.0037
+(0.031)
+
+0.079∗∗∗
+(0.024)
+
+0.083∗∗
+(0.036)
+
+0.039∗∗∗
+(0.0086)
+
+-0.046∗∗∗
+(0.0098)
+
+0.030
+(0.022)
+
+0.17∗∗∗
+(0.051)
+
+90,568
+
+PPML
+-0.14∗∗∗
+(0.052)
+
+-0.43∗∗
+(0.20)
+
+0.17∗∗
+(0.068)
+
+0.13
+(0.11)
+
+0.063∗
+(0.033)
+
+-0.017
+(0.020)
+
+0.13∗
+(0.070)
+
+0.37∗∗∗
+(0.11)
+
+405,345
+
+Origin (Game) / Destination ﬁxed effects are included and standard errors are clustered
+∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01
+
+19
+
+Table 11: Gravity: Including various distances
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Country sales Country sales Game sales Game sales
+
+Distance
+
+Contiguity
+
+Colonial relationship
+
+Common ofﬁcial languages
+
+Language proximity
+
+Cultural distance
+
+Local language adopted
+
+OLS
+-0.087∗∗
+(0.040)
+
+0.059
+(0.082)
+
+0.051
+(0.089)
+
+0.059
+(0.12)
+
+0.057∗∗
+(0.026)
+
+-0.024
+(0.039)
+
+PPML
+-0.17∗∗
+(0.073)
+
+-0.39∗
+(0.21)
+
+0.18∗∗∗
+(0.068)
+
+0.16
+(0.14)
+
+0.085∗
+(0.045)
+
+-0.031
+(0.030)
+
+Observations
+
+1,996
+
+2,593
+
+Standard errors in parentheses
+
+OLS
+-0.024∗∗
+(0.0092)
+
+0.011
+(0.029)
+
+0.077∗∗∗
+(0.024)
+
+0.090∗∗
+(0.036)
+
+0.041∗∗∗
+(0.0083)
+
+-0.047∗∗∗
+(0.0099)
+
+0.17∗∗∗
+(0.051)
+
+90,568
+
+PPML
+-0.16∗∗
+(0.065)
+
+-0.37∗∗
+(0.18)
+
+0.17∗∗∗
+(0.066)
+
+0.15
+(0.12)
+
+0.076∗∗
+(0.038)
+
+-0.023
+(0.024)
+
+0.37∗∗∗
+(0.11)
+
+405,345
+
+Game (Origin) / Destination ﬁxed effects are included and standard errors are clustered
+∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01
+
+20
+
+commonality (e.g., common cultural references in the region) affects the distance coef-
+ﬁcients in our gravity estimation. We ﬁnd that distance coefﬁcients are still signiﬁcant
+even controlling for the common region variable. The results are shown in Table 10.
+Columns (1)-(2) are results from data aggregated to country-level, and columns (3)-(4)
+are results from game-level data. In all our speciﬁcations, the estimated distance coefﬁ-
+cients are very close to original estimates, showing that the physical distance effect on
+digital trade are robust when common-region effects are controlled for.12
+
+5 Quantitative analysis
+
+Our empirical investigation indicates enduring trade frictions associated with physical
+distance in the pure digital distribution platform, which resembles an economy with
+free trade because the need for physical transportation and shipping is completely elim-
+inated. Even if all international trade becomes completely digital and goods can be
+transported freely across the globe, certain trade frictions may linger. We construct a
+simple quantitative model that incorporates the enduring trade friction to answer the
+following question: How much are we overestimating the gains from free trade if the
+enduring frictions are neglected?
+
+We adapt the standard Armington model (Armington, 1969) to incorporate the en-
+during trade frictions that cannot be eliminated by free trade.13 There are two types of
+trade frictions in the model: iceberg trade costs tin, and the residual trade frictions τin.
+Our model yields the following gravity equation:
+
+Xin = ξiζntinτ 1−σ
+
+in
+
+where Xin is the total export from i to n, ζi and ξn are functions of multilateral resis-
+tances. And σ is the elasticity of substitution. Trade frictions tin and τin are inseparable
+when using conventional trade data on physical goods.14 We adopt a two-step proce-
+dure to estimate and calibrate these two types of trade frictions. First, we run a gravity
+regression using conventional commodity trade data, which gives tinτ 1−σ
+in . They are
+
+12On top of this speciﬁcation, we tried including an EU dummy, where the variable takes one if both
+
+countries are in the EU. The distance coefﬁcients are similar.
+
+13Details of the model are explained in the appendix. It is possible to develop a model with product
+heterogeneity, but since our interest is to quantify the role of unexplained frictions, we start with the
+Armington model.
+
+14In the model, we are agnostic about the mechanism of the friction and simply formulate tin as a
+
+demand shifter.
+
+21
+
+speciﬁed as:
+
+tinτ 1−σ
+
+in = (Distancein)δdist ∗ exp
+
+(cid:16)
+
+δcontContiguityin
+
++ δcolonyColonyin + δcommonlangCommon languagein
+
+(cid:17)
+
+.
+
+Next, we utilize the gravity regression coefﬁcients estimated using the Steam data to
+back out the enduring trade friction tin. Since physical shipping and transportation are
+completely absent in game sales on Steam (τin = 1), we use the coefﬁcients as proxies of
+tin. Speciﬁcally, we assume that:
+
+tin = Distanceβdist
+
+in
+
+.
+
+We take value of βdist from the gravity regression using the digital trade data from
+Steam. In particular, βdist is set to 0.1.15 Combining our estimated coefﬁcients from trade
+in physical goods and trade in digital goods on Steam, we back out enduring trade
+frictions tin and iceberg trade frictions τin.
+
+We calibrate the parameters of our quantitative model for 43 countries to year 2014
+using the data from the World Input-output Database (Timmer et al., 2015)16. The elastic-
+ity parameter σ is set to 5, following Simonovska and Waugh (2014). Using the calibrated
+model, we perform following two counterfactual experiments: (1) eliminate trade costs
+completely while keeping residual frictions intact, and (2) eliminate both trade costs and
+residual frictions completely. We denote the original parameter as x and counterfactual
+parameters as x(cid:48). For the ﬁrst counterfactual experiment, we set τ (cid:48)
+in = tin,
+while for the second counterfactual, we set: τ (cid:48)
+
+in = 1, and t(cid:48)
+
+in = 1 and t(cid:48)
+
+in = 1.
+
+We evaluate and compare the welfare gains from these two counterfactual experi-
+ments. The welfare gains from the benchmark economy to free trade economy echoes
+the concept of trade potential in the literature, see Waugh and Ravikumar (2016) for ex-
+ample. Speciﬁcally, trade potential calculates the utility ratio between the current and
+the autarky equilibrium. The ﬁrst quantitative experiment represents the true trade po-
+tential (welfare gains from free trade) when all the trade costs and enduring trade fric-
+tions are correctly considered, while the second experiment represents the mis-speciﬁed
+trade potential when residual frictions are treated the same as iceberg trade costs. Our
+interest is in the relative welfare gains of the two counterfactual scenarios. In the cor-
+rectly speciﬁed free trade economy, only the iceberg trade costs are removed, and the
+enduring trade friction persist even in the free trade economy; failing to acknowledge
+
+15Our assumption is that these frictions observed in Steam can be extrapolated to aggregate economy.
+16Details of the calibration is shown in the appendix[:unedited]
+
+22
+
+Figure 1: Trade potentials
+
+the enduring friction would lead to biased quantitative evaluation of the trade potential.
+Hence, we compare the welfare implications of these two experiments to highlight the
+quantitative importance of residual trade friction.
+
+The result is shown in Figure 1. Trade potentials for both speciﬁcations, range from
+1.2 to 5.0, where the magnitude is in line with Waugh and Ravikumar (2016). These
+number indicates that countries have 20% to 400% higher welfare from being in free
+trade. However, there are signiﬁcant differences between these two correctly speciﬁed
+and mis-speciﬁed trade potentials. For example, the trade potential for India is around
+3.6 for the incorrectly speciﬁed case, but is only 1.9 for the correctly speciﬁed case. In
+that case, trade potential in India is overstated when free trade fails to consider the role
+of enduring friction. However, the presence of the residual frictions may also lead to
+understatement of trade potential for some countries. Countries may have better terms
+of trade (relative wage) from the existence of residual frictions. For example, the trade
+potential for Malta is around 5.0 for the correctly speciﬁed case, but is only around 2.0
+for the incorrectly speciﬁed case.
+
+Which countries would show larger discrepancies in trade potential when residual
+frictions are correctly incorporated? In ﬁgure 2, we compare these two trade potentials
+in a scatter-plot. The vertical axis shows the trade potential of the incorrect speciﬁca-
+tion, and the horizontal axis displays the trade potential of the correct speciﬁcation. The
+size of the circle represent the centrality measure for each country, which is calculated
+
+23
+
+AUSAUTBELBGRBRACANCHECHNCYPCZEDEUDNKESPESTFINFRAGBRGRCHRVHUNIDNINDIRLITAJPNKORLTULUXLVAMEXMLTNLDNORPOLPRTROURUSSVKSVNSWETURTWNUSA012345Trade potentialEliminating trade costsEliminating trade costs and residual frictionsFigure 2: Trade potentials: Comparison
+
+by the sum of the reciprocal of bilateral distances between countries17. A larger cen-
+trality value indicates that a country is more geographically centered. We can roughly
+divide countries in our sample into two two groups: (1) large but more geographically
+isolated countries, such as China, India and Indonesia (2) small but geographically cen-
+tered countries, such as Malta, Cyprus and Lithuania. The ﬁrst group exhibits higher
+trade potential for the incorrectly speciﬁed case, while the latter group exhibits higher
+trade potentials for the correctly speciﬁed case. The intuition is the following. Since
+residual frictions are driven by distance, eliminating them beneﬁts the isolated coun-
+tries while harms the well-connected countries (by the deterioration of terms of trade).
+Overall, residual frictions are quantitatively important in measuring trade potentials,
+and have unequal effects on different countries.
+
+6 Conclusion
+
+Digital distribution is drastically reshaping the landscape in consumption and delivery
+of goods. Using a purely digital distribution platform, consumers can enjoy content
+from far away places without paying any additional costs. In this paper, we ask if a
+purely digital distribution platform is able to eliminate the role of distance in the grav-
+ity model. We answer this question by using the data from Steam, the world’s largest
+
+17Speciﬁcally, geographical centrality for country i is calculated by a following formula: centralityi =
+
+(cid:80)N
+
+1=n
+
+1
+distin
+
+.
+
+24
+
+1.01.52.02.53.03.54.04.55.05.5Eliminating trade costs1.01.52.02.53.03.54.0Elminating trade costs and residual frictionsAUSAUTBELBGRBRACANCHECHNCYPCZEDEUDNKESPESTFINFRAGBRGRCHRVHUNIDNINDIRLITAJPNKORLTULUXLVAMEXMLTNLDNORPOLPRTROURUSSVKSVNSWETURTWNUSAdistribution platform of computer games. Using the sales and the developers’ location
+of each game, we show that, even in the entirely digital economic environment, geo-
+graphical resistances persist and remain strong. By estimating gravity regression using
+data on trade in digital goods, we ﬁnd that sales still decline as the developer and the
+consumer are more distant. Nevertheless, the distance elasticity on sales ranges between
+-0.1 to -0.2, which is about 10% to 20% of the conventional estimates on using trade in
+physical goods. Our result indicates that although the digital trade is successful to re-
+duce the cost from distances, there are tenacious frictions that persist even in this pure
+digital environment. Our additional analysis shows that these frictions work mainly
+through changes in quantity sold, not through changes prices, suggesting that the dis-
+tance mostly affects digital trade via the demand channel, not via the changes in trade
+costs. We further show that the information friction may be a plausible explanation on
+this distance effect. Our result is robust to various estimation speciﬁcations and choices
+made on sample selection.
+
+We argue that enduring trade frictions are quantitatively important. By adopting a
+standard Armington model, we compare the welfare implications for complete trade
+cost reduction with and without considering the enduring trade frictions. Speciﬁcally,
+we compare the two counterfactuals, which eliminate only the trade cost but not endur-
+ing trade friction, and the another eliminates both the trade cost and the trade friction.
+Without acknowledging the existence of non-erasable trade friction, the quantitative
+analysis would lead to a very biased evaluation of trade potentials. Ignoring enduring
+trade friction and eliminating it tends to overstate trade potentials for some countries
+and understate trade potentials for some other countries.
+
+25
+
+References
+
+Akerman, Anders, Edwin Leuven, and Magne Mogstad. 2022. “Information Frictions,
+Internet, and the Relationship between Distance and Trade.” American Economic Jour-
+nal: Applied Economics, 14(1): 133–63.
+
+Allen, Treb. 2014. “Information Frictions in Trade.” Econometrica, 82(6): 2041–2083.
+
+Armington, Paul S. 1969. “A Theory of Demand for Products Distinguished by Place of
+Production (Une théorie de la demande de produits différenciés d’après leur origine)
+(Una teoría de la demanda de productos distinguiéndolos según el lugar de produc-
+ción).” Staff Papers (International Monetary Fund), 16(1): 159–178.
+
+Blum, Bernardo S., and Avi Goldfarb. 2006. “Does the internet defy the law of gravity?”
+
+Journal of international economics, 70(2): 384–405.
+
+Carballo, Jerónimo, Marisol Rodriguez Chatruc, Catalina Salas Santa, and Christian
+Volpe Martincus. 2022. “Online business platforms and international trade.” Journal
+of International Economics, 137: 103599.
+
+Chen, Maggie X., and Min Wu. 2021. “The Value of Reputation in Trade: Evidence from
+
+Alibaba.” The Review of Economics and Statistics, 103(5): 857–873.
+
+Disdier, Anne-Célia, and Keith Head. 2008. “The Puzzling Persistence of the Distance
+
+Effect on Bilateral Trade.” The Review of Economics and Statistics, 90(1): 37–48.
+
+Disdier, Anne-Célia, Silvio H. T. Tai, Lionel Fontagné, and Thierry Mayer. 2010. “Bi-
+
+lateral trade of cultural goods.” Review of world economics, 145(4): 575–595.
+
+Fan, Jingting, Lixin Tang, Weiming Zhu, and Ben Zou. 2018. “The Alibaba effect: Spa-
+tial consumption inequality and the welfare gains from e-commerce.” Journal of inter-
+national economics, 114: 203–220.
+
+Ferreira, Fernando, and Joel Waldfogel. 2013. “Pop Internationalism: Has Half a
+Century of World Music Trade Displaced Local Culture?” The Economic Journal,
+123(569): 634–664.
+
+Freund, Caroline L, and Diana Weinhold. 2004. “The effect of the Internet on interna-
+
+tional trade.” Journal of International Economics, 62(1): 171–189.
+
+Friedman, Thomas L. 2007. The world is ﬂat. Penguin Books.
+
+26
+
+Goldfarb, Avi, and Catherine Tucker. 2019. “Digital Economics.” Journal of economic
+
+literature, 57(1): 3–43.
+
+Hortaçsu, Ali, F. Asís Martínez-Jerez, and Jason Douglas. 2009. “The Geography of
+Trade in Online Transactions: Evidence from eBay and MercadoLibre.” American Eco-
+nomic Journal: Microeconomics, 1(1): 53–74.
+
+Lendle, Andreas, Marcelo Olarreaga, Simon Schropp, and Pierre-Louis Vézina. 2016.
+“There Goes Gravity: eBay and the Death of Distance.” The Economic journal (London),
+126(591): 406–441.
+
+Mayer, Thierry, and Soledad Zignago. 2011. “Notes on CEPII’s distances measures: The
+
+GeoDist database.” CEPII Working Papers 2011-25.
+
+Melitz, Jacques, and Farid Toubal. 2014. “Native language, spoken language, transla-
+
+tion and trade.” Journal of International Economics, 93(2): 351–363.
+
+Silva, J. M. C. Santos, and Silvana Tenreyro. 2006. “The Log of Gravity.” The Review of
+
+Economics and Statistics, 88(4): 641–658.
+
+Simonovska, Ina, and Michael E Waugh. 2014. “The elasticity of trade: Estimates and
+
+evidence.” Journal of International Economics, 92(1): 34–50.
+
+Timmer, Marcel P., Erik Dietzenbacher, Bart Los, Robert Stehrer, and Gaaitzen J.
+de Vries. 2015. “An Illustrated User Guide to the World Input–Output Database: the
+Case of Global Automotive Production.” Review of International Economics, 23(3): 575–
+605.
+
+Waugh, Michael E., and B. Ravikumar. 2016. “Measuring openness to trade.” Journal of
+
+Economic Dynamics and Control, 72: 29–41.
+
+27
+
+A Quantitative model
+
+Here we illustrate the details of our quantitative model. The model extends the Arm-
+ington model to include the enduring frictions. The residual frictions are modeled as
+demand shifters, in the sense that consumers derive less utility from goods that are de-
+veloped in more distant locations. There are N countries in the economy, and in each
+country, there is a representative consumer and a representative ﬁrm.
+
+The representative ﬁrm in each country produce goods using labor, and sell the
+goods at marginal cost. Since the market is perfectly competitive, the representative
+ﬁrm in i sells the product to location n at marginal costs, which equals the cost s of labor
+and iceberg trade costs. The price of the goods produced in i and sold in n is
+
+pin = Aiwiτin,
+
+where Ai is the labor requirement for producing goods in i, wi is the labor wage in i, and
+τin is the iceberg trade cost of delivering goods from i to n.
+
+Country i supplies Li amount of labor inelastically, and use entirety of the earning to
+consumer goods. A representative consumer in i derives utility from consuming goods
+from countries n ∈ N :
+
+Ui =
+
+(cid:32)
+
+(cid:88)
+
+n∈N
+
+in q(σ−1)/σ
+t1/σ
+
+in
+
+(cid:33)σ/(σ−1)
+
+,
+
+where qin is the consumption of goods from j by a representative consumer i, σ is the
+elasticity of substitution between goods, and tin is a bilateral demand shifter. This de-
+mand shifter corresponds to the residual frictions we estimate in Steam data. The de-
+mand function of the representative consumer i becomes
+
+Xin = tinp1−σ
+
+in P σ−1
+
+n
+
+In
+
+where Pin is a price index of n and In is a total expenditure of n.
+
+The market clearing condition is:
+
+wiLi =
+
+(cid:88)
+
+n∈N
+
+Xin + Di.
+
+Where Di is a trade deﬁcit of country i. An equilibrium of this economy is {wi, pi, Xi, Di}
+that satisﬁes consumer optimization, producer optimization and market clearing condi-
+tions.
+
+28
+
+A.1 Calibrating the model
+
+We use the baseline parameters taken from the World Input Output tables (WIOD) and
+calibrate further parameters using the regression result from Steam. Our model yields
+the following gravity equation:
+
+Xin = ξiζntinτ 1−σ
+
+in
+
+where ζi = Aiwi and ξn = PnXn. Denote din = tinτ σ−1
+and the residual frictions.
+
+in
+
+as a combination of trade costs
+
+We retrieve w, X and I from the WIOD, and we calibrate A and d using gravity
+equation. More precisely, we perform a two-way ﬁxed effect gravity equation with the
+following speciﬁcation for d:
+
+din = (Distancein)δdist ∗ exp
+
+(cid:16)
+
+δcontContiguityin
+
++ δcolonyColonyin + δcommonlangColonyin
+
+(cid:17)
+
+.
+
+The productivity parameter A is backed out from the estimate of ξi = Aiwi and the
+
+wage data from WIOD. To separate out t and τ , we adopt a following speciﬁcation:
+
+tin = Distanceβdist
+
+in
+
+.
+
+and the coefﬁcient βdist is taken from the gravity regression using Steam data. 18 We
+
+can now calibrate τ , since we have a calibrated both d and t.
+
+In summary, w, X and I are taking from WIOD, A and d are calibrated with gravity
+
+equations using WIOD, and Steam data is used to separate d to t and τ .
+
+B List of countries
+
+The list of exporting countries are Argentina, Australia, Austria, Brazil, Bulgaria, Canada,
+Chile, China, China, Hong Kong Special Administrative Region, Colombia, Costa Rica,
+Croatia, Cyprus, Czech Republic, Denmark, Ecuador, Egypt, Estonia, Finland, France,
+Georgia, Germany, Hungary, India, Indonesia, Ireland, Israel, Italy, Japan, Kazakhstan,
+Latvia, Lithuania, Malaysia, Malta, Mexico, Morocco, Netherlands, New Zealand, Nor-
+way, Pakistan, Peru, Philippines, Poland, Portugal, Republic of Korea, Russian Federa-
+tion, Saudi Arabia, Singapore, Slovakia, Slovenia, South Africa, Spain, Sweden, Switzer-
+land, Taiwan, Thailand, Turkey, Ukraine, United Arab Emirates, United Kingdom of
+
+18The assumption is that the residual frictions in the aggregate economy is common with that of Steam.
+
+While this may not be the exactly true, this is a good starting point for a quantitative exploration.
+
+29
+
+Great Britain and Northern Ireland, United States of America, Uruguay, Venezuela (Bo-
+livarian Republic of), Viet Nam.
+
+The importing countries are Argentina, Australia, Austria, Azerbaijan, Bangladesh,
+Bolivia (Plurinational State of), Bosnia and Herzegovina, Brazil, Bulgaria, Canada, Chile,
+China, China, Hong Kong Special Administrative Region, Colombia, Costa Rica, Croa-
+tia, Cyprus, Czech Republic, Denmark, Ecuador, Egypt, Estonia, Finland, France, Geor-
+gia, Germany, Hungary, India, Indonesia, Ireland, Israel, Italy, Japan, Jordan, Kaza-
+khstan, Latvia, Lithuania, Malaysia, Malta, Mexico, Morocco, Netherlands, New Zealand,
+Norway, Pakistan, Peru, Philippines, Poland, Portugal, Qatar, Republic of Korea, Rus-
+sian Federation, Saudi Arabia, Singapore, Slovakia, Slovenia, South Africa, Spain, Swe-
+den, Switzerland, Taiwan, Thailand, Turkey, Uganda, Ukraine, United Arab Emirates,
+United Kingdom of Great Britain and Northern Ireland, United States of America, Uruguay,
+Venezuela (Bolivarian Republic of), Viet Nam.
+
+30
+
+

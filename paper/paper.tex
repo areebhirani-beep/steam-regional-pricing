@@ -67,9 +67,10 @@
 {\large Demand for Digital Goods When Regional Pricing Ends}\\[22pt]
 {\large Areeb Hirani\footnote{Independent researcher.
 Correspondence: \href{mailto:areeb.research@gmail.com}{areeb.research@gmail.com}.
-The full replication package, including the data-collection scripts, is public; every
-table and figure in this paper is regenerated from a cold start by those scripts.
-All errors are my own.}}\\[16pt]
+The full replication package, including every
+data-collection script, is public at \url{https://github.com/areebhirani-beep/steam-regional-pricing}. All data come from endpoints requiring no
+authentication, and every table and figure in this paper is regenerated from a cold start by
+\texttt{run\_all.sh}. All errors are my own.}}\\[16pt]
 {\normalsize August 2026}\\[4pt]
 {\small\itshape Working paper. Comments and corrections are very welcome.}
 \end{center}
@@ -1103,7 +1104,7 @@ incorporates.
 \subsection*{Reproducibility}
 
 Every table and figure in this paper is regenerated from a cold start by the scripts in the
-replication package. The analysis script writes a file of \LaTeX{} macro definitions that this
+replication package at \url{https://github.com/areebhirani-beep/steam-regional-pricing}, via a single entry point, \texttt{run\_all.sh}. The analysis script writes a file of \LaTeX{} macro definitions that this
 manuscript reads, so no number in the text is typed by hand. Expanding the sample and re-running the
 analysis updates the paper, including its abstract.
 

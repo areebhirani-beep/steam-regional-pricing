@@ -1,5 +1,7 @@
 # The Price of Being Priced Like America
 
+`https://github.com/areebhirani-beep/steam-regional-pricing`
+
 **Demand for Digital Goods When Regional Pricing Ends**
 
 Replication package. Paper: [`paper/paper.pdf`](paper/paper.pdf).

@@ -47,7 +47,7 @@ exchange, or it does not happen.
 > all 28 Steam languages ranks Turkish first. Latin-American Spanish, whose countries moved onto a
 > *discounted* dollar schedule on the same day, moves in the opposite direction.
 >
-> Paper: [link]. Replication package: [link]. Everything runs on public endpoints, no API key.
+> Paper: [link]. Replication package: https://github.com/areebhirani-beep/steam-regional-pricing. Everything runs on public endpoints, no API key.
 >
 > The question I cannot answer alone is the one you would ask first. My dose measure assumes
 > pre-change lira prices were a common fraction of dollar prices, because per-title historical lira
@@ -117,7 +117,7 @@ exchange, or it does not happen.
 > Turkish demand for paid titles falls 29 percent. Free-to-play titles in the same country barely
 > move.
 >
-> Paper: [link]. Code and data pipeline: [link].
+> Paper: [link]. Code and data pipeline: https://github.com/areebhirani-beep/steam-regional-pricing.
 >
 > The extension I cannot do alone: separating Argentina, which was treated on the same date but is
 > pooled with the rest of Latin America in Steam's language tags. Doing it properly needs

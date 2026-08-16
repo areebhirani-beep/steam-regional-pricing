@@ -1,71 +1,97 @@
 k,estimate,conf.low,conf.high,spec
--16,0.00601679800405166,-0.0582757423703356,0.0703093383784389,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--15,-0.0749778160578213,-0.140126345243795,-0.00982928687184791,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--14,-0.23010741003336,-0.294657484146792,-0.165557335919927,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--13,-0.185802824308521,-0.2502237545336,-0.121381894083441,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--12,0.0172554547935138,-0.0424731816289817,0.0769840912160094,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--11,-0.105882803134578,-0.163878819763428,-0.0478867865057279,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--10,0.085806052416821,0.0306340783921459,0.140978026441496,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--9,0.0624521570857396,0.00839032748232552,0.116513986689154,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--8,0.0463353750369424,-0.00229777281577915,0.0949685228896639,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--7,0.00776975863970449,-0.0417269953706575,0.0572665126500665,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--6,0.0247415273955611,-0.0228336639015228,0.072316718692645,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--5,0.0898158966392966,0.0431839594948398,0.136447833783753,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--4,0.211478020928636,0.164765528627615,0.258190513229657,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--3,-0.0180720473726404,-0.0643920750837028,0.0282479803384221,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--2,-0.0735311586246395,-0.117831518251795,-0.0292307989974837,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-0,0.0855754968899647,0.0450419744276625,0.126109019352267,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-1,-0.540574813959134,-0.589649789824705,-0.491499838093564,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-2,-0.468494804071745,-0.51537227190631,-0.42161733623718,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-3,-0.576229898591971,-0.626968803362832,-0.525490993821109,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-4,-0.507336114308464,-0.560643342788153,-0.454028885828776,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-5,-0.414746814621808,-0.466701923242149,-0.362791706001467,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-6,-0.585194349505065,-0.640649229045773,-0.529739469964358,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-7,-0.409186642433367,-0.461551856806299,-0.356821428060435,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-8,-0.378254971798389,-0.434219621173119,-0.322290322423659,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-9,-0.434234780453774,-0.490810786802827,-0.37765877410472,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-10,-0.510686943662736,-0.567902602415238,-0.453471284910235,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-11,-0.625074740112352,-0.682558788499548,-0.567590691725156,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-12,-0.465208874232313,-0.522931727799293,-0.407486020665333,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-13,-0.527050621378973,-0.584545679377836,-0.46955556338011,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-14,-0.42998338405746,-0.48895718857433,-0.371009579540591,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-15,-0.490949858982231,-0.549554864352747,-0.432344853611716,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-16,-0.444662283580987,-0.502974760436271,-0.386349806725703,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-17,-0.569748983125701,-0.629801750268551,-0.50969621598285,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
-18,-0.55895095881561,-0.61747409684455,-0.50042782078667,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-16,-0.00623645680668555,-0.0702360980787862,0.0577631844654151,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-15,-0.0843554884646179,-0.149459383077338,-0.0192515938518983,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-14,-0.226413737312778,-0.291055123688578,-0.161772350936979,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-13,-0.190182149134519,-0.254647020167919,-0.125717278101118,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-12,-0.00207696634760629,-0.0615494287070172,0.0573954960118046,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-11,-0.122976332888882,-0.180934559413105,-0.0650181063646594,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-10,0.0618714745038795,0.00601922651078085,0.117723722496978,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-9,0.0699382281371509,0.0152311582866712,0.124645297987631,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-8,0.045661523867637,-0.00337103091693333,0.0946940786522072,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-7,0.0140109473004401,-0.0356725755566238,0.063694470157504,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-6,0.026444236329891,-0.0211559588899506,0.0740444315497325,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-5,0.0970315013344689,0.0497016247489729,0.144361377919965,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-4,0.202981695016419,0.155916854548403,0.250046535484436,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-3,-0.013952398655643,-0.0608454504371241,0.0329406531258381,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+-2,-0.064151370167428,-0.107826823001379,-0.0204759173334774,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+0,0.0741930702477957,0.0336812423656518,0.11470489812994,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+1,-0.551767497449536,-0.60103594531144,-0.502499049587631,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+2,-0.47696548614729,-0.524696688013125,-0.429234284281455,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+3,-0.573919837056678,-0.625688995976604,-0.522150678136753,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+4,-0.512613579206921,-0.566551507057762,-0.45867565135608,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+5,-0.414876007261716,-0.468106822702382,-0.361645191821051,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+6,-0.570203407409397,-0.626260699330793,-0.514146115488002,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+7,-0.397922131173773,-0.450847729628598,-0.344996532718947,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+8,-0.389015758241123,-0.445723736753501,-0.332307779728746,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+9,-0.418226632766175,-0.475735395978467,-0.360717869553883,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+10,-0.510225698346165,-0.568635824776886,-0.451815571915444,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+11,-0.605762714670271,-0.664328731954004,-0.547196697386538,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+12,-0.459667549919045,-0.517693954695496,-0.401641145142593,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+13,-0.540848955789021,-0.599822313209117,-0.481875598368925,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+14,-0.427481815308009,-0.487298039751109,-0.367665590864908,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+15,-0.479814418524777,-0.539990365874614,-0.419638471174939,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+16,-0.439162918985151,-0.498483946213699,-0.379841891756603,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+17,-0.5537702079539,-0.614294345746547,-0.493246070161253,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+18,-0.542674857724059,-0.601715431388834,-0.483634284059285,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+19,-0.409870228131436,-0.470372559231442,-0.34936789703143,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+20,-0.499306355675348,-0.559658027712583,-0.438954683638113,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+21,-0.560071611334398,-0.620657670499691,-0.499485552169106,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+22,-0.557806353971016,-0.618521600077709,-0.497091107864323,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+23,-0.552793530689596,-0.615653372919734,-0.489933688459457,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+24,-0.474790629037352,-0.536614799129186,-0.412966458945519,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+25,-0.553761856583626,-0.618748896071399,-0.488774817095852,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+26,-0.492478046584944,-0.559541814966526,-0.425414278203362,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+27,-0.595636987037915,-0.659814370973274,-0.531459603102556,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+28,-0.365794673534019,-0.429748284884375,-0.301841062183663,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+29,-0.420331288482704,-0.486995667638303,-0.353666909327105,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+30,-0.50079144142033,-0.566399650562284,-0.435183232278375,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
+31,-0.842688561359157,-0.915234627909594,-0.77014249480872,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
 -1,0,0,0,"A.  Difference-in-differences: Turkish versus other languages, paid titles"
--16,-0.0412694843140369,-0.249112167530912,0.166573198902838,B.  Triple difference: free-to-play titles added as a within-Turkey control
--15,-0.133868285768644,-0.341259238802175,0.0735226672648863,B.  Triple difference: free-to-play titles added as a within-Turkey control
--14,-0.0501695078763093,-0.249936042925226,0.149597027172608,B.  Triple difference: free-to-play titles added as a within-Turkey control
--13,-0.0688153752838025,-0.28011640437026,0.142485653802656,B.  Triple difference: free-to-play titles added as a within-Turkey control
--12,-0.0954341672913939,-0.275212160624848,0.0843438260420602,B.  Triple difference: free-to-play titles added as a within-Turkey control
--11,-0.0825497404623461,-0.286478101039074,0.121378620114382,B.  Triple difference: free-to-play titles added as a within-Turkey control
--10,-0.0904821168258231,-0.36430754673065,0.183343313079003,B.  Triple difference: free-to-play titles added as a within-Turkey control
--9,-0.0994240865861732,-0.317024704219203,0.118176531046856,B.  Triple difference: free-to-play titles added as a within-Turkey control
--8,-0.112462130842904,-0.324048126379561,0.0991238646937533,B.  Triple difference: free-to-play titles added as a within-Turkey control
--7,-0.139872887472628,-0.331811033526003,0.0520652585807472,B.  Triple difference: free-to-play titles added as a within-Turkey control
--6,-0.152487184283005,-0.336910125382806,0.0319357568167968,B.  Triple difference: free-to-play titles added as a within-Turkey control
--5,-0.142357307726756,-0.340031465889937,0.055316850436426,B.  Triple difference: free-to-play titles added as a within-Turkey control
--4,0.0592171013995302,-0.0794975454345689,0.197931748233629,B.  Triple difference: free-to-play titles added as a within-Turkey control
--3,0.0322870712888851,-0.192670105329441,0.257244247907212,B.  Triple difference: free-to-play titles added as a within-Turkey control
--2,-0.0988139919620651,-0.300979766824227,0.103351782900097,B.  Triple difference: free-to-play titles added as a within-Turkey control
-0,0.0297779530058496,-0.139871271755232,0.199427177766932,B.  Triple difference: free-to-play titles added as a within-Turkey control
-1,-0.41964691281768,-0.585176378205311,-0.254117447430048,B.  Triple difference: free-to-play titles added as a within-Turkey control
-2,-0.396858942863078,-0.615081596979776,-0.17863628874638,B.  Triple difference: free-to-play titles added as a within-Turkey control
-3,-0.318655661384125,-0.580775152619168,-0.0565361701490829,B.  Triple difference: free-to-play titles added as a within-Turkey control
-4,-0.347999022729331,-0.526743521763164,-0.169254523695497,B.  Triple difference: free-to-play titles added as a within-Turkey control
-5,-0.268982586981127,-0.448556021257397,-0.0894091527048579,B.  Triple difference: free-to-play titles added as a within-Turkey control
-6,-0.390189460022602,-0.630116931743524,-0.15026198830168,B.  Triple difference: free-to-play titles added as a within-Turkey control
-7,-0.288527825226123,-0.496482844971182,-0.080572805481064,B.  Triple difference: free-to-play titles added as a within-Turkey control
-8,-0.397254004643294,-0.596685644959647,-0.197822364326941,B.  Triple difference: free-to-play titles added as a within-Turkey control
-9,-0.392365494543113,-0.570388431970365,-0.214342557115862,B.  Triple difference: free-to-play titles added as a within-Turkey control
-10,-0.364570542622593,-0.545757244791339,-0.183383840453846,B.  Triple difference: free-to-play titles added as a within-Turkey control
-11,-0.494350123912879,-0.702546187620522,-0.286154060205236,B.  Triple difference: free-to-play titles added as a within-Turkey control
-12,-0.372958423390317,-0.581960626415785,-0.163956220364848,B.  Triple difference: free-to-play titles added as a within-Turkey control
-13,-0.24002997557868,-0.51989404317425,0.0398340920168903,B.  Triple difference: free-to-play titles added as a within-Turkey control
-14,-0.262419598513081,-0.553996127650607,0.0291569306244451,B.  Triple difference: free-to-play titles added as a within-Turkey control
-15,-0.417146325774568,-0.630821041824122,-0.203471609725014,B.  Triple difference: free-to-play titles added as a within-Turkey control
-16,-0.430599432532223,-0.604580087944597,-0.25661877711985,B.  Triple difference: free-to-play titles added as a within-Turkey control
-17,-0.285544299838287,-0.571713732865667,0.000625133189092741,B.  Triple difference: free-to-play titles added as a within-Turkey control
-18,-0.426950231058353,-0.666206044810084,-0.187694417306623,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-16,-0.0889875231406498,-0.295143278284465,0.117168232003165,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-15,-0.142578587678106,-0.321643894420058,0.0364867190638462,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-14,-0.0833323600041683,-0.287171997670453,0.120507277662116,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-13,-0.119839693958233,-0.324462596180359,0.0847832082638936,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-12,-0.156846694207619,-0.335019519236087,0.0213261308208504,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-11,-0.0938890704983478,-0.283503399597902,0.0957252586012065,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-10,-0.0431185340717872,-0.212591304623699,0.126354236480124,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-9,-0.0787619550841858,-0.27183488602006,0.114310975851689,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-8,-0.0994226194107223,-0.29290652070926,0.0940612818878153,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-7,-0.192453557139982,-0.379945768016188,-0.00496134626377545,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-6,-0.196385621110969,-0.391398690049477,-0.00137255217246096,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-5,-0.16419626241801,-0.365522083561069,0.0371295587250475,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-4,0.0112943600047795,-0.131683327576923,0.154272047586482,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-3,-0.00903549663529023,-0.238157158792074,0.220086165521493,B.  Triple difference: free-to-play titles added as a within-Turkey control
+-2,-0.122039496754312,-0.328200124434211,0.0841211309255879,B.  Triple difference: free-to-play titles added as a within-Turkey control
+0,-0.0198820068489597,-0.192980382607945,0.153216368910026,B.  Triple difference: free-to-play titles added as a within-Turkey control
+1,-0.474670968275708,-0.643078394732926,-0.306263541818489,B.  Triple difference: free-to-play titles added as a within-Turkey control
+2,-0.367504238366786,-0.533858611174314,-0.201149865559257,B.  Triple difference: free-to-play titles added as a within-Turkey control
+3,-0.28313744362523,-0.534359966566321,-0.0319149206841381,B.  Triple difference: free-to-play titles added as a within-Turkey control
+4,-0.354498901108131,-0.540977328422662,-0.168020473793599,B.  Triple difference: free-to-play titles added as a within-Turkey control
+5,-0.293399760622338,-0.485332389370781,-0.101467131873895,B.  Triple difference: free-to-play titles added as a within-Turkey control
+6,-0.386872524011743,-0.628931248985392,-0.144813799038094,B.  Triple difference: free-to-play titles added as a within-Turkey control
+7,-0.306026729631417,-0.525415665920473,-0.0866377933423602,B.  Triple difference: free-to-play titles added as a within-Turkey control
+8,-0.366740161422721,-0.553882770740623,-0.179597552104818,B.  Triple difference: free-to-play titles added as a within-Turkey control
+9,-0.408085753293243,-0.591824681348268,-0.224346825238217,B.  Triple difference: free-to-play titles added as a within-Turkey control
+10,-0.407529505578789,-0.600576058764351,-0.214482952393228,B.  Triple difference: free-to-play titles added as a within-Turkey control
+11,-0.48219496310081,-0.675129055214598,-0.289260870987021,B.  Triple difference: free-to-play titles added as a within-Turkey control
+12,-0.397503415279204,-0.603339892460014,-0.191666938098395,B.  Triple difference: free-to-play titles added as a within-Turkey control
+13,-0.283474948272665,-0.575456440733781,0.00850654418845109,B.  Triple difference: free-to-play titles added as a within-Turkey control
+14,-0.23730674547137,-0.503489347132357,0.0288758561896165,B.  Triple difference: free-to-play titles added as a within-Turkey control
+15,-0.417389371855623,-0.622088869181964,-0.212689874529283,B.  Triple difference: free-to-play titles added as a within-Turkey control
+16,-0.484781876763824,-0.677723090569074,-0.291840662958574,B.  Triple difference: free-to-play titles added as a within-Turkey control
+17,-0.302627496234331,-0.582272408992892,-0.0229825834757706,B.  Triple difference: free-to-play titles added as a within-Turkey control
+18,-0.428599119413374,-0.658921169481344,-0.198277069345403,B.  Triple difference: free-to-play titles added as a within-Turkey control
+19,-0.374098850162265,-0.532697506181104,-0.215500194143426,B.  Triple difference: free-to-play titles added as a within-Turkey control
+20,-0.408646530835872,-0.631796140502533,-0.18549692116921,B.  Triple difference: free-to-play titles added as a within-Turkey control
+21,-0.498261336120056,-0.726160809447436,-0.270361862792676,B.  Triple difference: free-to-play titles added as a within-Turkey control
+22,-0.439709113381224,-0.703462143133193,-0.175956083629255,B.  Triple difference: free-to-play titles added as a within-Turkey control
+23,-0.420440250937427,-0.658905016367404,-0.18197548550745,B.  Triple difference: free-to-play titles added as a within-Turkey control
+24,-0.526415007548837,-0.754769164924715,-0.298060850172959,B.  Triple difference: free-to-play titles added as a within-Turkey control
+25,-0.474839500568544,-0.693364715139972,-0.256314285997116,B.  Triple difference: free-to-play titles added as a within-Turkey control
+26,-0.476552278993811,-0.744525145036346,-0.208579412951275,B.  Triple difference: free-to-play titles added as a within-Turkey control
+27,-0.565269759141272,-0.809218841544469,-0.321320676738076,B.  Triple difference: free-to-play titles added as a within-Turkey control
+28,-0.360903031921065,-0.629839710368535,-0.0919663534735945,B.  Triple difference: free-to-play titles added as a within-Turkey control
+29,-0.485813316119863,-0.6689106497369,-0.302715982502826,B.  Triple difference: free-to-play titles added as a within-Turkey control
+30,-0.339236945373772,-0.625506493547919,-0.0529673971996242,B.  Triple difference: free-to-play titles added as a within-Turkey control
+31,-0.678768646315401,-0.98803664781971,-0.369500644811091,B.  Triple difference: free-to-play titles added as a within-Turkey control
 -1,0,0,0,B.  Triple difference: free-to-play titles added as a within-Turkey control

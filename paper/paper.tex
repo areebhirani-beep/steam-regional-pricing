@@ -197,7 +197,7 @@ range implied by dividing the aggregate estimate by the reported price increases
 Four features of the event study make the result difficult to explain away. The effect appears in
 the first full month after the change and not before: the coefficient for November 2023, the month
 in which the change occurred on the twentieth, is \bKzero{} and statistically indistinguishable
-from zero. The effect is persistent, still between \tailHi{} and \tailLo{} more than a year later, which is
+from zero. The effect is persistent, still between \tailHi{} and \tailLo{} more than two years later, which is
 what a permanent price change should produce and not what a gradual macroeconomic deterioration
 looks like. Randomization inference, relabelling each language as treated in turn, ranks Turkish
 first of \riN{} with a one-sided $p$-value of \riP; the next most negative placebo is \riNext. And
@@ -683,8 +683,9 @@ and indistinguishable from zero. This is the correct pattern rather than a puzzl
 change took effect on 20 November and two thirds of that calendar month is pre-treatment. The
 decline appears in full at $k=1$, the first complete post-change month.
 
-The effect persists. More than a year later the coefficients remain between \tailHi{} and \tailLo{} with no tendency to
-revert. A permanent price change should produce a permanent level shift, and it
+The effect persists. Two years later the coefficients remain between \tailHi{} and \tailLo{} with no tendency to revert.
+The estimation window runs \horizonMonths{} months past the event, so this is not a short-run
+response that has yet to be undone. A permanent price change should produce a permanent level shift, and it
 does.
 
 Figure~\ref{fig:raw} shows the same three series without any regression adjustment, so that a
@@ -994,6 +995,48 @@ traversed range \citep{schmalensee1981,varian1985,aguirre2010}, and a single pri
 identifies a chord rather than a curve. That is a genuine limit of this design and not a
 presentational choice.
 
+\subsection{How much of the consumer loss is a transfer?}
+
+The bounds above can be combined. At the conservative price multiple, seller revenue rises to
+\revAct{} times its pre-change level, a gain of \ensuremath{0.48} in units of pre-change revenue,
+while the consumer-surplus loss is between \csActLo{} and \csActHi{} in the same units. The seller
+therefore captures between \transferLo{} and \transferHi{} percent of what Turkish consumers lost.
+The remainder is trade that simply stopped happening.
+
+That decomposition is the substantive point of the paper. When demand is inelastic, ending regional
+pricing is mostly a transfer from consumers in a poor country to a platform and its developers, and
+only secondarily a matter of forgone trade. Arguments about efficiency are therefore beside the
+point here; the question the episode actually raises is distributional.
+
+\subsection{Can these numbers be extrapolated?}\label{sec:curvature}
+
+Only within the observed range, and the data say why. A constant-elasticity demand curve with
+$|\varepsilon| < 1$ implies that revenue rises without limit in price, which cannot be true of any
+real market. Something must make demand more elastic at higher prices, and the dose-response
+variation can test for it directly: adding a quadratic term in $\Delta \ln P$ to
+equation~\eqref{eq:dosereg} asks whether titles that took larger increases display larger
+elasticities.
+
+Table~\ref{tab:curvature} reports the result. The quadratic coefficient is \bDoseSq{} (s.e.\
+\seDoseSq), so the point estimate has the expected sign, with demand becoming more elastic where
+the increase was larger, but it is not statistically distinguishable from zero. Evaluated at the
+tenth and ninetieth percentiles of the dose the implied elasticity moves from \epsDTen{} to
+\epsDNinety. The honest reading is that curvature is not identified here: the design cannot rule
+out constant elasticity over the traversed range, and it certainly cannot license extrapolation
+beyond it. Any counterfactual that requires prices outside the observed range needs a demand system
+this paper does not estimate.
+
+\begin{table}[htbp]
+\centering
+\caption{Does the elasticity vary with the size of the increase?}\label{tab:curvature}
+\vspace{2pt}
+{\footnotesize\input{../output/tables/t8_curvature.tex}}
+\notes{Column (1) is the linear dose-response of equation~\eqref{eq:dosereg}. Column (2) adds a
+quadratic in the title-specific size of the price increase. A negative quadratic term would mean
+demand becomes more elastic where the increase was larger. Standard errors clustered at title by
+language.}
+\end{table}
+
 \subsection{What the pre-change price implies about how it was set}
 
 A zero-marginal-cost monopolist maximising revenue prices where $\varepsilon = -1$. Turkey was
@@ -1006,7 +1049,8 @@ much an artefact of inattention as a deliberate strategy.
 \subsection{Caveats}
 
 Three bound all of the above. The elasticity is a chord over a very wide price range and cannot be
-extrapolated to small changes. The horizon is eighteen months, and the long-run response of a games
+extrapolated to small changes. The horizon is \horizonMonths{} months, which is long enough to rule out a transitory response but not
+long enough to capture cohort effects, and the long-run response of a games
 ecosystem to pricing out a national market, through fewer new players entering, fewer localisations
 commissioned and a thinner community, could be substantially larger than the medium-run response
 measured here. And the unit magnitudes rest on the proxy bound of Section~\ref{sec:validate} rather

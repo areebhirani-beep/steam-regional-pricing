@@ -20,17 +20,23 @@ affiliation, and no paid subscription.**
 
 | Specification | Estimate | s.e. | Reading |
 |---|---:|---:|---|
-| DiD, paid titles, Turkish vs. other languages | **-0.493** | 0.014 | 39% fall in review flow |
-| DDD, adding free-to-play as within-Turkey control | **-0.292** | 0.049 | 25% fall (preferred) |
-| Poisson PML on raw counts | -0.489 | 0.026 | not a log-transform artefact |
-| With a Turkish linear time trend | -0.567 | 0.017 | pre-trend correction makes it larger |
-| **Dose response: own-price elasticity** | **-0.239** | 0.052 | **inelastic** |
-| Two treated clusters, signed (Turkish up, LatAm down) | -0.306 | 0.010 | the mechanism is price |
-| Free-to-play in Turkish (macro control) | -0.207 | 0.047 | why DDD is smaller than DiD |
-| Latin-American Spanish (repriced down same day) | **+0.121** | 0.010 | opposite sign, as predicted |
-| Gray market (non-Steam key share) | +0.0100 | 0.0026 | +1.0pp shift to third-party keys |
+| DiD, paid titles, Turkish vs. other languages | **-0.499** | 0.016 | 39% fall in review flow |
+| DDD, adding free-to-play as within-Turkey control | **-0.317** | 0.057 | 27% fall (preferred) |
+| Poisson PML on raw counts | -0.472 | 0.029 | not a log-transform artefact |
+| With a Turkish linear time trend | -0.492 | 0.014 | pre-trend correction makes it larger |
+| **Dose response: own-price elasticity** | **-0.287** | 0.055 | **inelastic** |
+| Two treated clusters, signed (Turkish up, LatAm down) | -0.350 | 0.010 | the mechanism is price |
+| Free-to-play in Turkish (macro control) | -0.189 | 0.055 | why DDD is smaller than DiD |
+| Latin-American Spanish (repriced down same day) | **+0.207** | 0.012 | opposite sign, as predicted |
+| Gray market (non-Steam key share) | +0.0131 | 0.0026 | +1pp shift to third-party keys |
 
-Sample: **7,323,081 reviews** in the estimation window across 486 titles (464 paid, 22 free-to-play), 28 languages, 7348 title-by-language cells and 257,180 title-language-month observations, July 2022 to June 2025. The raw collection behind it is 17.4 million reviews across 560 titles and 29 languages.
+**In units, not reviews.** Bounded at [-0.183, -0.317], a 17 to 27 percent fall; elasticity [-0.17, -0.29].
+
+**Welfare.** Revenue rises to 2.48x pre-change. Consumer-surplus loss is 1.75 to 2.40 times pre-change revenue. The seller captures 62 to 84 percent of what consumers lost; the rest is forgone trade.
+
+**Horizon.** 31 months post-event, with no reversion.
+
+Sample: **9,608,862 reviews** in the estimation window across 484 titles (462 paid, 22 free-to-play), 28 languages, 6501 title-by-language cells and 312,048 title-language-month observations, July 2022 to June 2026. The raw collection behind it is 17.4 million reviews across 560 titles and 29 languages.
 
 **Proxy validated against units.** SteamSpy owner estimates provide an independent measure of units: log(owners) = 8.23 + 0.577·log(reviews), R-squared 0.65, N = 8,767. The slope is below one, so the unit response is bounded at [-0.169, -0.292] and the elasticity in units at [-0.14, -0.24]. Both ends inelastic.
 

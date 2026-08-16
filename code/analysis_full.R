@@ -17,7 +17,7 @@ dir.create(file.path(OUTD, "tables"),  recursive = TRUE, showWarnings = FALSE)
 EVENT    <- as.Date("2023-11-20")   # Valve ends TRY/ARS pricing
 ANNOUNCE <- as.Date("2023-10-25")   # Valve announces it
 EVENT_M  <- as.Date("2023-11-01")
-W0 <- as.Date("2022-07-01"); W1 <- as.Date("2025-06-01")
+W0 <- as.Date("2022-07-01"); W1 <- as.Date("2026-06-01")   # 30 months post-event
 
 ## ------------------------------- house style ------------------------------
 NAVY <- "#1f3b57"; RED <- "#a4243b"; GREEN <- "#3f7d20"
@@ -310,7 +310,7 @@ E <- rbind(evtab(did_e, "rel_m", "A.  Difference-in-differences: Turkish versus 
            evtab(ddd_e, "rel_m", "B.  Triple difference: free-to-play titles added as a within-Turkey control"))
 fwrite(E, file.path(OUTD, "tables", "event_study_coefs.csv"))
 
-f1 <- ggplot(E[k >= -16 & k <= 18], aes(k, estimate)) +
+f1 <- ggplot(E[k >= -16 & k <= 30], aes(k, estimate)) +
   annotate("rect", xmin = -0.5, xmax = Inf, ymin = -Inf, ymax = Inf, fill = "grey95") +
   geom_hline(yintercept = 0, linewidth = .3, colour = "grey25") +
   geom_vline(xintercept = -0.5, linetype = "22", linewidth = .45, colour = RED) +
@@ -318,7 +318,7 @@ f1 <- ggplot(E[k >= -16 & k <= 18], aes(k, estimate)) +
   geom_line(colour = NAVY, linewidth = .55) +
   geom_point(colour = NAVY, size = 1.15) +
   facet_wrap(~spec, ncol = 1) +
-  scale_x_continuous(breaks = seq(-15, 15, 5)) +
+  scale_x_continuous(breaks = seq(-15, 30, 5)) +
   labs(x = "Months relative to 20 November 2023", y = "Effect on log review flow") + th
 ggsave(file.path(OUTD, "figures", "fig1_event_study.pdf"), f1, width = 6.5, height = 5.4)
 
@@ -582,8 +582,9 @@ writeLines(c(readLines(file.path(OUTD, "tables", "macros.tex")),
   E_("doseMin", min(pr$ratio), "%.2f"), E_("doseMax", max(pr$ratio), "%.2f"),
   E_("doseMed", median(pr$ratio), "%.2f"),
   sprintf("\\newcommand{\\doseN}{%d}", nrow(pr)),
-  E_("tailLo", min(as.data.table(fread(file.path(OUTD,"tables","event_study_coefs.csv")))[grepl("^A",spec) & k>=12]$estimate), "%.2f"),
-  E_("tailHi", max(as.data.table(fread(file.path(OUTD,"tables","event_study_coefs.csv")))[grepl("^A",spec) & k>=12]$estimate), "%.2f")
+  E_("tailLo", min(as.data.table(fread(file.path(OUTD,"tables","event_study_coefs.csv")))[grepl("^A",spec) & k>=24]$estimate), "%.2f"),
+  E_("tailHi", max(as.data.table(fread(file.path(OUTD,"tables","event_study_coefs.csv")))[grepl("^A",spec) & k>=24]$estimate), "%.2f"),
+  sprintf("\\newcommand{\\horizonMonths}{%d}", max(m$rel_m))
 ), file.path(OUTD, "tables", "macros.tex"))
 
 ## proxy-validation figure
@@ -605,3 +606,62 @@ regtable(list(did_s, signed_s, dose_s),
                  "Title $\\times$ language FE" = rep("Yes", 3),
                  "Treated units" = c("1 (Turkish)", "2 (Turkish, LatAm)", "1 (Turkish)")),
   file = "t7_extensions.tex")
+
+## ---- (G) Is the elasticity constant over the traversed price range? --------
+## A constant-elasticity demand with |theta| < 1 implies revenue rises without
+## bound in price, which cannot be true. Adding a quadratic in the dose tests
+## whether demand becomes more elastic where the price increase was larger, and
+## therefore whether any counterfactual may be extrapolated at all.
+mp2[, dose_sq := dose_c^2]
+dose_q <- feols(log_n ~ turkish:post + turkish:post:dose_c + turkish:post:dose_sq |
+                  appid^month + appid^language, data = mp2, cluster = ~ appid^language)
+b_lin <- unname(coef(dose_q)["turkish:post:dose_c"])
+b_sq  <- unname(coef(dose_q)["turkish:post:dose_sq"])
+se_sq <- unname(se(dose_q)["turkish:post:dose_sq"])
+
+## elasticity evaluated at the 10th and 90th percentile of the dose
+d10 <- quantile(mp2$dose_c, .10); d90 <- quantile(mp2$dose_c, .90)
+eps_d10 <- b_lin + 2 * b_sq * d10
+eps_d90 <- b_lin + 2 * b_sq * d90
+
+## ---- (H) Counterfactual: what the change did, and what it did not ---------
+## Normalise pre-change Turkish revenue to 1. Actual: price x kappa, quantity
+## x exp(beta_units). Counterfactual "no change": price and quantity unchanged.
+kap <- 3.4
+q_act <- exp(b_units_hi); q_act_lo <- exp(b_units_lo)
+rev_act <- kap * q_act
+cs_act_lo <- (kap - 1) * q_act        # CS loss, lower bound, in units of pre-revenue
+cs_act_hi <- (kap - 1)
+## fraction of the consumer loss that shows up as seller revenue rather than
+## as forgone trade
+transfer_share_lo <- (rev_act - 1) / cs_act_hi
+transfer_share_hi <- (rev_act - 1) / cs_act_lo
+
+cat("\n================ ELASTICITY SHAPE AND COUNTERFACTUAL ================\n")
+cat(sprintf("(G) quadratic dose: linear %.3f, quadratic %.3f (%.3f), t=%.2f\n",
+            b_lin, b_sq, se_sq, b_sq/se_sq))
+cat(sprintf("    elasticity at dose p10 = %.3f ; at dose p90 = %.3f\n", eps_d10, eps_d90))
+cat(sprintf("(H) at kappa=%.1f: revenue %.2fx pre-change; CS loss %.2f to %.2f x pre-revenue\n",
+            kap, rev_act, cs_act_lo, cs_act_hi))
+cat(sprintf("    share of consumer loss captured as seller revenue: %.0f%% to %.0f%%\n",
+            100*transfer_share_lo, 100*transfer_share_hi))
+cat(sprintf("    horizon: %d months post-event\n", max(m$rel_m)))
+
+writeLines(c(readLines(file.path(OUTD, "tables", "macros.tex")),
+  E_("bDoseLin", b_lin), E_("bDoseSq", b_sq), E_("seDoseSq", se_sq),
+  E_("tDoseSq", b_sq/se_sq, "%.2f"),
+  E_("epsDTen", eps_d10, "%.2f"), E_("epsDNinety", eps_d90, "%.2f"),
+  E_("revAct", rev_act, "%.2f"),
+  E_("csActLo", cs_act_lo, "%.2f"), E_("csActHi", cs_act_hi, "%.2f"),
+  sprintf("\\newcommand{\\transferLo}{%.0f}", 100*transfer_share_lo),
+  sprintf("\\newcommand{\\transferHi}{%.0f}", 100*transfer_share_hi)
+), file.path(OUTD, "tables", "macros.tex"))
+
+regtable(list(dose_s, dose_q),
+  coefs = list("turkish:post" = "Turkish $\\times$ Post",
+               "turkish:post:dose_c"  = "$\\times\\ \\Delta\\ln P$",
+               "turkish:post:dose_sq" = "$\\times\\ (\\Delta\\ln P)^2$"),
+  heads = c("Linear", "Quadratic"),
+  fe_rows = list("Title $\\times$ month FE" = rep("Yes", 2),
+                 "Title $\\times$ language FE" = rep("Yes", 2)),
+  file = "t8_curvature.tex")

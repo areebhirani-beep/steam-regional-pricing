@@ -1,4 +1,4 @@
-# Phase 2 — Verification log
+# Phase 2. Verification log
 
 Every claim below was produced by a command run in this session. Commands are shown.
 Anything I could not confirm is marked `UNVERIFIED`.
@@ -13,7 +13,7 @@ Machine: macOS 25.5.0 (Darwin), Apple Silicon. Working dir `~/research-paper`.
 $ which R python3 curl jq git
 R not found            -> installed via `brew install r`  => R version 4.6.1 (2026-06-24) "Happy Hop"
 /opt/homebrew/bin/python3   (Python 3.14.6)
-/usr/bin/curl , /usr/bin/jq , /usr/bin/git
+/usr/bin/curl, /usr/bin/jq, /usr/bin/git
 $ pdflatex / xelatex / tectonic  -> not found -> installed BasicTeX via `brew install --cask basictex`
 ```
 
@@ -28,9 +28,9 @@ R packages installed from CRAN (`install_pkgs.R`, exit code 0): `data.table`, `f
 
 ---
 
-## §1 SEC EDGAR Form D — VERIFIED, complete, and richer than expected
+## §1 SEC EDGAR Form D. VERIFIED, complete, and richer than expected
 
-**Access.** The documented path `.../files/dera/data/form-d-data-sets/` returns 404. The working
+**Access.** The documented path `../files/dera/data/form-d-data-sets/` returns 404. The working
 path is:
 
 ```
@@ -61,17 +61,17 @@ industry group, **fund type (Venture Capital / Private Equity / Hedge / Other)**
 amount, total amount sold, **total number of investors already invested**, minimum investment,
 federal exemption claimed (506(b) vs 506(c)), and officer/director **names and addresses**.
 
-Sample check, 2025Q1 "Other Technology" issuers by amount sold — real, current, and correct:
+Sample check, 2025Q1 "Other Technology" issuers by amount sold, real, current, and correct:
 Databricks $8.59B (175 investors), Apptronik $403M, Saronic Technologies $348M, Whatnot $262M.
 VC fund offerings that quarter: 1,976, incl. Sequoia Capital Fund LP $19.6B, Madrona Venture
 Fund X $490M.
 
 **Verdict: Form D is a free, complete substitute for the financing side of Crunchbase/PitchBook.**
-It is not, however, unexploited — see §2.
+It is not, however, unexploited, see §2.
 
 ---
 
-## §2 Literature check that killed two candidates — VERIFIED
+## §2 Literature check that killed two candidates. VERIFIED
 
 Search led to a report hosted on sec.gov, downloaded and read in full:
 
@@ -98,7 +98,7 @@ This is, essentially exactly, candidate C1's design (below/above $10M × before/
 is candidate C6's entire question. Both are dead. Data: Form D + PitchBook + LinkedIn + a survey.
 I would have brought Form D alone, against an NBER faculty member with the SEC's cooperation.
 
-**Cost of not searching:** I had already run C1's core test on real data and it worked — see §3.
+**Cost of not searching:** I had already run C1's core test on real data and it worked, see §3.
 That is exactly the trap the search was for.
 
 ---
@@ -121,7 +121,7 @@ An absolute ceiling of 99–100 investors for five consecutive years, then a jum
 247–249. Private equity funds (ineligible) show no break: share >100 is 0.093, 0.065, 0.066,
 0.062, 0.055, 0.054, 0.063 for 2014–2020. The first small VC funds to cross 100 are, in order,
 `FundersClub VD8 LLC`, `NO Fund I, a series of AngelList-Forefront Venture Partners-Funds, LP`,
-`AK Fund I, a series of AngelList-GP-Funds-I, LP` — i.e. exactly the platforms that built the
+`AK Fund I, a series of AngelList-GP-Funds-I, LP`, i.e. exactly the platforms that built the
 solo-GP era. A lovely figure. Scooped.
 
 Statute verified independently from SEC Release No. IC-35305 (downloaded, text extracted):
@@ -133,9 +133,9 @@ beneficial owners** and "could not use the section 3(c)(1) exclusion absent" §5
 
 ---
 
-## §4 App-side data — what is and is not retrievable for free
+## §4 App-side data, what is and is not retrievable for free
 
-### 4.1 Live Apple endpoints — VERIFIED WORKING
+### 4.1 Live Apple endpoints. VERIFIED WORKING
 - `itunes.apple.com/lookup?id=…` returns price, releaseDate, currentVersionReleaseDate,
   averageUserRating, userRatingCount, genre, seller. (Spotify id=324684580 returned
   41,530,342 ratings, minimum iOS 16.1.)
@@ -143,11 +143,11 @@ beneficial owners** and "could not use the section 3(c)(1) exclusion absent" §5
 - **In-app purchase names and prices are on the public App Store web page.** Duolingo US:
   `Super Duolingo $9.99 | Barrel of Gems (1200) $4.99 | Super Duolingo $83.99 | … | $119.99`.
   This works for any of ~175 storefronts. **Current cross-section only.**
-- `itunes.apple.com/{cc}/rss/customerreviews/page={1..10}/id={app}/sortby=mostrecent/json`
+- `itunes.apple.com/{cc}/rss/customerreviews/page={1.10}/id={app}/sortby=mostrecent/json`
   returns **50 reviews/page, hard cap 10 pages = 500 per app per country**; page 11 is invalid.
   Verified in us/de/br/no.
 
-### 4.2 The retrospective wall — VERIFIED NEGATIVE, and it killed several candidates
+### 4.2 The retrospective wall. VERIFIED NEGATIVE, and it killed several candidates
 - **Wayback is far too sparse for App Store pages.** Duolingo US page, all snapshots, 200-limit
   CDX query: **12 snapshots in five years** (2019:2, 2020:2, 2021:1, 2022:5, 2023:2). For one of
   the ten largest apps on earth. There is no monthly historical app panel here.
@@ -155,7 +155,7 @@ beneficial owners** and "could not use the section 3(c)(1) exclusion absent" §5
   covers **3 days** (2026-08-11 → 2026-08-14). Germany: 20 days. Norway: 4 months. A long-tail
   app tested reached back to 2021. So review-based history exists only for small apps.
 
-### 4.3 Common Crawl — VERIFIED RICH, but with three hard constraints
+### 4.3 Common Crawl. VERIFIED RICH, but with three hard constraints
 Index API (`index.commoncrawl.org`), 126 crawls available (CC-MAIN-2013-* … CC-MAIN-2026-30).
 
 ```
@@ -168,13 +168,13 @@ Fetching the WARC bytes by HTTP range request and parsing the embedded
 `<script type="fastboot/shoebox" id="shoebox-media-api-cache-apps">` yields Apple's own media-API
 record. Confirmed fields, per app, from an actual archived page:
 
-- `versionHistory` — **every version with `releaseNotes` text and `releaseTimestamp`**
-- `offers` — price + currency; `top-in-apps` — the IAP list *with prices*
+- `versionHistory`, **every version with `releaseNotes` text and `releaseTimestamp`**
+- `offers`, price + currency; `top-in-apps`, the IAP list *with prices*
   (verified example: `$5 Bill Helper Basic Plan $4.99`, `Gold Plan $49.99`)
-- `userRating.ratingCountList` — the **1★–5★ histogram**, so two snapshots give ratings *flow*
-- `privacy.privacyTypes` — the App Privacy nutrition label
+- `userRating.ratingCountList`, the **1★–5★ histogram**, so two snapshots give ratings *flow*
+- `privacy.privacyTypes`, the App Privacy nutrition label
 - `releaseDate`, `bundleId`, `seller`, description, genres, file size, supported locales
-- `customers-also-bought-apps` and `developer-other-apps` — a co-purchase / portfolio graph
+- `customers-also-bought-apps` and `developer-other-apps`, a co-purchase / portfolio graph
 
 Format stability probe (12 records sampled per crawl):
 ```
@@ -186,24 +186,24 @@ CC-MAIN-2021-31: 0 records on page 0
 CC-MAIN-2019-35: idx200=9,502 but parsed 0/12 -> different HTML era
 ```
 
-**Constraint 1 — three or four HTML eras** need separate parsers; the rich-JSON era is roughly
+**Constraint 1, three or four HTML eras** need separate parsers; the rich-JSON era is roughly
 2022–2024.
-**Constraint 2 — non-US storefronts are thin.** Index block counts, CC-MAIN-2023-40:
+**Constraint 2, non-US storefronts are thin.** Index block counts, CC-MAIN-2023-40:
 us 15, de 3, jp 3, nl 2, it 2, gb 1, kr 1. Roughly a fifth to a fifteenth of US coverage. A
 same-app × multi-country × multi-period intersection collapses. **This is what killed the
 cross-country App Store price panel, and with it the EU/DMA pass-through design.**
-**Constraint 3 — the index server rate-limits hard.** Sustained querying produced
+**Constraint 3, the index server rate-limits hard.** Sustained querying produced
 `ConnectionRefusedError: [Errno 61] Connection refused`. Anything at scale must use the columnar
 (Parquet) index on S3, not the CDX API.
 
 Also verified negative: the **live 2026** App Store page uses a different renderer
 (`serialized-server-data`), carries no `versionHistory`/`ratingCountList`, and its
-`hasExternalPurchases` flag reads `False` for Spotify, Kindle, Netflix, Tinder, NYTimes — so it is
+`hasExternalPurchases` flag reads `False` for Spotify, Kindle, Netflix, Tinder, NYTimes, so it is
 *not* a usable indicator of external-purchase-link adoption in the US.
 
 ---
 
-## §5 Apple's own pass-through study — VERIFIED, and it reframes that question
+## §5 Apple's own pass-through study. VERIFIED, and it reframes that question
 
 Downloaded `https://developer.apple.com/download/files/DMA-Study-Nov-2025.pdf`.
 
@@ -216,16 +216,16 @@ Its numbers, quoted: ~21,000 unique paid apps and in-app purchases; 41 million+ 
 products"; "86% of commission savings went to non-EU developers."
 
 Two observations. First, it runs on **Apple's internal transaction data**, which nobody can audit.
-Second, as described it is a **share-of-prices-changed calculation, not a causal design** — the
+Second, as described it is a **share-of-prices-changed calculation, not a causal design**, the
 comparison is to "usual patterns in price changes," with no explicit control group, no event
 study, no counterfactual. An independent, public-data, properly identified pass-through study is
-therefore genuinely valuable. It is also, on this laptop, not buildable — see §4.3 Constraint 2.
+therefore genuinely valuable. It is also, on this laptop, not buildable, see §4.3 Constraint 2.
 Recorded as a strong idea whose data does not exist for me. **Marked dead for this project, live
 for a co-author with Sensor Tower or appfigures access.**
 
 ---
 
-## §6 Steam — VERIFIED, and this is where the project landed
+## §6 Steam. VERIFIED, and this is where the project landed
 
 ### 6.1 The event
 - **Announced 25 October 2023; effective 20 November 2023.** Valve ended Turkish Lira and
@@ -243,7 +243,7 @@ for a co-author with Sensor Tower or appfigures access.**
 disproportionately underpriced in TRY, so they took the biggest percentage increases). That is the
 identifying variation.
 
-### 6.2 The outcome data — VERIFIED FREE, COMPLETE, DEEP
+### 6.2 The outcome data. VERIFIED FREE, COMPLETE, DEEP
 `https://store.steampowered.com/appreviews/{appid}?json=1&filter=recent&language={lang}&num_per_page=100&cursor=…`
 No API key. Fields confirmed on live data:
 
@@ -257,8 +257,8 @@ author:  steamid, num_games_owned, num_reviews, playtime_at_review, playtime_for
 
 Two properties that make this unusually good:
 1. **`language` is a country proxy, and `turkish` is a clean one.** Turkish is spoken essentially
-   only in Turkey. (`latam` is NOT clean — see §6.4.)
-2. **`steam_purchase = false` means the copy was activated from a non-Steam key** — i.e. a
+   only in Turkey. (`latam` is NOT clean, see §6.4.)
+2. **`steam_purchase = false` means the copy was activated from a non-Steam key**, i.e. a
    third-party/gray-market key. This is a *directly observable substitution margin*.
 
 Pagination depth, measured:
@@ -271,10 +271,10 @@ Stardew Valley (413150), language=turkish
 ```
 
 Raw annual Turkish review counts for this one game already fall 21% then 36% after the change.
-That is not yet evidence — it needs the controls — but the pipeline reaches the pre-period, which
+That is not yet evidence, it needs the controls, but the pipeline reaches the pre-period, which
 was the thing that had to be true.
 
-### 6.3 Prices — VERIFIED for the present, PARTIAL for the past
+### 6.3 Prices. VERIFIED for the present, PARTIAL for the past
 `https://store.steampowered.com/api/appdetails?appids=413150&cc={cc}&filters=price_overview`
 returns current price in local currency for any storefront:
 
@@ -282,31 +282,31 @@ returns current price in local currency for any storefront:
 us $14.99 | tr $5.99 USD | ar $4.99 USD | br R$24,99 | ru 299 руб. | de 13,99€ | pl 53,99 zł | cn ¥48
 ```
 
-Note tr/ar now report **USD** — the change itself is visible in the API today.
+Note tr/ar now report **USD**, the change itself is visible in the API today.
 
 **Historical per-game TRY/ARS prices are the one thing I could not verify.** steamdb.info returns
 **HTTP 403** to programmatic fetches and its terms restrict scraping; I did not attempt to evade
 it. IsThereAnyDeal exposes a price-history API with a free individual key and multi-country
 support (`github.com/IsThereAnyDeal/API`), but whether its history includes TRY back to 2023 is
-`UNVERIFIED` — that is a 30-minute check to run before relying on it. The design below therefore
+`UNVERIFIED`, that is a 30-minute check to run before relying on it. The design below therefore
 does **not** depend on per-game historical prices for its main result; they enter only the
 dose-response extension.
 
 ### 6.4 A negative finding that reshaped the design
 Argentina cannot be isolated. Steam's language tag `latam` is Latin-American Spanish, covering
 Argentina alongside Mexico, Colombia, Chile and others. Those other countries were *also* treated
-on 20 Nov 2023, but in the **opposite direction** — they moved from plain USD (US prices) onto the
+on 20 Nov 2023, but in the **opposite direction**, they moved from plain USD (US prices) onto the
 new discounted "LATAM – USD" set, i.e. price *decreases*. Aggregating them into one language cell
 mixes opposite-signed treatments. **Argentina is therefore demoted from co-treatment to an
 extension** requiring user-level country identification via Steam Community profiles.
 
 Turkey survives clean: `turkish` ≈ Turkey, and Turkey's move was unambiguously a large increase.
 
-### 6.5 Control groups available — VERIFIED PRESENT IN THE DATA
+### 6.5 Control groups available. VERIFIED PRESENT IN THE DATA
 - **Within Turkey:** free-to-play titles (Dota 2, CS2, Warframe, War Thunder, Path of Exile,
   Apex Legends) had no price and so no treatment, while sharing every Turkish macro shock.
 - **Across countries:** other cheap/high-volatility storefronts that **kept local-currency
-  pricing** — Russia (RUB), Brazil (BRL), Poland (PLN), China (CNY) — all confirmed still local in
+  pricing**, Russia (RUB), Brazil (BRL), Poland (PLN), China (CNY), all confirmed still local in
   the price API above. Russia is the ideal control: comparable currency collapse, no Valve
   treatment.
 

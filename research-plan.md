@@ -1,4 +1,4 @@
-# Research plan — committed project
+# Research plan, committed project
 
 **Working title:** *The Price of Being Priced Like America: Demand for Digital Goods When
 Regional Pricing Ends*
@@ -8,11 +8,11 @@ script in `code/`. Sources I could not verify are marked `UNVERIFIED`.
 
 ---
 
-# Phase 3 — The graveyard
+# Phase 3. The graveyard
 
 Six candidates went in. Four are dead. Here is what killed each, with the evidence.
 
-### C1 — The 250-investor rule (2018 EGRRCPA §504) and the micro-VC era. **DEAD: scooped.**
+### C1. The 250-investor rule (2018 EGRRCPA §504) and the micro-VC era. **DEAD: scooped.**
 I verified the statute (Pub. L. 115-174 §504, 24 May 2018), built the Form D panel (609,582
 filings), and *found the result*: small VC funds had a hard ceiling of 99–100 investors every year
 2014–2018 with literally zero exceptions, and from 2019Q1 the ceiling jumps to 247–249, with the
@@ -27,11 +27,11 @@ They have Form D **plus PitchBook plus LinkedIn plus a survey plus the SEC's coo
 have had Form D. Emailing this to 250 finance professors would have reached Sabrina Howell, who
 would have recognised her own paper.
 
-### C6 — Rule 506(c) general solicitation. **DEAD: same paper, entire question.**
+### C6. Rule 506(c) general solicitation. **DEAD: same paper, entire question.**
 Howell & Parker is *titled* "VC Funds and Regulation D's Rule 506(c)." Nothing left.
 
-### C2 — Apple anti-steering deregulation and commission pass-through. **DEAD: data does not exist for me.**
-The question is excellent and live — Apple published its own study in November 2025 (Jane Choi,
+### C2. Apple anti-steering deregulation and commission pass-through. **DEAD: data does not exist for me.**
+The question is excellent and live. Apple published its own study in November 2025 (Jane Choi,
 *"What Happens to App Prices when Developers Pay Lower Commission Fees?"*, "Support for this study
 was provided by Apple") claiming developers kept 91% of the savings, using **internal transaction
 data nobody can audit**, with a descriptive share-of-prices-changed calculation rather than a
@@ -47,19 +47,19 @@ looked promising (`hasExternalPurchases`) reads `False` for Spotify, Kindle, Net
 NYTimes. Treatment is unobservable and the pre-period is unpopulated. Dead for me; **live for a
 co-author with appfigures or Sensor Tower.**
 
-### C3 — Apple's May 2023 price-point liberalisation. **DEAD: no pre-period.**
+### C3. Apple's May 2023 price-point liberalisation. **DEAD: no pre-period.**
 The event is real and verified (Apple Newsroom, Dec 2022; 87 tiers → 900 price points; existing
 apps and one-time IAPs migrated across all 175 storefronts on **9 May 2023**). But measuring
 whether cross-country price *dispersion* rose requires prices on both sides of May 2023 in many
-storefronts — the same wall as C2. A prospective version is possible but would have a pre-period of
+storefronts, the same wall as C2. A prospective version is possible but would have a pre-period of
 zero.
 
-### C4 — Startup pivots reconstructed from web archives. **DEMOTED, not killed.**
+### C4. Startup pivots reconstructed from web archives. **DEMOTED, not killed.**
 Wayback density is the problem again, and there is a deeper issue: a pivot panel is a *measurement*
 contribution with no source of variation attached. Without a shock, "does pivoting pay" is
 selection. Kept as a possible second paper.
 
-### C5 — Founder recycling from Form D RELATEDPERSONS. **DEMOTED.**
+### C5. Founder recycling from Form D RELATEDPERSONS. **DEMOTED.**
 The panel is real and free (51,603 person-rows in 2025Q1 alone) and the name-linked
 executive panel would be a genuine asset. But I could not find a source of variation in firm
 survival that is unrelated to founder quality, and comparing failed to surviving startups is
@@ -67,19 +67,19 @@ selection. Also this is the most heavily-fished pond in entrepreneurial finance.
 
 ---
 
-# Phase 4 — The commitment
+# Phase 4. The commitment
 
 ## 1. The question, as one testable sentence
 
 **When Valve abolished Turkish Lira pricing on 20 November 2023 and repriced the entire Steam
-catalogue in dollars — raising local prices by between roughly 240% and 2,900% depending on the
-title — by how much did Turkish demand for paid games fall, and what does that imply about the
+catalogue in dollars, raising local prices by between roughly 240% and 2,900% depending on the
+title, by how much did Turkish demand for paid games fall, and what does that imply about the
 price elasticity of demand for digital goods in an emerging market?**
 
-## 2. Why it matters — three sentences
+## 2. Why it matters, three sentences
 
-Every firm selling software globally — Steam, Spotify, Netflix, Adobe, and every consumer app
-with a subscription — must decide whether to discount steeply in low-income countries, and it
+Every firm selling software globally, including Steam, Spotify, Netflix, Adobe, and every consumer
+app with a subscription, must decide whether to discount steeply in low-income countries, and it
 makes that decision with essentially no causal evidence, because permanent price changes of this
 magnitude do not otherwise occur. If demand in these markets turns out to be *inelastic*, the deep
 regional discounts that are industry orthodoxy are leaving revenue on the table, and the firms
@@ -98,7 +98,7 @@ keep them current."
 
 **Why it is plausibly exogenous.** The decision was Valve's, it was driven by macro currency
 volatility rather than by conditions in any game's market, it applied to the entire catalogue on a
-single date, and it was announced 26 days ahead — long enough to be unanticipated in the pre-period
+single date, and it was announced 26 days ahead, long enough to be unanticipated in the pre-period
 and short enough to limit strategic repositioning. Crucially, **no individual developer chose it**,
 which is what separates this from every price change in observational data.
 
@@ -108,7 +108,7 @@ spoken essentially only in Turkey.
 
 **Control groups, three of them.**
 - *Across countries:* the 28 other Steam languages (verified: all 29 return data). Russia is the
-  ideal comparison — comparable currency collapse over the same years, **but Valve kept Ruble
+  ideal comparison, comparable currency collapse over the same years, **but Valve kept Ruble
   pricing**, confirmed live in the price API. Brazil (BRL), Poland (PLN) and China (CNY) likewise
   retained local currency.
 - *Within Turkey:* free-to-play titles. Same country, same macroeconomy, same platform, **no
@@ -119,7 +119,7 @@ spoken essentially only in Turkey.
 
 | Threat | Handling |
 |---|---|
-| Turkey's macroeconomy (lira collapse, inflation) reduced game demand independently | The triple difference uses free-to-play titles *in Turkish* as the within-country control, absorbed by language × month fixed effects. Anything hitting Turkish players in a month — income, inflation, internet outages, holidays — is differenced out. |
+| Turkey's macroeconomy (lira collapse, inflation) reduced game demand independently | The triple difference uses free-to-play titles *in Turkish* as the within-country control, absorbed by language × month fixed effects. Anything hitting Turkish players in a month (income, inflation, internet outages, holidays) is differenced out. |
 | Review-writing propensity changes with price (people who paid more may review more, or angrier) | Test directly: `share_pos`, median `playtime_at_review`, and median `num_games_owned` of reviewers are all observable. If the reviewer *composition* is stable, the propensity story is weak. Reported as a table, not hand-waved. |
 | Turkish users migrate to gray-market keys rather than exiting | This is measured, not assumed: `steam_purchase = false` identifies copies activated from non-Steam keys. It is an outcome, not a confound. |
 | Turkish users change their Steam account region | Their reviews stay Turkish-language, so the estimand remains "demand of Turkish *people*", which is the object of interest. Region-switching is one of the substitution margins. |
@@ -134,8 +134,8 @@ spoken essentially only in Turkey.
 | **Steam review histories** | `https://store.steampowered.com/appreviews/{appid}?json=1&filter=recent&language={lang}&num_per_page=100&cursor=…` | `timestamp_created`, `language`, `voted_up`, `steam_purchase`, `received_for_free`, `refunded`, `written_during_early_access`, `author.steamid`, `author.playtime_at_review`, `author.playtime_forever`, `author.num_games_owned`, `author.num_reviews` | Full history; verified pagination to **Dec 2021** at 400 pages and still advancing | Public HTTP, **no API key** |
 | **Steam store metadata & prices** | `https://store.steampowered.com/api/appdetails?appids={id}&cc={cc}` | name, `is_free`, release date, genres, developer, publisher, `price_overview` (currency, initial, final, discount) in any storefront | Current cross-section, ~40 storefronts | Public HTTP, no key |
 | **Steam app list** | `https://api.steampowered.com/ISteamApps/GetAppList/v2/` | every appid on Steam | Current | Public, no key |
-| **Valve policy record** | `help.steampowered.com/en/faqs/view/2720-4EC7-B95A-1D2A`; Steam news post of 25 Oct 2023 | Event date, affected currencies, new regional price sets | — | Public |
-| **Historical local prices (dose)** | IsThereAnyDeal API, free individual key (`github.com/IsThereAnyDeal/API`) | historical price by store and country | `UNVERIFIED` whether TRY history reaches 2023 — a 30-minute check | Free registration |
+| **Valve policy record** | `help.steampowered.com/en/faqs/view/2720-4EC7-B95A-1D2A`; Steam news post of 25 Oct 2023 | Event date, affected currencies, new regional price sets |, | Public |
+| **Historical local prices (dose)** | IsThereAnyDeal API, free individual key (`github.com/IsThereAnyDeal/API`) | historical price by store and country | `UNVERIFIED` whether TRY history reaches 2023, a 30-minute check | Free registration |
 
 **Observation counts, measured not estimated.** Stardew Valley alone returned **24,593 Turkish
 reviews** back to 30 Dec 2021 and has 28,274 Turkish reviews lifetime. Across the 29 languages
@@ -159,15 +159,15 @@ $$
 \;+\; \alpha_{gt} \;+\; \delta_{lt} \;+\; \gamma_{gl} \;+\; \varepsilon_{glt}
 $$
 
-- $Q_{glt}$ — count of reviews for game $g$ in language $l$ in month $t$; the demand proxy.
-- $\text{TR}_l$ — 1 if language $l$ is Turkish.
-- $\text{Paid}_g$ — 1 if game $g$ has a positive price (0 for free-to-play).
-- $t^{*}$ — November 2023; $k$ indexes months relative to the event; $k=-1$ omitted.
-- $\alpha_{gt}$ — **game × month** fixed effects: absorb every global shock to a title (sales,
+- $Q_{glt}$, count of reviews for game $g$ in language $l$ in month $t$; the demand proxy.
+- $\text{TR}_l$, 1 if language $l$ is Turkish.
+- $\text{Paid}_g$, 1 if game $g$ has a positive price (0 for free-to-play).
+- $t^{*}$, November 2023; $k$ indexes months relative to the event; $k=-1$ omitted.
+- $\alpha_{gt}$, **game × month** fixed effects: absorb every global shock to a title (sales,
   patches, DLC, esports events, seasonality, the game's own life cycle).
-- $\delta_{lt}$ — **language × month** fixed effects: absorb everything hitting speakers of a
+- $\delta_{lt}$, **language × month** fixed effects: absorb everything hitting speakers of a
   language in a month, including the Turkish macroeconomy.
-- $\gamma_{gl}$ — **game × language** fixed effects: absorb persistent affinity between a title and
+- $\gamma_{gl}$, **game × language** fixed effects: absorb persistent affinity between a title and
   a linguistic market, and the language-specific review-propensity constant. *This is why the
   unknown reviews-to-sales multiplier does not bias the estimate: it is a level, and it differences
   out.*
@@ -187,7 +187,7 @@ $$
 $$
 
 with $\theta$ the elasticity directly. **This is the specification that needs historical prices,
-and it is the specification I may not be able to complete alone — see §17.**
+and it is the specification I may not be able to complete alone, see §17.**
 
 ## 6. Falsification and robustness
 
@@ -210,7 +210,7 @@ and it is the specification I may not be able to complete alone — see §17.**
 6. **Leave-one-game-out** and **leave-one-language-out** re-estimation.
 7. **Poisson (PPML)** on raw counts instead of log(1+Q), to check the zero-handling.
 
-## 7. What the paper looks like either way — and the null is publishable
+## 7. What the paper looks like either way, and the null is publishable
 
 **If demand turns out inelastic** (the pilot points here: a ~46% quantity fall against a price
 increase of at least 240%, implying $\hat\varepsilon$ between roughly −0.2 and −0.6): the headline
@@ -219,7 +219,7 @@ more money from Turkey after tripling-to-tenfold-ing prices, and that the entire
 landed on Turkish consumers. That is a striking, contrarian, industry-relevant result.
 
 **If demand turns out elastic** ($\hat\varepsilon < -1$): the headline is that abolishing regional
-pricing destroyed revenue *and* consumer surplus — a lose-lose — and that regional price
+pricing destroyed revenue *and* consumer surplus, a lose-lose, and that regional price
 discrimination in emerging markets is not corporate charity but profit-maximisation, which is the
 standard defence platforms give regulators and which has never been tested.
 
@@ -231,21 +231,21 @@ precise zero from a noisy one, which is what makes the null publishable rather t
 result.
 
 I am not spending a year on a coin flip: **all three outcomes are papers**, because the object
-being estimated — an elasticity nobody has — is interesting at any value.
+being estimated, an elasticity nobody has, is interesting at any value.
 
 ## 8. Paper structure
 
 | § | Content | Words |
 |---|---|---|
-| 1 | Introduction — the event, the estimate, the three contributions | 1,400 |
-| 2 | Institutional setting — Steam, regional pricing, what Valve did and why | 1,000 |
-| 3 | Related literature — digital goods pricing, LOP and international prices, video-game demand, piracy and gray markets | 1,200 |
-| 4 | Data — construction, the review-flow proxy and its validation, coverage, summary statistics | 1,600 |
-| 5 | Empirical strategy — DiD, DDD, dose-response, inference under one treated cluster | 1,300 |
-| 6 | Results — main effect, event study, heterogeneity by price tier and genre | 1,800 |
-| 7 | Mechanisms — substitution to free-to-play, gray-market keys, extensive vs. intensive margin | 1,200 |
+| 1 | Introduction, the event, the estimate, the three contributions | 1,400 |
+| 2 | Institutional setting, Steam, regional pricing, what Valve did and why | 1,000 |
+| 3 | Related literature, digital goods pricing, LOP and international prices, video-game demand, piracy and gray markets | 1,200 |
+| 4 | Data, construction, the review-flow proxy and its validation, coverage, summary statistics | 1,600 |
+| 5 | Empirical strategy, DiD, DDD, dose-response, inference under one treated cluster | 1,300 |
+| 6 | Results, main effect, event study, heterogeneity by price tier and genre | 1,800 |
+| 7 | Mechanisms: substitution to free-to-play, gray-market keys, extensive vs. intensive margin | 1,200 |
 | 8 | Robustness and falsification | 900 |
-| 9 | Magnitudes — implied elasticity, revenue arithmetic, consumer-surplus bounds | 900 |
+| 9 | Magnitudes, implied elasticity, revenue arithmetic, consumer-surplus bounds | 900 |
 | 10 | Conclusion and what this cannot answer | 600 |
 | | **Total** | **≈ 11,900** |
 
@@ -253,7 +253,7 @@ being estimated — an elasticity nobody has — is interesting at any value.
 T3 Dose-response by price change. T4 Reviewer composition (the propensity test).
 T5 Substitution: free-to-play and non-Steam keys. T6 Robustness battery. T7 Placebo dates.
 
-**Figures.** F1 Event study, DiD and DDD panels *(built — `output/figures/fig1_event_study.pdf`)*.
+**Figures.** F1 Event study, DiD and DDD panels *(built, `output/figures/fig1_event_study.pdf`)*.
 F2 Raw review flow, Turkish vs. control languages, indexed. F3 Randomization inference
 distribution across 29 languages. F4 Dose-response scatter: log price change vs. log quantity
 change, by title. F5 Reviewer composition over time. F6 Free-to-play substitution.
@@ -262,9 +262,9 @@ change, by title. F5 Reviewer composition over time. F6 Free-to-play substitutio
 
 | Block | Dates | Deliverable |
 |---|---|---|
-| 1 | Sep 1–14 2026 | Scale the puller: full 29 languages, resumable, rate-limit-safe. Sampling frame from `GetAppList` — all titles released before 2022 with ≥ 500 lifetime reviews. |
+| 1 | Sep 1–14 2026 | Scale the puller: full 29 languages, resumable, rate-limit-safe. Sampling frame from `GetAppList`, all titles released before 2022 with ≥ 500 lifetime reviews. |
 | 2 | Sep 15–28 | Run the bulk pull (background, days). Build metadata for the full sample. |
-| 3 | Sep 29–Oct 12 | Panel construction, coverage diagnostics, the pagination-depth problem for high-volume languages. **⚠ most likely to slip — see below.** |
+| 3 | Sep 29–Oct 12 | Panel construction, coverage diagnostics, the pagination-depth problem for high-volume languages. **⚠ most likely to slip, see below.** |
 | 4 | Oct 13–26 | Replicate the pilot on the full sample. F1, F2. Summary statistics. |
 | 5 | Oct 27–Nov 9 | Full falsification battery: placebo dates, RI across 29 languages, Russia, leave-one-out. |
 | 6 | Nov 10–23 | Reviewer-composition tests; substitution margins (free-to-play, non-Steam keys). |
@@ -280,7 +280,7 @@ change, by title. F5 Reviewer composition over time. F6 Free-to-play substitutio
 | 16 | Mar 30–May 15 | Respond to replies; run extensions professors ask for; begin co-authored revision. |
 
 **The block most likely to slip is Block 3 (panel construction).** Reason, already observed in the
-pilot: the 400-page pull cap binds for high-volume language cells — English on Stardew Valley
+pilot: the 400-page pull cap binds for high-volume language cells. English on Stardew Valley
 returned 39,993 reviews and only reached 2025-08-31, nowhere near the pre-period, while Turkish
 reached 2021 comfortably. High-volume controls need pulls an order of magnitude deeper, which is
 slow, and the fix has to be designed rather than brute-forced (stratify controls toward mid-volume
@@ -288,13 +288,13 @@ languages; run the deep English pull as a long background job started in Block 2
 
 **Honest hour estimate: 300–340 hours.** Roughly 90 on data engineering, 70 on analysis, 90 on
 writing, 50 on the replication package and outreach. This fits the budget, but only because the
-pipeline already works — see Phase 5. Had it not, I would have told you the number was 500.
+pipeline already works, see Phase 5. Had it not, I would have told you the number was 500.
 
 ## 10. The three most likely ways this fails
 
 1. **Review flow is a bad proxy for units in exactly the way that matters.** *Rank: highest.* If
-   Turkish players who kept buying became *less* likely to review — because the same money now
-   buys one game instead of five, changing who reviews — the count falls without demand falling as
+   Turkish players who kept buying became *less* likely to review, because the same money now
+   buys one game instead of five, changing who reviews, the count falls without demand falling as
    much. *Mitigation:* reviewer-composition tests (§6.4); validate the proxy against `total_reviews`
    growth in untreated languages; report bounds. *Early warning:* median `num_games_owned` or
    `playtime_at_review` of Turkish reviewers shifts sharply at the event.
@@ -303,7 +303,7 @@ pipeline already works — see Phase 5. Had it not, I would have told you the nu
    rather than an estimate. *Mitigation:* ITAD API; failing that, reconstruct from Valve's
    published recommended-price grids; failing that, present the reduced form as the result and
    make the elasticity the co-author's contribution. *Early warning:* the ITAD check in Block 7
-   comes back without 2023 TRY coverage — **run that check in Block 1 instead, not Block 7.**
+   comes back without 2023 TRY coverage, **run that check in Block 1 instead, not Block 7.**
 3. **Turkish macro swamps the price effect and the DDD cannot separate them.** *Rank: third.* If
    free-to-play demand in Turkey responds to income shocks in the opposite direction to paid demand
    for reasons unrelated to price, the within-country control is contaminated. *Mitigation:*
@@ -313,7 +313,7 @@ pipeline already works — see Phase 5. Had it not, I would have told you the nu
 
 ---
 
-# Phase 5 — Proof that the pipeline works
+# Phase 5. Proof that the pipeline works
 
 This is not a proposal. The following has been run.
 
@@ -346,7 +346,7 @@ languages × 36 months, 1,995 game-language-month observations:
 
 **A −0.615 log-point fall is a 46% decline in Turkish demand for paid games.**
 
-Raw, before any regression — Turkish review counts, Jan–Oct 2023 vs. Jan–Oct 2024:
+Raw, before any regression. Turkish review counts, Jan–Oct 2023 vs. Jan–Oct 2024:
 
 ```
 Red Dead Redemption 2   11,804 -> 4,980   -57.8%   (paid)
@@ -357,7 +357,7 @@ Wallpaper Engine         1,585 -> 1,389   -12.4%   (paid)
 PUBG: BATTLEGROUNDS      4,635 -> 6,077   +31.1%   (FREE-TO-PLAY)
 ```
 
-Every paid title down. The free title up — consistent with substitution from paid to free within
+Every paid title down. The free title up, consistent with substitution from paid to free within
 Turkey, which is a result in its own right.
 
 **Figure 1 is built** (`output/figures/fig1_event_study.pdf/.png`): flat pre-trend hugging zero for
@@ -381,12 +381,12 @@ floor to 1/29 = **0.034**. That is a known, bounded, half-a-block task.
 > catalogue in dollars, raising local prices by between roughly 240% and 2,900% overnight. I use
 > this platform-imposed shock to estimate the price elasticity of demand for digital goods in an
 > emerging market, assembling a new panel of *[N]* million Steam reviews across 29 languages and
-> *[G]* titles — every review carrying a timestamp, a language, a playtime, and a flag for whether
+> *[G]* titles, every review carrying a timestamp, a language, a playtime, and a flag for whether
 > the copy was activated from a non-Steam key. Because Steam tags reviews by client language, and
 > because free-to-play titles were untouched by a change that hit every paid title, the design is a
 > triple difference: Turkish versus other languages, paid versus free titles, before versus after.
 > Turkish demand for paid games falls by *[X]%* relative to control, with a flat pre-trend over the
-> preceding sixteen months and no comparable movement in Russian — a market with a similar currency
+> preceding sixteen months and no comparable movement in Russian, a market with a similar currency
 > collapse whose Ruble pricing Valve retained. The implied elasticity is *inelastic*, which means
 > the deep regional discounts that are orthodoxy in the software industry were revenue-reducing,
 > and that the surplus lost when they end falls almost entirely on consumers in the poorest markets.
@@ -402,12 +402,12 @@ floor to 1/29 = **0.034**. That is a known, bounded, half-a-block task.
 Y-axis: effect on log review flow, running about +0.2 to −0.8. A dashed vertical line at the event.
 
 What the eye lands on: **a flat line at zero for sixteen months, then a cliff.** The pre-period
-coefficients sit on zero with tight bands — visibly, obviously flat — and at $k=0$ the series drops
+coefficients sit on zero with tight bands, visibly, obviously flat, and at $k=0$ the series drops
 to about −0.5 and *stays there* for a year and a half. There is no ambiguity to referee: you do not
 need to trust the econometrics, you can see the counterfactual.
 
-It persuades at a glance because it does the two things a reader checks in three seconds — is the
-pre-trend flat, and is the break at the right date — and passes both.
+It persuades at a glance because it does the two things a reader checks in three seconds, is the
+pre-trend flat, and is the break at the right date, and passes both.
 
 ## 13. Email subject line
 
@@ -417,9 +417,9 @@ pre-trend flat, and is the break at the right date — and passes both.
 
 **Verified pool.** The 24th International Industrial Organization Conference (Boston, 10–12 April
 2026) program lists **72 sessions and 254 papers**, with **536 affiliation mentions across 110
-unique institutions** — Boston University 30, Indiana 30, Cornell 26, MIT 18, Yale 17, NYU 16,
+unique institutions**, Boston University 30, Indiana 30, Cornell 26, MIT 18, Yale 17, NYU 16,
 Northwestern 13. That is one conference in one of the four relevant subfields and it alone clears
-the 200–300 target. *(Marketing Science Conference program size: `UNVERIFIED` — INFORMS had not
+the 200–300 target. *(Marketing Science Conference program size: `UNVERIFIED`, INFORMS had not
 posted 2026 program statistics at the time of checking.)*
 
 | Segment | Where they sit | What to lead with | Journals / venues |
@@ -429,10 +429,10 @@ posted 2026 program statistics at the time of checking.)*
 | **C. Information systems / platform economics** | IS groups in business schools | The dataset and the platform-governance angle: what a platform's pricing architecture does to its complementors and users | *Information Systems Research*, *MISQ*, *Management Science*; WISE, CIST |
 | **D. International economics / open-economy macro** | Economics departments, trade and international finance | The law-of-one-price framing: a forced move into dollar pricing for a digital good, with *quantities* observed | *JIE*, *AEJ: Macro*, *IMF Economic Review*; NBER IFM |
 
-**Named starting points, verified as real and directly adjacent:** José Tudón (ITAM) — estimated
+**Named starting points, verified as real and directly adjacent:** José Tudón (ITAM), estimated
 Steam price elasticities from within-consumer variation; Yuta Watabe (Xiamen), Han Yang (Academia
-Sinica), Eugene Kanasheuski — Steam cross-country gravity, *CJE* 2025; Alberto Cavallo (HBS),
-Brent Neiman (Chicago), Roberto Rigobon (MIT) — the QJE currency-union price paper this is the
+Sinica), Eugene Kanasheuski. Steam cross-country gravity, *CJE* 2025; Alberto Cavallo (HBS),
+Brent Neiman (Chicago), Roberto Rigobon (MIT), the QJE currency-union price paper this is the
 quantity-side complement to.
 
 **Segmentation rule: never send the same email.** An IO economist is bought by the research design
@@ -443,7 +443,7 @@ law-of-one-price framing. The figure is identical in all four; the first sentenc
 ## 15. Open extensions the paper deliberately cannot resolve alone
 
 1. **Argentina.** Argentina was treated on the same date, but Steam's `latam` language tag pools
-   Argentina with Mexico, Colombia and Chile — countries that moved in the *opposite* direction,
+   Argentina with Mexico, Colombia and Chile, countries that moved in the *opposite* direction,
    onto a discounted LATAM–USD set. Separating them requires user-level country identification from
    Steam Community profiles at scale, which raises collection and ethics questions I should not
    resolve unilaterally. Doing so would double the treated sample and give a second, independent
@@ -458,8 +458,8 @@ law-of-one-price framing. The figure is identical in all four; the first sentenc
    structural pricing model.
 4. **Consumer surplus.** A reduced-form elasticity at one large price change bounds but does not
    pin down the surplus loss, because the demand curve's *curvature* over the range matters and a
-   single change identifies a chord, not a slope. A structural demand system — and a second price
-   change for identification — closes it.
+   single change identifies a chord, not a slope. A structural demand system, and a second price
+   change for identification, closes it.
 5. **Substitution to piracy.** I observe substitution to free-to-play and to non-Steam keys, and
    find the latter is a precise null. I cannot observe piracy at all. Anyone with torrent-tracker or
    ISP data closes the most policy-relevant margin in the paper.
@@ -477,7 +477,7 @@ Honestly, three things, in descending order of how much they will care:
   reviewer identifiers, plus the pull and cleaning code. Assembling it is roughly 90 hours of
   engineering that a professor will not do and a first-year PhD student will resent doing.
 - **A cheap paper.** The empirical core is finished before they arrive. Their marginal cost is a
-  structural section, a licensed data validation, and a referee-proofing pass — the parts they are
+  structural section, a licensed data validation, and a referee-proofing pass, the parts they are
   actually good at and that I am not.
 
 If the honest answer had been "not much," the design would be wrong. The test I applied: *would a
@@ -489,7 +489,7 @@ and that is the whole bet.
 **What I finish alone, by roughly March 2027:** the panel across 29 languages; the DiD, the DDD,
 and the event study; the full falsification battery including placebo dates, randomization
 inference, Russia, and leave-one-out; the reviewer-composition validation of the demand proxy; the
-substitution margins; a public replication package; and a reduced-form magnitude — *demand fell by
+substitution margins; a public replication package; and a reduced-form magnitude, *demand fell by
 X%*.
 
 **What I cannot close, and why:**
@@ -504,15 +504,15 @@ X%*.
 
 **What the paper becomes after they join.** The reduced form becomes a demand estimate with a
 welfare number attached; the descriptive substitution results become a story about how consumers in
-poor countries adjust to being priced like rich ones; and the policy section — should platforms be
-permitted, or required, to price-discriminate geographically — becomes defensible rather than
+poor countries adjust to being priced like rich ones; and the policy section, should platforms be
+permitted, or required, to price-discriminate geographically, becomes defensible rather than
 suggestive.
 
 **Journal tier, stated honestly.** Solo, the reduced-form version is a *Journal of Economics &
 Management Strategy* / *International Journal of Industrial Organization* / *Information Systems
 Research* paper. Co-authored with the structural section and validated units, it is a
-*Marketing Science* or *Management Science* paper, and on the optimistic branch — if the elasticity
-is precisely estimated and the welfare calculation is credible — *AEJ: Microeconomics*. I do not
+*Marketing Science* or *Management Science* paper, and on the optimistic branch, if the elasticity
+is precisely estimated and the welfare calculation is credible, *AEJ: Microeconomics*. I do not
 think this is an *AER* or *QJE* paper and I would not claim it is. The event is unusually clean but
 it is one event, in one country, in one product category.
 
@@ -520,7 +520,7 @@ it is one event, in one country, in one product category.
 
 | Month | Step |
 |---|---|
-| Mar 2027 | Outreach; first replies. Expect a low single-digit percentage response from 250 emails — that is 5–12 real conversations. |
+| Mar 2027 | Outreach; first replies. Expect a low single-digit percentage response from 250 emails, that is 5–12 real conversations. |
 | Apr 2027 | Calls. Send the replication package, not just the PDF. Identify which gap in the table above each person can close. |
 | May–Jun 2027 | One co-author commits. Scope the extension; they pull the licensed data. |
 | Jul–Aug 2027 | Joint revision: structural section drafted, units validated, framing set for a target editor. |
@@ -533,8 +533,8 @@ it is one event, in one country, in one product category.
 decision. I apply in fall 2027. **There will be no publication by then, and anyone who tells you
 otherwise is selling something.** What will exist on the application: a co-authored SSRN working
 paper with a named faculty member, a conference presentation, an "under review at *[journal]*"
-line if the submission lands by Q3 2027, a public GitHub replication package, and — in parallel and
-entirely under my own control — a solo undergraduate-journal publication (*Issues in Political
+line if the submission lands by Q3 2027, a public GitHub replication package, and, in parallel and
+entirely under my own control, a solo undergraduate-journal publication (*Issues in Political
 Economy*, *The Developing Economist*, *Michigan Journal of Economics*), a *Journal of Emerging
 Investigators* submission, and a JSHS presentation. That is the realistic package, and it is a
 strong one; it is just not the word "published."
@@ -543,16 +543,16 @@ strong one; it is just not the word "published."
 
 # Runners-up, and why each lost
 
-**C5 — the Form D founder panel.** Name-linking RELATEDPERSONS across 2014–2026 yields a free,
+**C5, the Form D founder panel.** Name-linking RELATEDPERSONS across 2014–2026 yields a free,
 person-level panel of every officer and director of every Reg D issuer in the United States —
-51,603 person-rows in a single quarter — which is a genuine asset that nobody has assembled in
+51,603 person-rows in a single quarter, which is a genuine asset that nobody has assembled in
 public form. It lost because I could not attach a source of variation to it. Every question I could
 pose ("do failed founders start again?", "where do they go?") compares firms that failed to firms
 that did not, which is selection, not identification. A dataset without a shock is a resource, not
 a paper. It is the strongest *second* project on this list, and it becomes a paper the moment a
 shock to firm survival that is orthogonal to founder quality is found.
 
-**C2 — App Store commission pass-through.** This lost on data, not on merit, and it is the one I
+**C2. App Store commission pass-through.** This lost on data, not on merit, and it is the one I
 regret. The question is live in front of the European Commission, the DOJ, and the UK CMA right
 now; Apple has put a self-funded, non-causal study into that debate using data nobody can check;
 and an independent test would be read. It died because the historical prices do not exist for free

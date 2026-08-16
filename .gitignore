@@ -14,3 +14,6 @@ sp.html
 duo.html
 cc_page.html
 cc_sample.json
+paper/*.pdf
+!paper/paper.pdf
+*.bak

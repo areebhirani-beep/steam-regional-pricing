@@ -16,8 +16,9 @@ import requests, json, time, os, sys, datetime as dt
 
 UA = {"User-Agent": "AreebHirani-HSResearch areeb.research@gmail.com"}
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "raw", "steam_reviews")
-STOP_BEFORE = dt.datetime(2022, 1, 1, tzinfo=dt.UTC).timestamp()
-MAXPAGES = 400
+STOP_BEFORE = dt.datetime(int(os.environ.get("STOP_YEAR", 2022)),
+                          int(os.environ.get("STOP_MONTH", 1)), 1, tzinfo=dt.UTC).timestamp()
+MAXPAGES = int(os.environ.get("MAXPAGES", 400))
 
 S = requests.Session()
 S.headers.update(UA)

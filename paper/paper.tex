@@ -181,9 +181,8 @@ The third is a dose-response specification. Because Valve's recommended lira sch
 approximately proportional to the dollar schedule, the pre-change Turkish price was to a first
 approximation a common fraction of the US price. Under that assumption the cross-title variation
 in the size of the increase is exactly the log of the ratio of a title's current Turkish price to
-its US price, which is observable today. That ratio ranges from $0.33$ to $1.00$ across the
-sample, a threefold spread, and interacting it with the treatment recovers the elasticity
-directly.
+its US price, which is observable today. That ratio runs from \doseMin{} to \doseMax{} across the \doseN{} priced titles in the sample, a
+fivefold spread, and interacting it with the treatment recovers the elasticity directly.
 
 \subsection*{Results}
 
@@ -197,8 +196,8 @@ range implied by dividing the aggregate estimate by the reported price increases
 Four features of the event study make the result difficult to explain away. The effect appears in
 the first full month after the change and not before: the coefficient for November 2023, the month
 in which the change occurred on the twentieth, is \bKzero{} and statistically indistinguishable
-from zero. The effect is persistent, still between $-0.4$ and $-0.6$ eighteen months later, which
-is what a permanent price change should produce and not what a gradual macroeconomic deterioration
+from zero. The effect is persistent, still between \tailHi{} and \tailLo{} more than a year later, which is
+what a permanent price change should produce and not what a gradual macroeconomic deterioration
 looks like. Randomization inference, relabelling each language as treated in turn, ranks Turkish
 first of \riN{} with a one-sided $p$-value of \riP; the next most negative placebo is \riNext. And
 Latin-American Spanish, whose speakers' countries moved onto a \emph{discounted} dollar schedule
@@ -377,8 +376,8 @@ level, and raising the price must raise revenue.
 The revenue arithmetic follows immediately. If price rises by a factor $\kappa$ and quantity
 responds with constant elasticity $\varepsilon$, revenue scales by $\kappa^{\,1+\varepsilon}$,
 which exceeds one whenever $\varepsilon > -1$. With $\kappa$ between $3.4$ and $30$ and
-$\hat\varepsilon$ near $-0.33$, the implied revenue multiple ranges from roughly \revLo{} to
-\revHi. Even the conservative end is a large number, and it is why the finding is not a curiosity:
+$\hat\varepsilon$ of the order of \epsUnitsHi, the implied revenue multiple ranges from roughly
+\revMultLo{} to \revMultHi. Even the conservative end is a large number, and it is why the finding is not a curiosity:
 a platform tripled prices in a national market and collected more money for at least eighteen
 months afterwards.
 
@@ -450,6 +449,41 @@ reviews rather than a change in how many people buy, the observable characterist
 reviewers should shift at the event. Playtime at review, library size, and review sign are all
 recorded. Section~\ref{sec:mech} reports the tests, and finds that where composition does move it
 moves in the direction that makes the estimate conservative.
+
+\subsection{Validating the proxy against an independent measure of units}\label{sec:validate}
+
+Equation~\eqref{eq:proxy} assumes only that $\mu_{g\ell}$ is stable, but a reader is entitled to
+ask how reviews and units are related at all. SteamSpy publishes owner-count estimates constructed
+by a method unrelated to review counts, which supplies an independent, if noisy, measure of units.
+Regressing log owners on log lifetime reviews across \proxyN{} titles gives a slope of
+\proxySlope{} (s.e.\ \proxySE) with $R^2 = \proxyRtwo$, and a median of \multMed{} units per
+review. Figure~\ref{fig:proxy} plots the relationship against the 45-degree line.
+
+The slope is materially below one. Larger titles generate proportionally fewer reviews per owner,
+which is what one would expect if mass-market buyers review less often than enthusiasts. Two
+consequences follow, and the paper carries both rather than choosing between them.
+
+First, the fixed-effect argument is unaffected. The concavity is a statement about differences
+\emph{between} titles, and $\gamma_{g\ell}$ absorbs those differences entirely.
+
+Second, the translation from a review response into a unit response is not one-for-one, and the
+paper should not pretend otherwise. If the cross-sectional concavity also describes the
+within-title time series, then a proportional fall in reviews corresponds to a smaller
+proportional fall in units, scaled by \proxySlope. Every magnitude in this paper is therefore
+reported as a bound: the unit response lies between \bUnitsLo{} and \bUnitsHi, a fall of
+\pctUnitsLo{} to \pctUnitsHi{} percent, and the implied elasticity lies between \epsUnitsLo{} and
+\epsUnitsHi. Both ends are inelastic, so the paper's conclusion does not turn on which is right.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.88\textwidth]{fig7_proxy.pdf}
+\caption{Reviews and units}
+\label{fig:proxy}
+\notes{Each point is a Steam title with at least 200 lifetime reviews. The solid line is the
+fitted log-log relationship between SteamSpy owner estimates and lifetime review counts; the dashed
+line has slope one for comparison. A slope below one means larger titles generate proportionally
+fewer reviews per owner.}
+\end{figure}
 
 \subsection{Summary statistics}
 
@@ -648,8 +682,8 @@ and indistinguishable from zero. This is the correct pattern rather than a puzzl
 change took effect on 20 November and two thirds of that calendar month is pre-treatment. The
 decline appears in full at $k=1$, the first complete post-change month.
 
-The effect persists. Eighteen months later the coefficients remain between $-0.4$ and $-0.6$ with
-no tendency to revert. A permanent price change should produce a permanent level shift, and it
+The effect persists. More than a year later the coefficients remain between \tailHi{} and \tailLo{} with no tendency to
+revert. A permanent price change should produce a permanent level shift, and it
 does.
 
 Figure~\ref{fig:raw} shows the same three series without any regression adjustment, so that a
@@ -790,6 +824,48 @@ the price change, Russian would look like Turkish. It does not.
 Dropping each title in turn and re-estimating moves the coefficient only within
 $[\looMin,\ \looMax]$. No single game is responsible for the result.
 
+\subsection{Inference that does not assume many treated clusters}
+
+Conventional standard errors are reported throughout, but the design has one treated language and
+those standard errors do not know it. Inverting the placebo distribution of
+Figure~\ref{fig:ri} in the manner of \citet{conley2011} gives a 95 percent confidence interval of
+$[\ctLo,\ \ctHi]$, which excludes zero. This interval is wider than the conventional one, as it
+should be, and it is the interval the paper asks readers to use.
+
+\subsection{A second treated cluster with the opposite sign}
+
+The design can be pushed from one treated cluster to two. Turkish-speaking players faced a price
+increase on 20 November 2023; speakers of Latin-American Spanish faced a decrease on the same day.
+Coding the treatment as $+1$ for Turkish, $-1$ for Latin-American Spanish and zero otherwise uses
+both, and tests the mechanism rather than a single country's experience. Column (2) of
+Table~\ref{tab:extensions} reports \bSigned{} (s.e.\ \seSigned, $t = \tSigned$). A shock that
+raises demand where prices fell and lowers it where prices rose is a price shock.
+
+\subsection{How much does the dose assumption matter?}
+
+Equation~\eqref{eq:dose} assumes developers priced Turkey off Valve's proportional schedule. That
+assumption leaves a testable trace: if developers follow a schedule, the ratio of Turkish to US
+price should cluster on a few values rather than spread smoothly. In the estimation sample the
+ratio takes \nRatioModes{} distinct values, and the five most common cover \topFiveShare{} percent
+of titles, which is consistent with schedule-following rather than title-by-title optimisation.
+
+Whatever residual variation remains is classical measurement error in the dose, which attenuates
+$\hat\theta$ toward zero. Under reliability ratios of $0.9$, $0.7$ and $0.5$ the corrected
+elasticity is \thetaAttNine, \thetaAttSeven{} and \thetaAttFive{} respectively. Measurement error
+in the dose therefore cannot explain the finding away; correcting for it makes demand more elastic
+but leaves it inelastic even under an aggressive correction.
+
+\begin{table}[htbp]
+\centering
+\caption{Extensions: two treated clusters and the dose}\label{tab:extensions}
+\vspace{2pt}
+{\footnotesize\input{../output/tables/t7_extensions.tex}}
+\notes{Column (1) repeats the baseline. Column (2) codes the treatment $+1$ for Turkish, $-1$ for
+Latin-American Spanish and zero otherwise, using both repriced groups. Column (3) is the
+dose-response specification of equation~\eqref{eq:dosereg}. Standard errors clustered at title by
+language.}
+\end{table}
+
 %=======================================================================
 \section{Mechanisms}\label{sec:mech}
 %=======================================================================
@@ -841,61 +917,99 @@ therefore makes the estimate conservative.
 
 \subsection{The gray market}
 
-The coefficient on the share of reviews from non-Steam keys is \bGM{} (s.e.\ \seGM). Turkish buyers
-did not visibly shift toward third-party key resale. I report this as the null it is, and note its
-limits: gray-market keys are one substitution margin, and the most important one, outright piracy,
-is unobservable in this data. A finding of no substitution into observable gray-market channels is
-consistent both with consumers exiting the market and with consumers substituting into channels I
-cannot see.
+The coefficient on the share of reviews from non-Steam keys is \bGM{} (s.e.\ \seGM). Turkish
+buyers did shift toward third-party key resale, and with a sample this size the shift is precisely
+estimated, but the magnitude is about one percentage point. Set against a decline in paid purchases
+of \pctDDD{} percent, gray-market substitution accounts for a small fraction of the response. Most
+of the people who stopped buying at the new prices did not reappear as key buyers; they stopped
+appearing.
 
-\subsection{Substitution toward free-to-play}
+The limit of this test should be stated plainly. Gray-market keys are one substitution margin and
+the most important one, outright piracy, is unobservable here. A small measured shift into
+observable third-party channels is consistent both with consumers leaving the market and with
+consumers moving into channels I cannot see, and the data cannot separate those.
 
-Column (4) of Table~\ref{tab:main} estimates the effect on free-to-play titles in Turkish, where the
-price change could not operate mechanically. The coefficient is \bFree{} (s.e.\ \seFree). It is
-small relative to the effect on paid titles, and it is the reason the triple difference (\bDDD) is
-smaller in magnitude than the plain difference-in-differences (\bDiD).
+\subsection{What free-to-play titles reveal, and why they are the preferred control}
 
-The interpretation is straightforward and worth stating precisely. Turkish engagement with
-free-to-play titles fell slightly over the same period, which is what one would expect if Turkish
-macroeconomic conditions were deteriorating independently of Valve's decision. The gap between the
-two specifications is therefore an estimate of the macroeconomic component embedded in the raw
-difference-in-differences, and the triple difference is the specification that removes it. The
-paper's preferred estimate is accordingly \bDDD, and \bDiD{} should be read as an upper bound on the
-magnitude.
+Column (4) of Table~\ref{tab:main} estimates the effect on free-to-play titles in Turkish, where
+the price change could not operate mechanically. The coefficient is \bFree{} (s.e.\ \seFree). It
+is not zero, and the paper does not claim it is.
+
+That deserves a direct answer rather than a footnote. Turkish engagement with free titles fell
+over the same window, by roughly two fifths of the fall in paid titles. Since no free title's price
+changed, this cannot be a price effect. It is what one would expect if Turkish conditions were
+deteriorating for reasons unrelated to Valve, which over 2023 and 2024 is not a speculative
+possibility. The right inference is not that the design fails but that the plain
+difference-in-differences of column (1) contains a macroeconomic component, and that the triple
+difference exists precisely to remove it. This is why \bDDD{} rather than \bDiD{} is the paper's
+preferred estimate throughout, and why \bDiD{} should be read as an upper bound on the magnitude.
+
+One caveat runs the other way and is worth stating. If some Turkish players responded to the price
+increase by switching from paid to free titles, then free-title demand contains a positive
+substitution term, its purely macroeconomic component is more negative than \bFree, and the triple
+difference overstates the price effect by the size of that substitution. The observed decline in
+free-title demand bounds how large that term can be: substitution into free titles cannot have been
+large, because free-title demand fell rather than rose. The honest reading is that the price effect
+on paid demand lies between \bDDD{} and something modestly smaller in magnitude, and that both ends
+of that interval are inelastic once translated into units by Section~\ref{sec:validate}.
 
 %=======================================================================
 \section{Magnitudes}\label{sec:magnitudes}
 %=======================================================================
 
-The dose-response specification gives an own-price elasticity of \bDose{} (s.e.\ \seDose). Dividing
-the aggregate reduced form by the range of reported price increases gives \epsLo{} to \epsHi. Both
-approaches place demand well inside the inelastic region, and comfortably above the
-$\varepsilon = -1$ benchmark of equation~\eqref{eq:unitelastic}.
+The dose-response specification gives an own-price elasticity of \bDose{} (s.e.\ \seDose)
+measured in reviews. Applying the proxy bound of Section~\ref{sec:validate}, the elasticity in
+units lies between \epsUnitsLo{} and \epsUnitsHi. Dividing the aggregate reduced form by the range
+of reported price increases gives \epsLo{} to \epsHi. Every route places demand well inside the
+inelastic region and comfortably above the $\varepsilon = -1$ benchmark of
+equation~\eqref{eq:unitelastic}.
 
-Three consequences follow.
+\subsection{Revenue}
 
-\heading{Revenue rose.} With a price multiple between $3.4$ and $30$ and an elasticity near $-0.33$,
-revenue scales by a factor between roughly \revLo{} and \revHi. The event study shows no reversion
-after eighteen months, so this is not a transitory gain.
+If price rises by a factor $\kappa$ and quantity falls to $Q_1 = Q_0 e^{\beta}$, revenue scales by
+$\kappa\,e^{\beta}$. Using the unit response and the documented price multiples, revenue rises by a
+factor of \revMultLo{} at the conservative end of the price change and \revMultHi{} at the
+aggressive end. The event study shows no reversion after eighteen months, so this is a level shift
+rather than a transitory gain. Valve and its developers made more money from Turkey after tripling
+prices, and kept making it.
 
-\heading{The prior price was not a solution to a pricing problem.} A zero-marginal-cost monopolist
-maximising revenue prices at unit elasticity. Turkey was priced far below that point, which means
-the pre-change lira price was not chosen so much as inherited from a currency schedule that had not
-kept pace with depreciation. This is the digital-goods counterpart of the coarse pricing that
-\citet{dellavigna2019} document in US retail, and it suggests that the striking geographic price
-differentials in software may be as much an artefact of inattention as a deliberate strategy.
+\subsection{Consumer surplus}
 
-\heading{The incidence fell on Turkish consumers.} Inelastic demand means most of the price increase
-was a transfer rather than a distortion. Turkish players kept buying at prices several times higher,
-and paid for it.
+The welfare consequence can be bounded without assuming a functional form. For any downward-sloping
+demand, the loss in consumer surplus from a price increase $p_0 \to p_1$ lies between the two
+rectangles $Q_1(p_1-p_0)$ and $Q_0(p_1-p_0)$. Expressed as a multiple of pre-change revenue
+$R_0 = p_0 Q_0$, the loss is between $(\kappa-1)\,Q_1/Q_0$ and $(\kappa-1)$. At the conservative
+price multiple this puts the surplus loss at between \csLossLo{} and \csLossHi{} times the revenue
+Turkish players had previously been paying, and the bound widens mechanically at larger multiples.
 
-Three caveats bound all of this. The elasticity is a chord over a very wide price range and cannot
-be extrapolated to small changes. The horizon is eighteen months, and the long-run response of a
-games ecosystem to pricing out a national market, through fewer new players entering, fewer
-localisations commissioned and a thinner community, could be substantially larger than the
-medium-run response measured here. And every quantity in this paper is a review rather than a unit,
-with the composition tests of Section~\ref{sec:mech} indicating that this makes the estimate
-conservative rather than inflated.
+The comparison worth drawing is between that and the revenue gain. Turkish consumers lost more
+surplus than the seller gained in revenue, which is the ordinary consequence of a price increase,
+but the ratio here is unusually lopsided precisely because demand is inelastic. When quantity does
+not move, a price increase is close to a pure transfer, and the party that keeps buying is the
+party that pays.
+
+I do not report a deadweight-loss number. Doing so requires the curvature of demand over the
+traversed range \citep{schmalensee1981,varian1985,aguirre2010}, and a single price change
+identifies a chord rather than a curve. That is a genuine limit of this design and not a
+presentational choice.
+
+\subsection{What the pre-change price implies about how it was set}
+
+A zero-marginal-cost monopolist maximising revenue prices where $\varepsilon = -1$. Turkey was
+priced far below that point. The pre-change lira price was therefore not the solution to a pricing
+problem so much as the residue of a currency schedule that had not kept pace with depreciation.
+This is the digital-goods counterpart of the coarse pricing that \citet{dellavigna2019} document in
+US retail, and it suggests that the striking geographic price differentials in software may be as
+much an artefact of inattention as a deliberate strategy.
+
+\subsection{Caveats}
+
+Three bound all of the above. The elasticity is a chord over a very wide price range and cannot be
+extrapolated to small changes. The horizon is eighteen months, and the long-run response of a games
+ecosystem to pricing out a national market, through fewer new players entering, fewer localisations
+commissioned and a thinner community, could be substantially larger than the medium-run response
+measured here. And the unit magnitudes rest on the proxy bound of Section~\ref{sec:validate} rather
+than on observed sales.
 
 %=======================================================================
 \section{Conclusion}\label{sec:conclusion}

@@ -17,3 +17,5 @@ cc_sample.json
 paper/*.pdf
 !paper/paper.pdf
 *.bak
+data/raw/steamspy/
+logs_*.txt

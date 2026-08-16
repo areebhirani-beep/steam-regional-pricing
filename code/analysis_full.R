@@ -478,3 +478,130 @@ cat(sprintf("detrended post effect %.3f | with Turkish linear trend %.3f (%.3f)\
 cat(sprintf("elasticity [%.2f, %.2f] | revenue multiple [%.1f, %.1f]x\n",
             stats$eps_lo, stats$eps_hi, stats$rev_lo, stats$rev_hi))
 cat("figures + tables written to output/\n")
+
+## =========================================================================
+##  EXTENSIONS ADDRESSING THE SIX REFEREE OBJECTIONS
+## =========================================================================
+
+## ---- (A) Validate the review-flow proxy against an independent units measure
+## SteamSpy publishes owner-count estimates built from a different method than
+## review counts. If the mapping from reviews to units were proportional the
+## log-log slope would be 1. It is not, so the paper must bound the unit
+## response rather than assume it.
+ss <- fread("data/interim/steamspy_frame.csv")
+ss <- ss[reviews_total >= 200 & owners_mid > 0]
+ss[, `:=`(lr = log(reviews_total), lo = log(owners_mid))]
+pm <- lm(lo ~ lr, data = ss)
+proxy_slope <- unname(coef(pm)["lr"])
+proxy_se    <- summary(pm)$coefficients["lr", "Std. Error"]
+proxy_r2    <- summary(pm)$r.squared
+proxy_n     <- nrow(ss)
+ss[, mult := owners_mid / reviews_total]
+mult_med <- median(ss$mult)
+
+## bound the unit response: proportional (slope 1) vs. estimated concavity
+b_units_hi <- b2                     # if reviews map one-for-one into units
+b_units_lo <- b2 * proxy_slope       # if the cross-sectional concavity also holds over time
+eps_units_hi <- unname(coef(dose_s)["turkish:post:dose_c"])
+eps_units_lo <- eps_units_hi * proxy_slope
+
+## ---- (B) Conley-Taber inference for a design with few treated clusters -----
+## Invert the placebo distribution: the set of nulls not rejected at 5% is
+## betahat minus the central 95% of the (centred) placebo estimates.
+pl <- ri[language != "turkish"]$est
+pl_c <- pl - mean(pl)
+ct_lo <- truth - quantile(pl_c, 0.975)
+ct_hi <- truth - quantile(pl_c, 0.025)
+
+## ---- (C) Two treated clusters with opposite-signed treatment ---------------
+## Turkish prices rose; Latin-American Spanish prices fell on the same date.
+## Signing the treatment uses both and tests the mechanism directly.
+m[, signed := fifelse(turkish == 1, 1, fifelse(latam == 1, -1, 0))]
+signed_s <- feols(log_n ~ signed:post | appid^month + appid^language,
+                  data = m[paid == 1], cluster = ~ appid^language)
+b_signed  <- unname(coef(signed_s)["signed:post"])
+se_signed <- unname(se(signed_s)["signed:post"])
+
+## ---- (D) Is Valve's price schedule actually followed? ----------------------
+## The dose in eq. (4) assumes pre-change lira prices were a common fraction of
+## dollar prices. If developers follow Valve's proportional schedule, current
+## Turkish/US ratios should cluster on a few values rather than spread smoothly.
+pr <- unique(fread(INP)[us_price > 0 & tr_price_now > 0, .(appid, us_price, tr_price_now)])
+pr[, ratio := round(tr_price_now / us_price, 2)]
+modes <- pr[, .N, by = ratio][order(-N)]
+top5_share <- sum(head(modes$N, 5)) / nrow(pr)
+n_distinct_ratio <- nrow(modes)
+fwrite(modes, file.path(OUTD, "tables", "price_ratio_modes.csv"))
+
+## ---- (E) Attenuation bounds on the dose-response elasticity ----------------
+lam <- c(0.9, 0.7, 0.5)
+theta_att <- unname(coef(dose_s)["turkish:post:dose_c"]) / lam
+
+## ---- (F) Welfare and revenue, assumption-light bounds ----------------------
+## No functional form: consumer-surplus loss lies between the two rectangles
+## Q1*(p1-p0) and Q0*(p1-p0). Express both as multiples of pre-change revenue.
+kappa <- c(3.4, 30)
+qratio_hi <- exp(b_units_hi); qratio_lo <- exp(b_units_lo)
+cs_loss <- function(k, qr) c(lo = (k - 1) * qr, hi = (k - 1) * 1)
+rev_mult <- function(k, qr) k * qr
+cs_lo_34 <- cs_loss(3.4, qratio_hi)[["lo"]]; cs_hi_34 <- cs_loss(3.4, qratio_hi)[["hi"]]
+rev_34   <- rev_mult(3.4, qratio_hi);        rev_30 <- rev_mult(30, qratio_hi)
+
+cat("\n================ EXTENSIONS ================\n")
+cat(sprintf("(A) proxy: log(owners) = %.2f + %.3f*log(reviews), R2=%.3f, N=%s; median units/review %.0f\n",
+            coef(pm)[1], proxy_slope, proxy_r2, formatC(proxy_n, big.mark=",", format="d"), mult_med))
+cat(sprintf("    unit response bounded: [%.3f, %.3f]  (=> %.0f%% to %.0f%% fall)\n",
+            b_units_lo, b_units_hi, 100*(1-exp(b_units_lo)), 100*(1-exp(b_units_hi))))
+cat(sprintf("    elasticity bounded:    [%.3f, %.3f]\n", eps_units_lo, eps_units_hi))
+cat(sprintf("(B) Conley-Taber 95%% CI from placebo distribution: [%.3f, %.3f]\n", ct_lo, ct_hi))
+cat(sprintf("(C) signed two-cluster treatment: %.3f (%.3f), t=%.2f\n",
+            b_signed, se_signed, b_signed/se_signed))
+cat(sprintf("(D) price-ratio schedule: %d distinct ratios over %d titles; top 5 cover %.0f%%\n",
+            n_distinct_ratio, nrow(pr), 100*top5_share))
+cat(sprintf("(E) attenuation-corrected elasticity at lambda=0.9/0.7/0.5: %.3f / %.3f / %.3f\n",
+            theta_att[1], theta_att[2], theta_att[3]))
+cat(sprintf("(F) revenue multiple %.1fx (k=3.4) to %.1fx (k=30); CS loss %.1f to %.1f x pre-revenue at k=3.4\n",
+            rev_34, rev_30, cs_lo_34, cs_hi_34))
+
+writeLines(c(readLines(file.path(OUTD, "tables", "macros.tex")),
+  E_("proxySlope", proxy_slope), E_("proxySE", proxy_se), E_("proxyRtwo", proxy_r2, "%.2f"),
+  sprintf("\\newcommand{\\proxyN}{%s}", formatC(proxy_n, big.mark=",", format="d")),
+  E_("multMed", mult_med, "%.0f"),
+  E_("bUnitsLo", b_units_lo), E_("bUnitsHi", b_units_hi),
+  sprintf("\\newcommand{\\pctUnitsLo}{%.0f}", 100*(1-exp(b_units_lo))),
+  sprintf("\\newcommand{\\pctUnitsHi}{%.0f}", 100*(1-exp(b_units_hi))),
+  E_("epsUnitsLo", eps_units_lo, "%.2f"), E_("epsUnitsHi", eps_units_hi, "%.2f"),
+  E_("ctLo", ct_lo), E_("ctHi", ct_hi),
+  E_("bSigned", b_signed), E_("seSigned", se_signed), E_("tSigned", b_signed/se_signed, "%.2f"),
+  sprintf("\\newcommand{\\nRatioModes}{%d}", n_distinct_ratio),
+  sprintf("\\newcommand{\\topFiveShare}{%.0f}", 100*top5_share),
+  E_("thetaAttNine", theta_att[1], "%.2f"), E_("thetaAttSeven", theta_att[2], "%.2f"),
+  E_("thetaAttFive", theta_att[3], "%.2f"),
+  E_("revMultLo", rev_34, "%.1f"), E_("revMultHi", rev_30, "%.1f"),
+  E_("csLossLo", cs_lo_34, "%.1f"), E_("csLossHi", cs_hi_34, "%.1f"),
+  E_("doseMin", min(pr$ratio), "%.2f"), E_("doseMax", max(pr$ratio), "%.2f"),
+  E_("doseMed", median(pr$ratio), "%.2f"),
+  sprintf("\\newcommand{\\doseN}{%d}", nrow(pr)),
+  E_("tailLo", min(as.data.table(fread(file.path(OUTD,"tables","event_study_coefs.csv")))[grepl("^A",spec) & k>=12]$estimate), "%.2f"),
+  E_("tailHi", max(as.data.table(fread(file.path(OUTD,"tables","event_study_coefs.csv")))[grepl("^A",spec) & k>=12]$estimate), "%.2f")
+), file.path(OUTD, "tables", "macros.tex"))
+
+## proxy-validation figure
+set.seed(1)
+sf <- ss[sample(.N, min(4000, .N))]
+f7 <- ggplot(sf, aes(lr, lo)) +
+  geom_point(alpha = .12, size = .5, colour = NAVY) +
+  geom_smooth(method = "lm", se = FALSE, colour = RED, linewidth = .6) +
+  geom_abline(intercept = coef(pm)[1], slope = 1, linetype = "22", colour = "grey40") +
+  labs(x = "log lifetime review count", y = "log estimated owners") + th
+ggsave(file.path(OUTD, "figures", "fig7_proxy.pdf"), f7, width = 6.5, height = 3.2)
+
+regtable(list(did_s, signed_s, dose_s),
+  coefs = list("turkish:post" = "Turkish $\\times$ Post",
+               "signed:post"  = "Signed treatment $\\times$ Post",
+               "turkish:post:dose_c" = "Turkish $\\times$ Post $\\times$ $\\Delta\\ln P$"),
+  heads = c("Baseline", "Two clusters, signed", "Dose"),
+  fe_rows = list("Title $\\times$ month FE" = rep("Yes", 3),
+                 "Title $\\times$ language FE" = rep("Yes", 3),
+                 "Treated units" = c("1 (Turkish)", "2 (Turkish, LatAm)", "1 (Turkish)")),
+  file = "t7_extensions.tex")

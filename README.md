@@ -18,22 +18,23 @@ affiliation, and no paid subscription.**
 
 | Specification | Estimate | s.e. | Reading |
 |---|---:|---:|---|
-| DiD, paid titles, Turkish vs. other languages | **−0.468** | 0.055 | 37% fall in Turkish demand |
-| DDD, adding free-to-play as within-Turkey control | **−0.343** | 0.083 | 29% fall (preferred) |
-| Poisson PML on raw counts | −0.413 | 0.082 | not a log-transform artefact |
-| With a Turkish linear time trend | −0.580 | 0.042 | pre-trend correction makes it larger |
-| **Dose response: own-price elasticity** | **−0.331** | 0.153 | **inelastic** |
-| Placebo: free-to-play titles only | −0.136 | 0.069 | small, and the reason DDD < DiD |
-| Latin-American Spanish (repriced *down* same day) | **+0.148** | 0.032 | opposite sign, as predicted |
-| Gray market (non-Steam key share) | +0.0063 | 0.0061 | null |
+| DiD, paid titles, Turkish vs. other languages | **-0.493** | 0.014 | 39% fall in review flow |
+| DDD, adding free-to-play as within-Turkey control | **-0.292** | 0.049 | 25% fall (preferred) |
+| Poisson PML on raw counts | -0.489 | 0.026 | not a log-transform artefact |
+| With a Turkish linear time trend | -0.567 | 0.017 | pre-trend correction makes it larger |
+| **Dose response: own-price elasticity** | **-0.239** | 0.052 | **inelastic** |
+| Two treated clusters, signed (Turkish up, LatAm down) | -0.306 | 0.010 | the mechanism is price |
+| Free-to-play in Turkish (macro control) | -0.207 | 0.047 | why DDD is smaller than DiD |
+| Latin-American Spanish (repriced down same day) | **+0.121** | 0.010 | opposite sign, as predicted |
+| Gray market (non-Steam key share) | +0.0100 | 0.0026 | +1.0pp shift to third-party keys |
 
-Sample: **1,361,901 reviews**, 39 titles (29 paid, 10 free-to-play), 28 languages, 526
-title-by-language cells, 18,410 title-language-month observations, July 2022 to June 2025.
+Sample: **7,323,081 reviews** in the estimation window across 486 titles (464 paid, 22 free-to-play), 28 languages, 7348 title-by-language cells and 257,180 title-language-month observations, July 2022 to June 2025. The raw collection behind it is 17.4 million reviews across 560 titles and 29 languages.
 
-Falsification: randomization inference across all 28 languages ranks Turkish first
-(p = 0.036; next most negative placebo −0.175). Leave-one-title-out gives [−0.490, −0.448].
-The fitted pre-trend slope is **positive** (+0.0153 per month, s.e. 0.0073), so it biases against
-the finding.
+**Proxy validated against units.** SteamSpy owner estimates provide an independent measure of units: log(owners) = 8.23 + 0.577·log(reviews), R-squared 0.65, N = 8,767. The slope is below one, so the unit response is bounded at [-0.169, -0.292] and the elasticity in units at [-0.14, -0.24]. Both ends inelastic.
+
+**Inference designed for one treated cluster.** Randomization inference across all 28 languages ranks Turkish first (p = 0.036; next most negative placebo -0.122). Conley-Taber interval inverted from the placebo distribution: [-0.866, -0.335]. Leave-one-title-out: [-0.496, -0.492]. The fitted pre-trend slope is **positive** (+0.0118 per month), so it biases against the finding.
+
+**Welfare.** Revenue rose by 2.5x to 22.4x. Consumer-surplus loss is 1.8 to 2.4 times pre-change Turkish revenue at the conservative price multiple, bounded without a functional form.
 
 *All numbers regenerate from `output/tables/stats.json`.*
 
@@ -76,7 +77,9 @@ paper updates itself, abstract included.
 
 ```
 code/pull_steam_reviews.py   paginated review-history collector, resumable per (appid, language)
-code/pull_steam_meta.py      title metadata and prices across storefronts
+code/build_frame.py          SteamSpy sampling frame + Turkish-volume screen
+code/pull_meta_fast.py       parallel metadata/price pull for the full sample
+code/export_steamspy.py      owner estimates for the proxy validation
 code/build_panel.py          reviews -> title x language x week panel, with coverage checks
 code/analysis_full.R         every table, figure, and \newcommand in the paper
 install_pkgs.R               R dependencies
@@ -84,7 +87,7 @@ paper/paper.tex              the manuscript
 paper/refs.bib               bibliography
 data/raw/                    raw pulls (not committed; regenerate with steps 1 and 2)
 data/interim/                panel in parquet and csv
-output/figures/              six figures, PDF
+output/figures/              seven figures, PDF
 output/tables/               LaTeX fragments, CSVs, stats.json, macros.tex
 candidates.md                Phase 1: six candidate questions
 verification-log.md          Phase 2: every check run, with commands and results

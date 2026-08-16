@@ -43,27 +43,35 @@ Sample: **7,323,081 reviews** in the estimation window across 486 titles (464 pa
 ## Reproducing from a cold start
 
 ```bash
+./run_all.sh          # everything below, in order, resumable
+```
+
+Or step by step:
+
+```bash
 # 0. environment
 python3 -m venv .venv
 ./.venv/bin/pip install pandas numpy requests matplotlib statsmodels pyarrow pdfminer.six
 brew install r tectonic          # macOS. R >= 4.3; tectonic compiles the paper without sudo
 Rscript install_pkgs.R           # data.table, fixest, ggplot2, broom, jsonlite, ...
 
-# 1. pull raw review histories (hours; resumable, safe to interrupt and rerun)
-./.venv/bin/python code/pull_steam_reviews.py \
-    "413150,292030,271590,1091500,431960,105600,322330,252490,1145360,620" \
-    "turkish,latam,russian,german,polish,schinese,brazilian,koreana,spanish,french"
+# 1. sampling frame: SteamSpy top titles, screened for Turkish review volume
+./.venv/bin/python code/build_frame.py 400 600
 
-# 2. pull title metadata and current prices across storefronts
-./.venv/bin/python code/pull_steam_meta.py "413150,292030,271590,1091500,431960"
+# 2. review histories, sharded and resumable (hours)
+./.venv/bin/python code/pull_steam_reviews.py "<appids>" "<languages>"
 
-# 3. build the title x language x week panel
+# 3. title metadata and US/TR prices
+./.venv/bin/python code/pull_meta_fast.py
+
+# 4. SteamSpy owner estimates, for validating the review proxy
+./.venv/bin/python code/export_steamspy.py
+
+# 5. panel, then every table, figure and in-text number
 ./.venv/bin/python code/build_panel.py
-
-# 4. every table, figure, and in-text number
 Rscript code/analysis_full.R
 
-# 5. compile the paper
+# 6. compile the paper
 cd paper && tectonic -X compile paper.tex
 ```
 
@@ -76,6 +84,7 @@ paper updates itself, abstract included.
 ## Layout
 
 ```
+run_all.sh                   one command, cold start to compiled PDF
 code/pull_steam_reviews.py   paginated review-history collector, resumable per (appid, language)
 code/build_frame.py          SteamSpy sampling frame + Turkish-volume screen
 code/pull_meta_fast.py       parallel metadata/price pull for the full sample

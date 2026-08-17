@@ -96,8 +96,8 @@ languages. Latin-American Spanish, whose countries moved onto a \emph{discounted
 on the same day, moves in the opposite direction. And the pre-existing differential trend is
 mildly positive, so netting it out makes the estimated decline larger rather than smaller. A
 dose-response specification exploiting cross-title variation in the size of the increase recovers
-an own-price elasticity of \bDose{} (s.e.\ \seDose). Demand is inelastic. Two implications follow.
-Steam's deep regional discount was revenue-reducing, so the industry practice of steep
+an own-price elasticity of \bDose{} (s.e.\ \seDose). Demand is inelastic.
+Steam's deep regional discount was therefore revenue-reducing, so the industry practice of steep
 emerging-market discounting cannot rest on the profit grounds usually offered for it; and because
 quantity moves little, nearly the entire burden of ending regional pricing falls on consumers in
 the poorest markets as a transfer rather than as avoided deadweight loss. Existing elasticity
@@ -204,9 +204,8 @@ first of \riN{} with a one-sided $p$-value of \riP; the next most negative place
 Latin-American Spanish, whose speakers' countries moved onto a \emph{discounted} dollar schedule
 on the very same day, moves in the opposite direction, $+\bLatam$ (s.e.\ \seLatam).
 
-I treat the pre-period candidly rather than asserting that it is flat. A joint Wald test on the
-pre-event coefficients rejects ($F = \preF$), but that test rejects on month-to-month noise as
-readily as on a trend. The economically relevant object is the slope, and the fitted pre-period
+The pre-period is not flat, and a joint Wald test on the pre-event coefficients rejects
+($F = \preF$). That test rejects on month-to-month noise as readily as on a trend. The economically relevant object is the slope, and the fitted pre-period
 slope is $+\preSlope$ per month (s.e.\ \preSlopeSE), which is to say Turkish demand was drifting
 mildly \emph{upward} relative to control before the change. Netting the trend out therefore makes
 the estimate larger, not smaller: linear detrending gives \bDetrend, and allowing Turkish speakers
@@ -269,8 +268,8 @@ decision. Most empirical work on platform power studies the platform competing w
 complementors \citep{zhu2018,wen2019} or shaping what users see \citep{fleder2009,tadelis2016}.
 Valve did neither. It changed the currency in which its entire catalogue is denominated, and in
 doing so reset every seller's price in two countries simultaneously. That is a form of platform
-power the literature has not measured, and it is not exotic: pricing architecture is a platform
-decision that binds thousands of independent sellers at once.
+power the literature has not measured, Pricing architecture is a platform decision
+that binds thousands of independent sellers at once.
 
 The stakes of measuring it properly are visible in how the question is currently being answered.
 \citet{choi2025}, in a study for which support was provided by Apple, reports that when the
@@ -280,8 +279,7 @@ reach consumers. The study runs on internal transaction data that cannot be audi
 described it is a share-of-prices-changed calculation rather than a causal design. Whatever one
 makes of the conclusion, the episode illustrates that questions about platform pricing now in
 front of regulators are being settled largely with proprietary data held by interested parties.
-Part of the motivation for this paper is that the public record can do better than it has been
-asked to.
+The public record can support a sharper answer than it has been asked to.
 
 To development and digital adoption, the closest antecedent is \citet{bjorkegren2019}, who
 estimates demand for a network good in a low-income country using near-universal transaction data.
@@ -297,7 +295,7 @@ was activated from a non-Steam key, and Section~\ref{sec:mech} reports what happ
 
 \subsection*{What this paper cannot do}
 
-Three limits belong at the outset rather than in a footnote. The outcome is a proxy for units
+Three limits belong at the outset. The outcome is a proxy for units
 rather than units, and Section~\ref{sec:proxy} tests the assumption that its mapping to units is
 stable but cannot prove it. Piracy is unobservable, and it is the substitution margin where the
 welfare accounting is ultimately decided. And Argentina, treated on the same day, cannot be
@@ -331,8 +329,6 @@ be converted at that day's rate. Valve simultaneously introduced two new regiona
 schedules covering twenty-five additional countries. The stated rationale was exchange-rate
 volatility.
 
-Four features matter for identification.
-
 \heading{It was not chosen by sellers.} A developer whose game became five times more expensive in
 Turkey on 20 November did not make that decision; Valve's currency architecture did. This is the
 property that price changes in observational data almost never have, and it is what allows the
@@ -343,8 +339,8 @@ therefore none of the pathologies that arise when already-treated units serve as
 controls \citep{goodmanbacon2021}. Section~\ref{sec:estimator} returns to this, because it is a
 case in which the frontier estimator is the wrong tool.
 
-\heading{It was announced 26 days in advance.} Long enough that the pre-period is genuinely
-untreated, and short enough to limit strategic repositioning by either side. The announcement
+\heading{It was announced 26 days in advance.} Long enough that the pre-period is
+untreated, short enough to limit strategic repositioning by either side. The announcement
 window is examined directly in the weekly event study of Section~\ref{sec:weekly}, where a
 pre-event purchase spike would be evidence for the mechanism rather than against it.
 
@@ -358,8 +354,8 @@ basis of the dose-response specification in Section~\ref{sec:dose}.
 \section{Conceptual framework}\label{sec:concept}
 %=======================================================================
 
-It is worth being precise about what an inelastic estimate would and would not establish, because
-the temptation to over-read a single elasticity is strong.
+An inelastic estimate establishes less than it might appear to, and the boundary is worth drawing
+before the results arrive.
 
 Consider a monopolist selling a zero-marginal-cost good in two separated markets, home and
 foreign, with demands $Q_h(p)$ and $Q_f(p)$. Under third-degree price discrimination the firm
@@ -369,8 +365,7 @@ With zero marginal cost, profit maximisation requires
 \varepsilon_f\!\left(p_f^{*}\right) \;=\; -1 .
 \label{eq:unitelastic}
 \end{equation}
-A monopolist with no marginal cost prices at the point of unit elasticity. This is the single most
-useful benchmark in the paper. If the estimated elasticity at the pre-change Turkish price is
+A monopolist with no marginal cost prices at the point of unit elasticity. That is the benchmark against which the estimates below should be read. If the estimated elasticity at the pre-change Turkish price is
 materially smaller than one in absolute value, the firm was pricing below the revenue-maximising
 level, and raising the price must raise revenue.
 
@@ -382,9 +377,7 @@ $\hat\varepsilon$ of the order of \epsUnitsHi, the implied revenue multiple rang
 a platform tripled prices in a national market and collected more money for at least eighteen
 months afterwards.
 
-Two cautions bound the interpretation.
-
-First, an elasticity estimated from one large change is a chord, not a slope.
+An elasticity estimated from one large change is a chord, not a slope.
 Equation~\eqref{eq:unitelastic} is a local condition, and a demand curve traversed over a range of
 three to thirty times is unlikely to have constant elasticity. What the estimate establishes is
 that demand was inelastic \emph{on average over the traversed range}, which is sufficient for the
@@ -392,7 +385,7 @@ revenue conclusion and insufficient for a precise welfare number. The welfare co
 third-degree price discrimination depend on the curvature of demand in each market
 \citep{schmalensee1981,varian1985,aguirre2010}, and curvature is not identified by a single change.
 
-Second, inelastic demand is a statement about incidence, not about desirability. When quantity
+Inelastic demand is also a statement about incidence, not about desirability. When quantity
 barely responds, a price increase is close to a pure transfer from consumers to the seller. The
 finding that Turkish players kept buying at prices several times higher is therefore not
 reassuring. It is the definition of the burden falling on them.
@@ -462,16 +455,14 @@ review. Figure~\ref{fig:proxy} plots the relationship against the 45-degree line
 
 The slope is materially below one. Larger titles generate proportionally fewer reviews per owner,
 which is what one would expect if mass-market buyers review less often than enthusiasts. Two
-consequences follow, and the paper carries both rather than choosing between them.
+consequences follow, and both are carried through the results below.
 
-First, the fixed-effect argument is unaffected. The concavity is a statement about differences
-\emph{between} titles, and $\gamma_{g\ell}$ absorbs those differences entirely.
-
-Second, the translation from a review response into a unit response is not one-for-one, and the
-paper should not pretend otherwise. If the cross-sectional concavity also describes the
-within-title time series, then a proportional fall in reviews corresponds to a smaller
-proportional fall in units, scaled by \proxySlope. Every magnitude in this paper is therefore
-reported as a bound: the unit response lies between \bUnitsLo{} and \bUnitsHi, a fall of
+The fixed-effect argument survives this, since the concavity is a statement about differences
+\emph{between} titles and $\gamma_{g\ell}$ absorbs those differences entirely. What does not
+survive is any assumption that a given percentage fall in reviews means the same percentage fall in
+units. Should the cross-sectional concavity also describe the within-title time series, a
+proportional fall in reviews corresponds to a smaller proportional fall in units, scaled by
+\proxySlope. Every magnitude below is therefore reported as a bound: the unit response lies between \bUnitsLo{} and \bUnitsHi, a fall of
 \pctUnitsLo{} to \pctUnitsHi{} percent, and the implied elasticity lies between \epsUnitsLo{} and
 \epsUnitsHi. Both ends are inelastic, so the paper's conclusion does not turn on which is right.
 
@@ -613,7 +604,7 @@ recovers $\theta$, the own-price elasticity, directly.
 The assumption that $\phi$ is common across titles is an approximation. Developers could and did
 deviate from Valve's schedule, and residual variation in $\phi$ is measurement error in the dose
 that attenuates $\hat\theta$ toward zero. This is the single place where licensed historical price
-data would most improve the paper, and Section~\ref{sec:conclusion} says so plainly.
+data would most improve the paper, and Section~\ref{sec:conclusion} returns to it.
 
 %=======================================================================
 \section{Results}\label{sec:results}
@@ -653,7 +644,7 @@ of Latin-American Spanish were also repriced on 20 November 2023, but in the opp
 their countries moved from the plain dollar schedule onto a new discounted regional one. If the
 mechanism is price, that group should move up. It does, by $\bLatam$ (s.e.\ \seLatam). A confound
 that could produce a large negative movement in Turkish and a simultaneous positive movement in
-Latin-American Spanish, on precisely the date Valve repriced both in opposite directions, is
+Latin-American Spanish, on the date Valve repriced both in opposite directions, is
 difficult to construct.
 
 \subsection{Event study}
@@ -671,19 +662,17 @@ shaded region marks the post-event period. Bands are 95 percent confidence inter
 errors clustered at title by language.}
 \end{figure}
 
-Three features can be read directly off the figure.
+Before the event the series fluctuates around zero without trending. Individual monthly
+coefficients are noisy, with a maximum absolute value of \preMax{} and a standard deviation of
+\preSD, but they average \preMean{} and their fitted slope, reported in
+Section~\ref{sec:pretrend}, is mildly positive rather than negative.
 
-The pre-period fluctuates around zero without trending. Individual monthly coefficients are noisy,
-with a maximum absolute value of \preMax{} and a standard deviation of \preSD, but their mean is
-\preMean{} and, as Section~\ref{sec:pretrend} shows, their fitted slope is mildly positive rather
-than negative.
+Timing lines up with the event. The coefficient at $k=0$, November 2023, is \bKzero{} and
+indistinguishable from zero, which is what a change taking effect on the twentieth of that month
+should produce: two thirds of November is pre-treatment. The decline arrives in full at $k=1$, the
+first complete post-change month.
 
-The effect appears exactly when it should. The coefficient at $k=0$, November 2023, is \bKzero{}
-and indistinguishable from zero. This is the correct pattern rather than a puzzle, because the
-change took effect on 20 November and two thirds of that calendar month is pre-treatment. The
-decline appears in full at $k=1$, the first complete post-change month.
-
-The effect persists. Two years later the coefficients remain between \tailHi{} and \tailLo{} with no tendency to revert.
+Nor does it fade. Two years later the coefficients remain between \tailHi{} and \tailLo{} with no tendency to revert.
 The estimation window runs \horizonMonths{} months past the event, so this is not a short-run
 response that has yet to be undone. A permanent price change should produce a permanent level shift, and it
 does.
@@ -898,8 +887,8 @@ proxy assumption requires.
 
 Median playtime at review rises by \bPT{} log points (s.e.\ \sePT). This is a real change and it has
 a natural reading: when the price of a game rises severalfold, the marginal buyer who remains is the
-one who values it most and plays it most. Selection on intensity of use is precisely what an
-inelastic aggregate response combined with a shifting composition of buyers would produce.
+one who values it most and plays it most. Selection on intensity of use is what an inelastic
+aggregate response combined with a shifting composition of buyers would produce.
 Figure~\ref{fig:comp} plots all three series over time.
 
 \begin{figure}[htbp]
@@ -911,7 +900,7 @@ Figure~\ref{fig:comp} plots all three series over time.
 month, for Turkish and for all other languages pooled. The vertical line marks 20 November 2023.}
 \end{figure}
 
-It is worth being explicit about which direction this cuts. If the surviving Turkish buyers are more
+The direction this cuts matters. If the surviving Turkish buyers are more
 intensive users, and if intensive users review at a higher rate, then $\mu_{g\ell}$ rose for Turkish
 paid titles after the change. A rise in $\mu$ pushes measured review counts \emph{up}, which means
 the true decline in units is larger than the measured decline in reviews. The playtime result
@@ -926,7 +915,7 @@ of \pctDDD{} percent, gray-market substitution accounts for a small fraction of 
 of the people who stopped buying at the new prices did not reappear as key buyers; they stopped
 appearing.
 
-The limit of this test should be stated plainly. Gray-market keys are one substitution margin and
+The test has a hard limit. Gray-market keys are one substitution margin and
 the most important one, outright piracy, is unobservable here. A small measured shift into
 observable third-party channels is consistent both with consumers leaving the market and with
 consumers moving into channels I cannot see, and the data cannot separate those.
@@ -941,18 +930,16 @@ That deserves a direct answer rather than a footnote. Turkish engagement with fr
 over the same window, by roughly two fifths of the fall in paid titles. Since no free title's price
 changed, this cannot be a price effect. It is what one would expect if Turkish conditions were
 deteriorating for reasons unrelated to Valve, which over 2023 and 2024 is not a speculative
-possibility. The right inference is not that the design fails but that the plain
-difference-in-differences of column (1) contains a macroeconomic component, and that the triple
-difference exists precisely to remove it. This is why \bDDD{} rather than \bDiD{} is the paper's
-preferred estimate throughout, and why \bDiD{} should be read as an upper bound on the magnitude.
+possibility. What it shows is that the plain difference-in-differences of column (1)
+contains a macroeconomic component, which is the reason the triple difference exists. \bDDD{} is
+therefore the preferred estimate throughout, and \bDiD{} an upper bound on the magnitude.
 
-One caveat runs the other way and is worth stating. If some Turkish players responded to the price
+One caveat runs the other way. If some Turkish players responded to the price
 increase by switching from paid to free titles, then free-title demand contains a positive
 substitution term, its purely macroeconomic component is more negative than \bFree, and the triple
-difference overstates the price effect by the size of that substitution. The observed decline in
-free-title demand bounds how large that term can be: substitution into free titles cannot have been
-large, because free-title demand fell rather than rose. The honest reading is that the price effect
-on paid demand lies between \bDDD{} and something modestly smaller in magnitude, and that both ends
+difference overstates the price effect by the size of that substitution. The observed decline in free-title demand bounds that term: substitution
+into free titles cannot have been large, because free-title demand fell rather than rose. The price
+effect on paid demand therefore lies between \bDDD{} and something modestly smaller, and both ends
 of that interval are inelastic once translated into units by Section~\ref{sec:validate}.
 
 %=======================================================================
@@ -986,14 +973,13 @@ Turkish players had previously been paying, and the bound widens mechanically at
 
 The comparison worth drawing is between that and the revenue gain. Turkish consumers lost more
 surplus than the seller gained in revenue, which is the ordinary consequence of a price increase,
-but the ratio here is unusually lopsided precisely because demand is inelastic. When quantity does
+but the ratio here is unusually lopsided because demand is inelastic. When quantity does
 not move, a price increase is close to a pure transfer, and the party that keeps buying is the
 party that pays.
 
 I do not report a deadweight-loss number. Doing so requires the curvature of demand over the
 traversed range \citep{schmalensee1981,varian1985,aguirre2010}, and a single price change
-identifies a chord rather than a curve. That is a genuine limit of this design and not a
-presentational choice.
+identifies a chord rather than a curve. That is a limit of the design.
 
 \subsection{How much of the consumer loss is a transfer?}
 
@@ -1003,14 +989,13 @@ while the consumer-surplus loss is between \csActLo{} and \csActHi{} in the same
 therefore captures between \transferLo{} and \transferHi{} percent of what Turkish consumers lost.
 The remainder is trade that simply stopped happening.
 
-That decomposition is the substantive point of the paper. When demand is inelastic, ending regional
+That decomposition is the substantive point. When demand is inelastic, ending regional
 pricing is mostly a transfer from consumers in a poor country to a platform and its developers, and
-only secondarily a matter of forgone trade. Arguments about efficiency are therefore beside the
-point here; the question the episode actually raises is distributional.
+only secondarily a matter of forgone trade. The question the episode raises is distributional, not one of efficiency.
 
 \subsection{Can these numbers be extrapolated?}\label{sec:curvature}
 
-Only within the observed range, and the data say why. A constant-elasticity demand curve with
+Only within the observed range. A constant-elasticity demand curve with
 $|\varepsilon| < 1$ implies that revenue rises without limit in price, which cannot be true of any
 real market. Something must make demand more elastic at higher prices, and the dose-response
 variation can test for it directly: adding a quadratic term in $\Delta \ln P$ to
@@ -1021,9 +1006,8 @@ Table~\ref{tab:curvature} reports the result. The quadratic coefficient is \bDos
 \seDoseSq), so the point estimate has the expected sign, with demand becoming more elastic where
 the increase was larger, but it is not statistically distinguishable from zero. Evaluated at the
 tenth and ninetieth percentiles of the dose the implied elasticity moves from \epsDTen{} to
-\epsDNinety. The honest reading is that curvature is not identified here: the design cannot rule
-out constant elasticity over the traversed range, and it certainly cannot license extrapolation
-beyond it. Any counterfactual that requires prices outside the observed range needs a demand system
+\epsDNinety. Curvature is not identified here. The design cannot rule out constant elasticity over
+the traversed range, and it cannot license extrapolation beyond it. Any counterfactual that requires prices outside the observed range needs a demand system
 this paper does not estimate.
 
 \begin{table}[htbp]

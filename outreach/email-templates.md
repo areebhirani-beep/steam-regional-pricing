@@ -1,219 +1,186 @@
-# Outreach pack
+# Correspondence
 
-The paper is the artifact. This file is how it gets read.
+Four letters, because an IO economist and a marketing professor are persuaded by different things.
+The paper is the same in all four. The first paragraph is not.
 
-**Rule zero: never send the same email twice.** An IO economist is bought by the research design,
-a marketing professor by the elasticity, an information-systems professor by the panel, and an
-international economist by the law-of-one-price framing. The figure is identical in all four. The
-first sentence is not.
+**Links to use**
 
-**Rule one: the subject line does the work.** A professor decides in the preview pane.
+- Paper: `https://github.com/areebhirani-beep/steam-regional-pricing/blob/main/paper/paper.pdf`
+- Code and data: `https://github.com/areebhirani-beep/steam-regional-pricing`
 
-> **Valve raised game prices in Turkey by up to 2,900% overnight. Demand fell by a third.**
+Post the PDF to SSRN before the first batch and swap the link. A blob URL works today; a dead link
+in eighteen months is worse than never writing.
 
-Alternates, if you want to A/B them across batches:
+**Before sending**
 
-- *A natural experiment in regional pricing you may not have seen*
-- *An elasticity for digital goods, identified off a 3x to 30x permanent price change*
-- *Steam abolished Turkish Lira pricing in 2023. I measured what happened.*
-
-**Rule two: host the PDF somewhere permanent before wave one.** The GitHub blob link works today,
-but a cold email whose link dies six months from now is worse than no email. Post to SSRN, or cut a
-GitHub release, and use that URL everywhere.
-
-**Rule three: attach nothing.** Link the PDF and link the GitHub. Attachments trip spam filters and
-signal that you expect them to do work before deciding.
-
-**Rule four: one ask, and make it small.** Never open with "will you co-author." Open with a
-question only they can answer. The co-authorship conversation happens on the second or third
-exchange, or it does not happen.
+Keep it under 200 words. Attach nothing, since attachments trip filters and imply they owe you work
+before deciding. Ask one question they can answer in two sentences, and never open with
+co-authorship. Send twenty, wait a week, then revise.
 
 ---
 
-## Segment A: Industrial organization and digital economics
+## A. Industrial organization, digital economics
 
-*Economics departments; NBER IO and Economics of Digitization; IIOC, EARIE.*
-*Lead with identification. These readers are bought or lost on the research design.*
+*Economics departments, NBER IO and Digitization, IIOC, EARIE. They are won or lost on the design.*
 
-> Subject: **Valve raised game prices in Turkey by up to 2,900% overnight. Demand fell by a third.**
+> **Subject: Valve raised Turkish game prices up to 2,900% overnight. What happened to demand.**
 >
 > Professor [Name],
 >
-> On 20 November 2023 Valve abolished Turkish Lira pricing on Steam and repriced its entire
-> catalogue in dollars. Local prices rose by between roughly 240 and 2,900 percent on a single
-> date, for reasons that had nothing to do with any individual game: Valve cited exchange-rate
-> volatility. Free-to-play titles had no price and so were untreated, which leaves a control group
-> inside the treated country.
+> On 20 November 2023 Valve dropped the Turkish Lira and repriced the whole Steam catalogue in
+> dollars. Local prices rose 240 to 2,900 percent on one date, chosen for exchange-rate reasons
+> that had nothing to do with any particular game. Free-to-play titles have no price, so the change
+> left an untreated control group inside the treated country.
 >
-> I used it to estimate the price elasticity of demand for digital goods in an emerging market.
-> Turkish demand for paid titles falls 27 percent in a triple difference (-0.317, s.e.
-> 0.057), and a dose-response specification recovers an elasticity of -0.287. Randomization inference across
-> all 28 Steam languages ranks Turkish first. Latin-American Spanish, whose countries moved onto a
-> *discounted* dollar schedule on the same day, moves in the opposite direction.
+> Turkish demand for paid titles falls 27 percent in a triple difference (−0.317, s.e. 0.057), and
+> the dose-response specification gives an elasticity of −0.287. Relabelling each of the 28 Steam
+> languages as treated in turn puts Turkish first. Latin-American Spanish, whose countries moved to
+> a discounted dollar schedule the same day, moves the other way.
 >
-> Paper: https://github.com/areebhirani-beep/steam-regional-pricing/blob/main/paper/paper.pdf. Replication package: https://github.com/areebhirani-beep/steam-regional-pricing. Everything runs on public endpoints, no API key.
+> Paper and code: [links]. Public endpoints throughout, no API key.
 >
-> The question I cannot answer alone is the one you would ask first. My dose measure assumes
-> pre-change lira prices were a common fraction of dollar prices, because per-title historical lira
-> quotations are not free. Is there a defensible way to relax that assumption with data you have
-> seen used, or is it a licensed-archive problem?
+> One thing I cannot resolve. The dose assumes pre-2023 lira prices were a common fraction of
+> dollar prices, since per-title lira history is not free. Is there a way around that you have seen
+> work, or is it simply a licensed-archive problem?
 >
-> I am a high school junior in Texas, applying to economics programs next year. I would value fifteen minutes
-> if you have it, and I am happy to be told the design has a hole in it.
+> I am a high school junior in Texas. Fifteen minutes would be worth a lot to me.
 >
 > Areeb Hirani
 
 ---
 
-## Segment B: Quantitative marketing and pricing
+## B. Quantitative marketing, pricing
 
-*Business school marketing groups; ISMS Marketing Science Conference.*
-*Lead with the number and what it means for a pricing manager.*
+*Marketing groups, ISMS. Lead with the number and what a pricing manager does with it.*
 
-> Subject: **An elasticity for digital goods, identified off a permanent 3x to 30x price increase**
+> **Subject: A digital-goods elasticity from a permanent 3x to 30x price increase**
 >
 > Professor [Name],
 >
-> Almost every estimate of price sensitivity for digital entertainment comes from temporary
-> promotions, which confound price sensitivity with intertemporal substitution. In November 2023
-> Valve gave us a permanent one: it abolished Turkish Lira pricing on Steam and repriced the whole
-> catalogue in dollars overnight, raising local prices several-fold to thirty-fold depending on the
-> title.
+> Nearly every price-sensitivity estimate for digital entertainment comes from temporary
+> promotions, which mix price response with intertemporal substitution. Valve supplied a permanent
+> one in November 2023: it abolished Turkish Lira pricing on Steam and repriced the catalogue in
+> dollars, raising local prices several-fold to thirty-fold depending on the title.
 >
-> Demand is inelastic. The dose-response estimate is -0.287 (s.e. 0.055), well above the
-> unit-elastic benchmark a zero-marginal-cost seller should price at. The implication is
-> uncomfortable for industry practice: Steam's deep emerging-market discount was
-> revenue-reducing, and the surplus lost when it ended fell almost entirely on Turkish consumers.
-> It is the mirror image of DellaVigna and Gentzkow's uniform-pricing result, and it points at the
-> same underlying fact, that geographic prices are set with heuristics rather than elasticities.
+> Demand turns out to be inelastic, −0.287 (s.e. 0.055), well short of the unit-elastic point a
+> zero-marginal-cost seller should be pricing at. So the deep emerging-market discount was
+> revenue-reducing, and the surplus lost when it ended fell almost entirely on Turkish consumers:
+> the seller captured 62 to 84 percent of it. That is the mirror image of the DellaVigna and
+> Gentzkow uniform-pricing result, arrived at from the opposite direction.
 >
-> The welfare split is the part I did not expect: the seller captures 62 to 84 percent of
-> what Turkish consumers lost, so this is mostly a transfer out of a poor market rather than forgone
-> trade.
+> Paper: [link]. The figure that carries it is on page 9.
 >
-> Paper: https://github.com/areebhirani-beep/steam-regional-pricing/blob/main/paper/paper.pdf. One figure carries it, and it is on page 9.
->
-> My question for you: I observe reviews, not units, and I show the composition of reviewers is
-> stable on library size and sentiment while playtime rises. Is that enough to convince a referee
-> that the proxy is not doing the work, or is there a validation you would insist on?
+> My question is about the outcome variable. I observe reviews, not units, and validate the mapping
+> against SteamSpy owner counts, which are concave in reviews, so I report bounds. Would that
+> satisfy you as a referee, or is there a validation you would insist on?
 >
 > Areeb Hirani
 
 ---
 
-## Segment C: Information systems and platform economics
+## C. Information systems, platform economics
 
-*IS groups in business schools; ISR, MISQ, Management Science; WISE, CIST.*
-*Lead with the data asset and the platform-governance angle.*
+*IS groups, ISR, MISQ, Management Science, WISE. Lead with the panel.*
 
-> Subject: **A platform reset every seller's price in two countries on one day. I built the panel.**
+> **Subject: A platform reset every seller's price in two countries on one day**
 >
 > Professor [Name],
 >
-> Most empirical work on platform power studies the platform competing with its complementors or
-> shaping what users see. Valve did something different in November 2023: it changed the currency
-> its entire catalogue is denominated in, and in doing so reset every independent seller's price in
-> Turkey and Argentina simultaneously. Pricing architecture is a platform decision that binds
-> thousands of sellers at once, and I have not found it measured.
+> Work on platform power tends to study the platform competing with its complementors or steering
+> what users see. Valve did neither in November 2023. It changed the currency its whole catalogue
+> is denominated in, resetting every independent seller's price in Turkey and Argentina at once.
+> Pricing architecture binds thousands of sellers simultaneously, and I have not found it measured.
 >
-> To measure it I assembled a panel of 9,608,862 Steam reviews across 484 titles and
-> 28 languages, from a raw collection of 17.4 million. Each observation carries a timestamp, a language, the reviewer's playtime at the
-> moment of writing, their library size, and a flag for whether the copy was activated from a
-> non-Steam key, which makes gray-market substitution directly observable rather than inferred.
-> The collector and the cleaning code are public and require no API key.
+> The panel is 9.6 million Steam reviews across 484 titles and 28 languages. Each observation
+> carries a timestamp, a language, the reviewer's playtime when they wrote, their library size, and
+> a flag for whether the copy came from a non-Steam key, which makes gray-market substitution
+> observable rather than assumed. Turkish demand for paid titles falls 27 percent. Free titles in
+> the same country fall far less, which is how the design separates price from macro.
 >
-> Turkish demand for paid titles falls 27 percent. Free-to-play titles in the same country,
-> which have no price, fall by far less, which is how the design separates the price change from the
-> Turkish macroeconomy.
+> Paper and full pipeline: [links]. No API key anywhere.
 >
-> Paper: https://github.com/areebhirani-beep/steam-regional-pricing/blob/main/paper/paper.pdf. Code and data pipeline: https://github.com/areebhirani-beep/steam-regional-pricing.
->
-> The extension I cannot do alone: separating Argentina, which was treated on the same date but is
-> pooled with the rest of Latin America in Steam's language tags. Doing it properly needs
-> user-level country identification at scale, which raises collection and ethics questions I should
-> not resolve unilaterally. Is that a project you would want to scope?
+> The extension I should not attempt alone is Argentina, treated the same day but pooled with the
+> rest of Latin America in Steam's language tags. Separating it needs user-level country data at
+> scale, which raises collection questions I would rather not decide by myself. Worth scoping?
 >
 > Areeb Hirani
 
 ---
 
-## Segment D: International economics and open-economy macro
+## D. International economics, open-economy macro
 
-*Economics departments, trade and international finance; NBER IFM.*
-*Lead with dominant-currency pricing. This is the segment most likely to see the paper as their own.*
+*Trade and international finance, NBER IFM. The segment most likely to treat it as their own.*
 
-> Subject: **A digital good forced from local-currency to dollar pricing, with quantities observed**
+> **Subject: A digital good forced from local-currency to dollar pricing, with quantities observed**
 >
 > Professor [Name],
 >
-> The dominant-currency literature has price data and, usually, coarse quantity data. In November
-> 2023 Valve moved Steam's Turkish and Argentine storefronts off local currency and onto dollars,
-> which is close to a forced currency-union entry for a digital good, imposed by a platform rather
-> than a central bank. Because Steam tags every review with the reviewer's client language, the
-> quantity margin is observable at the product level and at monthly frequency.
+> The dominant-currency literature usually has prices and only coarse quantities. In November 2023
+> Valve moved Steam's Turkish and Argentine storefronts off local currency onto dollars, which is
+> close to a forced currency-union entry for a digital good, imposed by a platform rather than a
+> central bank. Because Steam tags every review with the writer's client language, quantities are
+> observable at product level and monthly frequency.
 >
-> Turkish demand for paid titles falls 27 percent, with an implied elasticity of -0.287. The
-> pre-existing differential trend is mildly positive, so netting it out makes the decline larger.
-> Latin-American Spanish, repriced downward on the same date, moves the other way.
+> Turkish demand for paid titles falls 27 percent, implying an elasticity of −0.287. The
+> pre-existing differential trend runs positive, so netting it out makes the decline larger.
+> Latin-American Spanish, repriced downward the same day, moves up. The window runs 31 months past
+> the event with no reversion.
 >
-> This is the quantity-side complement to Cavallo, Neiman and Rigobon, in a setting where the
-> currency switch is dated to the day and applies to an entire catalogue at once.
+> Paper: [link]. This is the quantity-side complement to Cavallo, Neiman and Rigobon, in a setting
+> where the currency switch is dated to the day and hits an entire catalogue at once.
 >
-> Paper: https://github.com/areebhirani-beep/steam-regional-pricing/blob/main/paper/paper.pdf.
->
-> What I would most value your view on: whether the near-complete absence of a quantity response
-> tells us something about pass-through into a market where the seller has no marginal cost, or
-> whether I am reading too much into one country.
+> What I would most value your read on: whether so little quantity response says something about
+> pass-through where the seller has no marginal cost, or whether I am over-reading one country.
 >
 > Areeb Hirani
 
 ---
 
-## Follow-up, sent once, ten to fourteen days later
+## Follow-up
 
-Keep it three sentences. Add one new thing. Never resend the original.
+Once, ten to fourteen days later. Three sentences. Add something new. Never resend the original.
 
 > Professor [Name],
 >
-> Following up once on the note below. Since sending it I extended the window to 31 months past
-> the event, where the effect shows no reversion, and added a leave-one-title-out check that moves
-> the estimate only within [-0.502, -0.497].
+> Following up once. Since writing I extended the window to 31 months past the event, where the
+> effect shows no reversion, and added a leave-one-title-out check that moves the estimate only
+> between −0.502 and −0.497.
 >
-> If this is not your area, I would be grateful for a name rather than a reply.
+> If this is not your area, a name would be as useful to me as a reply.
 >
 > Areeb
 
-That last sentence is the highest-yield line in the whole pack. People who will not help you will
-often forward you.
+That last line is the highest-yield sentence here. People who will not help you will often forward
+you.
 
 ---
 
-## Named starting points
+## Who to write to
 
-These are people whose published work the paper engages directly, so the email has a real reason to
-exist. Get current addresses from department pages; do not guess them.
+These are people whose published work the paper engages, so the letter has a reason to exist. Get
+addresses from department pages rather than guessing them.
 
-| Institution | Person | The connection |
-|---|---|---|
-| Harvard (HBS) | Alberto Cavallo | Cavallo, Neiman and Rigobon (2014, QJE) is the price-side paper this is the quantity-side complement to |
+| Institution | Person | Connection |
+| :--- | :--- | :--- |
+| Harvard (HBS) | Alberto Cavallo | Cavallo, Neiman & Rigobon (2014, QJE) is the price-side paper this complements |
 | Harvard | Gita Gopinath | Dominant Currency Paradigm (2020, AER); this is a forced move to dollar pricing |
-| Harvard (HBS) | Feng Zhu | Platform-owner behaviour and complementors (2018, SMJ; 2019, SMJ with Wen) |
-| Brown | Daniel Björkegren | Demand for a network good in a low-income country (2019, ReStud); closest antecedent in setting |
-| Penn (Wharton) | Aviv Nevo | Nevo, Turner and Williams (2016, Econometrica) solve the temporary-vs-permanent price problem structurally |
-| Penn (Wharton) | Kartik Hosanagar | Fleder and Hosanagar (2009, Management Science); platform design and consumption |
+| Harvard (HBS) | Feng Zhu | Platform-owner behaviour and complementors (2018 and 2019, SMJ) |
+| Brown | Daniel Björkegren | Demand for a network good in a low-income country (2019, ReStud) |
+| Penn (Wharton) | Aviv Nevo | Nevo, Turner & Williams (2016, Econometrica) solve the temporary-vs-permanent price problem structurally |
+| Penn (Wharton) | Kartik Hosanagar | Fleder & Hosanagar (2009, Management Science) |
 | Penn (Wharton) | Pinar Yildirim | Applied theory and empirics of online platforms |
-| Berkeley | Stefano DellaVigna | Uniform Pricing in U.S. Retail Chains (2019, QJE); this paper is its mirror image in digital goods |
+| Berkeley | Stefano DellaVigna | Uniform Pricing in U.S. Retail Chains (2019, QJE); this is its mirror image |
 | Berkeley | Pierre-Olivier Gourinchas | Co-author on Dominant Currency Paradigm |
-| Berkeley (Haas) | Steve Tadelis | Online platform markets and their measurement |
-| Berkeley (Haas) | Carl Shapiro, Michael Katz | Network externalities (1985, AER); the framework the free-to-play control tests against |
-| ITAM | José Tudón | Distilling Network Effects from Steam (2022, QME); the closest existing elasticity for the same market |
-| Xiamen / Academia Sinica | Yuta Watabe, Han Yang | Steam cross-country gravity (2025, CJE); nearest neighbour in data |
+| Berkeley (Haas) | Steve Tadelis | Measurement in online platform markets |
+| Berkeley (Haas) | Carl Shapiro, Michael Katz | Network externalities (1985, AER), the framework the free-to-play control tests |
+| ITAM | José Tudón | Distilling Network Effects from Steam (2022, QME), the closest existing elasticity |
+| Xiamen, Academia Sinica | Yuta Watabe, Han Yang | Steam cross-country gravity (2025, CJE), nearest neighbour in data |
 
-**Segmenting the long list.** Verified pool from a single conference in a single subfield: the 24th
+**Building the long list.** One conference in one subfield clears the target on its own: the 24th
 International Industrial Organization Conference program lists 72 sessions and 254 papers, with 536
 affiliation mentions across 110 institutions. Pull author lists from IIOC, the ISMS Marketing
-Science Conference, and WISE, then sort each author into segment A, B, C or D by the journal they
-publish in most. Send in batches of about 40 so you can revise the template between waves.
+Science Conference and WISE, sort each name into A, B, C or D by where they publish, and send in
+batches of forty so the letter can improve between waves.
 
-**Expected yield.** From 250 well-segmented emails, a low single-digit percentage reply rate is 5
-to 12 real conversations. That is the number the whole project is built to produce.
+**Expected yield.** From 250 well-sorted letters, a low single-digit reply rate is five to twelve
+real conversations. That is the number this project exists to produce.
